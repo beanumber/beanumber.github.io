@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Science, Sabermetrics, and You</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="macdougal_files/rmdshower/node_modules/shower-ribbon/styles/screen-16x10.css">
+  <link rel="stylesheet" href="macdougal_files/rmdshower/style-common.css">
+  <link rel="stylesheet" href="macdougal_files/rmdshower/style-ribbon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+  <script src="macdougal_files/rmdshower/auto-render.min.js" type="text/javascript"></script>
+  
+  
+  
+  
+      <script src="macdougal_files/htmlwidgets-0.8/htmlwidgets.js"></script>
+    <script src="macdougal_files/viz-0.3/viz.js"></script>
+    <link href="macdougal_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="macdougal_files/grViz-binding-0.9.0/grViz.js"></script>
+  
+</head>
+
+<body class="shower list">
+
+  <header class="caption">
+    <h1>Data Science, Sabermetrics, and You</h1>
+    <p>Ben Baumer</p>
+  </header>
+
+    
+  
+<section id="data-science-sabermetrics-and-you" class="slide level2 white">
+<h2>Data Science, Sabermetrics, and You</h2>
+<!--
+<img src="https://espnfivethirtyeight.files.wordpress.com/2016/06/gettyimages-455266466.jpg?w=3551" class="cover">
+-->
+<p><img src="https://static1.squarespace.com/static/54905286e4b050812345644c/560b1c27e4b0a43ccfccc9d9/571a6de701dbaee900dd3f42/1477676739172/Baseball-stock-photo-3.jpg?format=1500w" class="cover"></p>
+</br></br></br></br></br>
+<p class="white">
+Ben Baumer</br> Lawrence University</br> May 10th, 2017</br>
+</p>
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ul>
+<li><strong>What</strong> is data science?</li>
+<li><strong>Where</strong> is data science applied? Case study: baseball</li>
+<li><strong>Who</strong> are data scientists?</li>
+<li><strong>How</strong> does one become a data scientist?</li>
+<li><strong>Why</strong> data science?</li>
+</ul>
+</section>
+<section id="data-science" class="titleslide slide level1"><h2 class="shout">Data science</h2></section><section id="section" class="slide level2 white">
+<h2></h2>
+<p><img src="https://2s7gjr373w3x22jf92z99mgm5w-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/shutterstock_data_science_aslysun.jpg" class="cover"></p>
+</section><section id="v1.0" class="slide level2">
+<h2>v1.0</h2>
+<p><img src="https://static1.squarespace.com/static/5150aec6e4b0e340ec52710a/t/51525c33e4b0b3e0d10f77ab/1364352052403/Data_Science_VD.png" class="cover"></p>
+</section><section id="section-1" class="slide level2 fullpage white">
+<h2></h2>
+<p><img src="https://1.bp.blogspot.com/-ju4m6PBOrgo/V-E5qz99SaI/AAAAAAAAMF0/gle0zsZz_nIBEMVg0EdZHoGJhjlnBzv1gCLcB/s1600/moz-screenshot-3-729576.png" /></p>
+</section><section id="v3.0" class="slide level2 fullpage">
+<h2>v3.0?</h2>
+<p><img src="https://3.bp.blogspot.com/-bvQxcwfqATQ/V-E_uTBc4VI/AAAAAAAAMGQ/Qa1Ntef-rs0E-mWx5pkVu-CPlREdvD0TwCLcB/s1600/VennDiagram2.png" /></p>
+</section><section id="data-scientist-as-poorly-trained-statistician" class="slide level2">
+<h2>Data scientist as poorly-trained statistician</h2>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Statistician: person using data in [scientifically] rigorous ways. Data Scientist: person writings blog posts, giving talks … about data.
+</p>
+— Dirk Eddelbuettel (<span class="citation" data-cites="eddelbuettel">@eddelbuettel</span>) <a href="https://twitter.com/eddelbuettel/status/263737821918027776">October 31, 2012</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section><section id="data-scientist-subset-statistician" class="slide level2">
+<h2>Data scientist <span class="math inline">\(\subset\)</span> statistician</h2>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+<a href="https://twitter.com/eddelbuettel"><span class="citation" data-cites="eddelbuettel">@eddelbuettel</span></a> my cynical definition: a data scientist is a statistician who is useful ;)
+</p>
+— Hadley Wickham (<span class="citation" data-cites="hadleywickham">@hadleywickham</span>) <a href="https://twitter.com/hadleywickham/status/263750846246969344">October 31, 2012</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section><section id="data-scientist-as-intersection" class="slide level2">
+<h2>Data scientist as intersection</h2>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Data Scientist (n.): Person who is better at statistics than any software engineer and better at software engineering than any statistician.
+</p>
+— Josh Wills (<span class="citation" data-cites="josh_wills">@josh_wills</span>) <a href="https://twitter.com/josh_wills/status/198093512149958656">May 3, 2012</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section><section id="section-2" class="slide level2">
+<h2></h2>
+<p><img src="data_science_wikipedia.png" class="cover"></p>
+</section>
+<section id="sabermetrics" class="titleslide slide level1"><h2 class="shout">Sabermetrics</h2></section><section id="what-is-sabermetrics" class="slide level2">
+<h2>What is sabermetrics?</h2>
+<div class="double">
+<p><img src="https://sabermetricscapstone.files.wordpress.com/2014/12/sabermetrics3.jpg" width="400px"></p>
+<ul>
+<li>statistics</li>
+<li>computing</li>
+<li>math</li>
+<li>baseball</li>
+<li><del>physics</del></li>
+</ul>
+</div>
+</section><section id="a-brief-history-of-sabermetrics" class="slide level2 fullpage">
+<h2>A brief history of sabermetrics</h2>
+<div id="htmlwidget-635e03941bf699930578" style="width:768px;height:470.4px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-635e03941bf699930578">{"x":{"diagram":"\ndigraph dot {\n\ngraph [layout = dot]\n\nnode [shape = oval,\n      style = filled,\n      color = darkgrey,\n      label = \"\"]\n\nnode [fillcolor = orange, width = 2]\na [label = \"sabermetrics\"]\n\nnode [fillcolor = dodgerblue, fixedsize = true, width = 1]\nb [label = \"data\"]\nc [label = \"tools\"]\nd [label = \"methods\"]\n\nedge [color = darkgrey]\n{b c d} -> a\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</section><section id="early-20th-century" class="slide level2">
+<h2>Early 20th century</h2>
+<div class="double">
+<ul>
+<li>1900s: <a href="https://en.wikipedia.org/wiki/Henry_Chadwick_(writer)">Henry Chadwick</a> invents the boxscore</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Henry_Chadwick_Baseball.jpg/200px-Henry_Chadwick_Baseball.jpg" width="350px"></p>
+</div>
+</section><section id="early-20th-century-data" class="slide level2">
+<h2>Early 20th century: data</h2>
+<div class="double">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/1876boxscore.jpg/220px-1876boxscore.jpg" width="400px"></p>
+<ul>
+<li>Boxscores
+<ul>
+<li>game level</li>
+<li>dozens of rows</li>
+</ul></li>
+</ul>
+</div>
+</section><section id="early-20th-century-tools" class="slide level2">
+<h2>Early 20th century: tools</h2>
+<div class="double">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Early_SSA_accounting_operations.jpg/220px-Early_SSA_accounting_operations.jpg" width="350px"></p>
+<ul>
+<li>1880: <a href="https://en.wikipedia.org/wiki/History_of_computing_hardware">punched cards invented</a> (by IBM)</li>
+<li>1935: punched cards used by SSA</li>
+</ul>
+</div>
+</section><section id="early-20th-century-methods" class="slide level2">
+<h2>Early 20th century: methods</h2>
+<div class="double">
+<ul>
+<li>1907: <a href="https://en.wikipedia.org/wiki/History_of_statistics">Galton’s paper</a> on wisdom-of-crowds</li>
+<li>1908: <a href="https://en.wikipedia.org/wiki/Student%27s_t-distribution">Gosset’s <em>t</em>-test</a></li>
+<li>1918: Fisher introduces <strong>variance</strong></li>
+<li>1935: <em>Design of Experiments</em></li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/R._A._Fischer.jpg/220px-R._A._Fischer.jpg" width="326px"></p>
+</div>
+</section><section id="early-20th-century-what-did-we-learn" class="slide level2">
+<h2>Early 20th century: what did we learn?</h2>
+<div class="double">
+<p><img src="http://cdn1.sbnation.com/imported_assets/546275/cy_20-_20zack.jpg" width="350px"></p>
+<ul>
+<li>Batting
+<ul>
+<li>batting average</li>
+</ul></li>
+<li>Pitching:
+<ul>
+<li>earned run average (<strong>ERA</strong>)</li>
+</ul></li>
+<li>Fielding
+<ul>
+<li>fielding percentage</li>
+</ul></li>
+</ul>
+</div>
+</section><section id="branch-rickey-era" class="slide level2">
+<h2>Branch Rickey era</h2>
+<div class="double">
+<ul>
+<li>1947: <a href="http://www.baseball-reference.com/bullpen/Allan_Roth">Allan Roth</a>, Brooklyn Dodgers statistician</li>
+</ul>
+<p><img src="http://sabr.org/sites/default/files/images/allan_roth_low_res_LOC_3c27300v.jpg" width="450px"></p>
+</div>
+</section><section id="branch-rickey-era-data" class="slide level2">
+<h2>Branch Rickey era: data</h2>
+<div class="double">
+<p><img src="http://www.kevinsavagecards.com/ItemImages/000016/39_12308a_lg.jpeg" width="400px"></p>
+<ul>
+<li>Tabulated
+<ul>
+<li>recorded by hand (?)</li>
+<li>hundreds of rows (?)</li>
+</ul></li>
+<li>1951: <a href="http://www.baseball-reference.com/bullpen/The_Official_Encyclopedia_of_Baseball"><em>Official Encyclopedia of Baseball</em></a>
+<ul>
+<li>games played</li>
+<li>batting average (for hitters)</li>
+<li>wins and losses (pitchers)</li>
+</ul></li>
+</ul>
+</div>
+</section><section id="branch-rickey-era-tools" class="slide level2">
+<h2>Branch Rickey era: tools</h2>
+<div class="double">
+<p><img src="http://www.vintagecalculators.com/assets/images/autogen/MonroeLN160X_1.jpg" width="400px"></p>
+<ul>
+<li>1940s: <a href="http://www.vintagecalculators.com/html/monroe_ln-160x.html">Monroe LN-160X</a></li>
+<li>1947: <a href="https://en.wikipedia.org/wiki/Victor_Technology">Victor is the world’s largest exclusive manufacturer of adding machines</a></li>
+<li>1950: <a href="https://en.wikipedia.org/wiki/Turing_test">Turing test</a></li>
+</ul>
+</div>
+</section><section id="branch-rickey-era-methods" class="slide level2">
+<h2>Branch Rickey era: methods</h2>
+<div class="double">
+<ul>
+<li>1953: Metropolis’s paper on <a href="https://en.wikipedia.org/wiki/Nicholas_Metropolis#Monte_Carlo_method">Monte Carlo methods</a></li>
+<li>1959: <a href="https://en.wikipedia.org/wiki/List_of_important_publications_in_statistics">Lehmann’s <em>Testing Statistical Hypotheses</em></a></li>
+<li>1970: Codd’s <a href="http://www.quickbase.com/articles/timeline-of-database-history">“A Relational Model of Data for Large Shared Data Banks”</a></li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/3dRosenbrock.png/350px-3dRosenbrock.png" width="400px"></p>
+<ul>
+<li>1970: <a href="https://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm">Metropolis-Hastings</a> for MCMC</li>
+</ul>
+</div>
+</section><section id="roth-on-math" class="slide level2">
+<h2><a href="https://sabr.org/bioproj/person/350155ef">Roth on math</a></h2>
+<blockquote>
+<p>The figures concerned in baseball statistical work don’t call for integral calculus or even advanced algebra.</p>
+</blockquote>
+<p><strong>Allan Roth</strong></p>
+<p class="note">
+Rosenthal, ed., “The Statistician,” in <em>Baseball Is Their Business</em>, 1952, p. 140
+</p>
+</section><section id="section-3" class="slide level2 white">
+<h2></h2>
+<p><img src="http://assets.sbnation.com/assets/573927/Rickey.jpg" class="cover"></p>
+</section><section id="what-did-we-learn" class="slide level2">
+<h2>What did we learn?</h2>
+<div class="double">
+<p><img src="http://www.wikihow.com/images/c/c2/Calculate-On-Base-Percentage-Step-12.jpg" width="400px"></p>
+<ul>
+<li>Batting:
+<ul>
+<li><a href="http://www.baseball-reference.com/bullpen/Allan_Roth"><strong>OBP</strong> better than batting average</a></li>
+<li><a href="http://www.nytimes.com/1992/03/05/sports/alan-roth-74-dies-baseball-statistician.html">Platoon effects</a></li>
+</ul></li>
+<li>Pitching:
+<ul>
+<li>Pitch counts</li>
+</ul></li>
+<li>Fielding:
+<ul>
+<li>Spray charts</li>
+</ul></li>
+</ul>
+</div>
+</section><section id="bill-james-era" class="slide level2">
+<h2>Bill James era</h2>
+<div class="double">
+<ul>
+<li>1977–1988: <a href="https://en.wikipedia.org/wiki/Bill_James">Bill James</a> popularizes “<a href="https://en.wikipedia.org/wiki/Sabermetrics">sabermetrics</a>”</li>
+</ul>
+<p><img src="http://ecx.images-amazon.com/images/I/51iOtZD9EHL._SX258_BO1,204,203,200_.jpg" width="300px"></p>
+</div>
+</section><section id="bill-james-era-data" class="slide level2">
+<h2>Bill James era: data</h2>
+<div class="double">
+<p>&lt;img src=“<a href="https://espnfivethirtyeight.files.wordpress.com/2017/05/baseballencyclopedia-05.gif?strip=info&amp;w=575&amp;ssl=1" class="uri">https://espnfivethirtyeight.files.wordpress.com/2017/05/baseballencyclopedia-05.gif?strip=info&amp;w=575&amp;ssl=1</a>” width=“400px”&gt;</p>
+<ul>
+<li>Data: seasonal + some splits
+<ul>
+<li><code>player-team-season</code>, batter vs. pitcher</li>
+<li>100,000 rows seasonal</li>
+</ul></li>
+<li>1969: <a href="https://fivethirtyeight.com/features/before-baseball-reference-statheads-relied-on-the-big-mac/">“Big Mac”</a></li>
+<li>1995: <a href="https://en.wikipedia.org/wiki/Sean_Lahman">Sean Lahman</a> publishes first online database</li>
+</ul>
+</div>
+</section><section id="bill-james-era-tools" class="slide level2">
+<h2>Bill James era: tools</h2>
+<div class="double">
+<ul>
+<li>1974: <a href="https://en.wikipedia.org/wiki/Ingres_(database)">Ingres</a></li>
+<li>1977: <a href="https://en.wikipedia.org/wiki/Apple_II">Apple II</a></li>
+<li>1981: <a href="https://en.wikipedia.org/wiki/MS-DOS">MS-DOS</a> first released</li>
+<li>1986: <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> becomes and ANSI standard</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Apple_II_IMG_4212.jpg" width="400px"></p>
+</div>
+</section><section id="bill-james-era-methods" class="slide level2">
+<h2>Bill James era: methods</h2>
+<div class="double">
+<p><img src="http://courses.washington.edu/matlab1/Bootstrap_examples_07.png" width="400px"></p>
+<ul>
+<li>1977: <a href="https://en.wikipedia.org/wiki/John_Tukey">Tukey</a>, <em>Exploratory Data Analysis</em></li>
+<li>1977: <a href="https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm">EM algorithm</a></li>
+<li>1979: Efron discovers <a href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)">the bootstrap</a></li>
+</ul>
+</div>
+</section><section id="bill-james-era-what-did-we-learn" class="slide level2">
+<h2>Bill James era: what did we learn?</h2>
+<div class="double">
+<ul>
+<li><strong>Pythagorean Expectation</strong></li>
+<li>Win Shares</li>
+<li>Batting
+<ul>
+<li>Runs Created</li>
+</ul></li>
+<li>Pitching
+<ul>
+<li>Game Score</li>
+</ul></li>
+<li>Fielding
+<ul>
+<li>Range Factor</li>
+</ul></li>
+</ul>
+<p><img src="http://www.eg.bucknell.edu/~bvollmay/baseball/wpct_vs_z.gif" width="400px"></p>
+</div>
+</section><section id="internet-era" class="slide level2">
+<h2>Internet era</h2>
+<div class="double">
+<ul>
+<li>1990s: <a href="https://groups.google.com/forum/#!forum/rec.sport.baseball">rec.sport.baseball</a> connects the next generation of sabermetricians</li>
+</ul>
+<p><img src="http://i0.wp.com/mopupduty.com/wp-content/uploads/2011/06/sabermetrics.jpg?fit=450%2C272" width="400px"></p>
+</div>
+</section><section id="internet-era-data" class="slide level2">
+<h2>Internet era: data</h2>
+<div class="double">
+<ul>
+<li>Data: seasonal
+<ul>
+<li><code>player-team-season</code></li>
+<li>100,000 rows seasonal</li>
+</ul></li>
+<li>1995: <a href="https://en.wikipedia.org/wiki/Sean_Lahman">Sean Lahman</a> publishes first online database</li>
+</ul>
+</div>
+<p><img src="https://i.stack.imgur.com/NjwuJ.jpg" width="800px"></p>
+</section><section id="internet-era-tools" class="slide level2">
+<h2>Internet era: tools</h2>
+<div class="double">
+<ul>
+<li>1990: <a href="https://en.wikipedia.org/wiki/Windows_3.0">Windows 3.0</a></li>
+<li>1995: <a href="https://en.wikipedia.org/wiki/Microsoft_Excel#Number_of_rows_and_columns">Excel 7.0</a> can handle at most 16k rows</li>
+<li>1998: <a href="https://en.wikipedia.org/wiki/IMac_G3">iMac G3</a></li>
+</ul>
+<p><img src="http://cdn.cultofmac.com/wp-content/uploads/2016/08/tumblr_o860yvcIUg1rnoexwo1_1280-780x439.jpg" width="450px"></p>
+</div>
+</section><section id="internet-era-methods" class="slide level2">
+<h2>Internet era: methods</h2>
+<div class="double">
+<p><img src="https://imgs.xkcd.com/comics/linear_regression.png" width="400px"></p>
+<ul>
+<li>correlation</li>
+<li>regression</li>
+<li>Markov chains</li>
+</ul>
+</div>
+</section><section id="internet-era-what-did-we-learn" class="slide level2">
+<h2>Internet era: what did we learn?</h2>
+<blockquote>
+<p>There is little if any difference among major-league pitchers in their ability to prevent hits on balls hit in the field of play.</p>
+</blockquote>
+<p><strong>Voros McCracken</strong></p>
+<!--
+
+- 1999: [Defense Independent Pitching Statistics (DIPS)](https://en.wikipedia.org/wiki/Defense_independent_pitching_statistics)
+
+-->
+<p class="note">
+McCracken, “<a href="http://www.baseballprospectus.com/article.php?articleid=878">Pitching and Defense: How Much Control Do Hurlers Have?</a>,” BaseballProspectus.com, Jan 23, 2001
+</p>
+</section><section id="section-4" class="slide level2 white">
+<h2></h2>
+<p><img src="http://1.bp.blogspot.com/-fWxprKv-6LI/UltyCnvh5xI/AAAAAAAAIyY/It2_rSTrt9Q/s1600/Moneyball.JPG" class="cover"></p>
+<!--
+
+## Moneyball era
+
+<div class="double">
+- 2003: *[Moneyball](https://en.wikipedia.org/wiki/Moneyball)*
+
+  <img src="http://goaldentimes.org/wp-content/uploads/2012/09/Desktop5-1024x771.jpg" width="450px">
+</div>
+
+-->
+</section><section id="moneyball-era-data" class="slide level2">
+<h2>Moneyball era: data</h2>
+<div class="double">
+<ul>
+<li>Play-by-play
+<ul>
+<li>batter vs. pitcher</li>
+<li>several million rows</li>
+</ul></li>
+<li>1996: <a href="https://en.wikipedia.org/wiki/Retrosheet">Retrosheet</a> starts publishing play-by-play data online</li>
+</ul>
+<p><img src="http://www.retrosheet.org/hitloc.jpg" width="450px"></p>
+</div>
+</section><section id="moneyball-era-tools" class="slide level2">
+<h2>Moneyball era: tools</h2>
+<div class="double">
+<ul>
+<li>2003: <a href="https://en.wikipedia.org/wiki/Microsoft_Excel#Number_of_rows_and_columns">Excel 11.0</a> can handle at most 64k rows</li>
+<li>2005: <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> powers Google</li>
+</ul>
+<p><img src="http://2.bp.blogspot.com/_CERlGVs2E6w/TSSJYEjHJDI/AAAAAAAAAIU/_VShALxnZ5E/s1600/Spreadsheet.png" width="450px"></p>
+</div>
+</section><section id="moneyball-era-methods" class="slide level2">
+<h2>Moneyball era: methods</h2>
+<div class="double">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/KnnClassification.svg/220px-KnnClassification.svg.png" width="400px"></p>
+<ul>
+<li>regression</li>
+<li>clustering</li>
+<li><span class="math inline">\(k\)</span>-Nearest Neighbor</li>
+</ul>
+</div>
+</section><section id="moneyball-era-what-did-we-learn" class="slide level2">
+<h2>Moneyball era: what did we learn?</h2>
+<div class="double">
+<ul>
+<li>Batting
+<ul>
+<li>Linear Weights</li>
+<li>Value Over Replacement Player</li>
+<li><strong>Projection systems</strong></li>
+</ul></li>
+<li>Pitching
+<ul>
+<li>Leverage</li>
+</ul></li>
+<li>Fielding
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ultimate_zone_rating">Ultimate Zone Rating</a></li>
+</ul></li>
+</ul>
+<p><img src="http://15130-presscdn-0-89.pagely.netdna-cdn.com/wp-content/uploads/2016/06/NateSilver.jpg" width="400px"></p>
+</div>
+</section><section id="pitchfx-era" class="slide level2">
+<h2>PITCHf/x era</h2>
+<div class="double">
+<ul>
+<li>2004–2012: BB works for Mets</li>
+</ul>
+<p><img src="http://www.cuny.edu/news/publications/cunymatters/summer2010/for-top-players/baumer.jpg" width="450px"></p>
+</div>
+</section><section id="pitchfx-era-data" class="slide level2">
+<h2>PITCHf/x era: data</h2>
+<div class="double">
+<ul>
+<li>Pitch-by-pitch
+<ul>
+<li>each pitch</li>
+<li>several million rows <em>per season</em></li>
+</ul></li>
+</ul>
+<p><img src="http://cpsievert.github.io/slides/pitchRx/CC/gameday.png" width="400px"></p>
+</div>
+</section><section id="pitchfx-era-tools" class="slide level2">
+<h2>PITCHf/x era: tools</h2>
+<div class="double">
+<p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png" width="350px"></p>
+<ul>
+<li>2000s: SQL can handle tens of millions of rows on modest hardware</li>
+<li>2007: <a href="https://en.wikipedia.org/wiki/Microsoft_Excel#Number_of_rows_and_columns">Excel 12.0</a> can handle at most 1M rows</li>
+</ul>
+</div>
+</section><section id="pitchfx-era-methods" class="slide level2">
+<h2>PITCHf/x era: methods</h2>
+<div class="double">
+<p><img src="https://i.stack.imgur.com/bGw94.jpg" width="400px"></p>
+<ul>
+<li>mixed models</li>
+<li>Bayesian methods</li>
+<li>generalized linear models</li>
+</ul>
+</div>
+</section><section id="pitchfx-era-what-did-we-learn" class="slide level2">
+<h2>PITCHf/x era: what did we learn?</h2>
+<div class="double">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Wins_Above_Replacement">WAR</a></li>
+<li>Pitching
+<ul>
+<li>Spin rates</li>
+<li><strong>Catcher framing</strong></li>
+</ul></li>
+</ul>
+<p><img src="http://www.qcbaseball.com/images/swaying2.jpg" width="400px"></p>
+</div>
+</section><section id="statcast-era-data" class="slide level2">
+<h2>Statcast era: data</h2>
+<div class="double">
+<ul>
+<li>2015: <a href="https://en.wikipedia.org/wiki/Statcast">Statcast</a> deployed</li>
+<li>Data: player-tracking
+<ul>
+<li>every 1/15th of a second</li>
+<li>several million rows <em>per game</em></li>
+</ul></li>
+</ul>
+<p><img src="http://baseball.physics.illinois.edu/images/Tracking-2.png" width="400px"></p>
+</div>
+</section><section id="statcast-era-tools" class="slide level2">
+<h2>Statcast era: tools</h2>
+<div class="double">
+<ul>
+<li>Hadoop</li>
+<li>Apache Spark</li>
+<li><a href="http://www.cray.com/blog/crays-mystery-mlb-team-revealed/">Cray supercomputer</a>!</li>
+</ul>
+<p><img src="https://www.extremetech.com/wp-content/uploads/2016/06/products_xc_40_photo_01.jpg" width="450px"></p>
+</div>
+</section><section id="statcast-era-methods" class="slide level2">
+<h2>Statcast era: methods</h2>
+<div class="double">
+<p><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAk3AAAAJDBiZGU1OWZiLWIzZWMtNDU0ZC04NTEwLWY5OWM2ZDc5NGYwMA.png" width="400px"></p>
+<ul>
+<li>machine learning
+<ul>
+<li>regularized regression</li>
+<li>decision trees</li>
+<li>random forests</li>
+<li>neural networks</li>
+<li>support vector machines</li>
+</ul></li>
+</ul>
+</div>
+</section><section id="statcast-era-what-have-we-learned" class="slide level2">
+<h2>Statcast era: what have we learned?</h2>
+<div class="double">
+<ul>
+<li>Batting:
+<ul>
+<li>exit velocity</li>
+<li>launch angle</li>
+</ul></li>
+<li>Fielding:
+<ul>
+<li>route efficiency</li>
+<li>pop time</li>
+</ul></li>
+</ul>
+<p><img src="http://www.hardballtimes.com/wp-content/uploads/2016/06/angle_speed_pred-2.png" width="400px"></p>
+</div>
+</section><section id="summary" class="slide level2">
+<h2>Summary</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">data</th>
+<th style="text-align: center;">rows</th>
+<th style="text-align: center;">tool</th>
+<th style="text-align: center;">method</th>
+<th style="text-align: center;">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">boxscores</td>
+<td style="text-align: center;">dozens</td>
+<td style="text-align: center;">paper</td>
+<td style="text-align: center;">arithmetic</td>
+<td style="text-align: center;">rates</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">tabulated</td>
+<td style="text-align: center;">hundreds</td>
+<td style="text-align: center;">adding machine</td>
+<td style="text-align: center;">arithmetic</td>
+<td style="text-align: center;">formulas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">compiled</td>
+<td style="text-align: center;">thousands</td>
+<td style="text-align: center;">calculator</td>
+<td style="text-align: center;">algebra</td>
+<td style="text-align: center;">metrics</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">seasonal</td>
+<td style="text-align: center;">100 k</td>
+<td style="text-align: center;">spreadsheet</td>
+<td style="text-align: center;">regression</td>
+<td style="text-align: center;">metrics</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">play-by-play</td>
+<td style="text-align: center;">1 M</td>
+<td style="text-align: center;">SQL (laptop)</td>
+<td style="text-align: center;">regression</td>
+<td style="text-align: center;">fitted models</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">pitch-by-pitch</td>
+<td style="text-align: center;">10 M</td>
+<td style="text-align: center;">SQL (server)</td>
+<td style="text-align: center;">mixed, Bayesian</td>
+<td style="text-align: center;">statistical models</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">player tracking</td>
+<td style="text-align: center;">billions</td>
+<td style="text-align: center;">Spark</td>
+<td style="text-align: center;">ML</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+</section><section id="example-catcher-framing" class="slide level2">
+<h2>Example: Catcher Framing</h2>
+<!--
+- [PITCHf/x](https://www.sportvision.com/baseball/pitchfx%C2%AE)
+- Jose Molina, Russell Martin (*[Big Data Baseball](http://www.amazon.com/Big-Data-Baseball-Miracles-20-Year/dp/1250063507)*)
+-->
+<div class="double">
+<p><img src="http://ia601701.us.archive.org/31/items/JoseMolinaryanDoumitGifs/MolinaFrame1.gif" width="400px"> Jose Molina (good)</p>
+<p><img src="http://ia801701.us.archive.org/31/items/JoseMolinaryanDoumitGifs/DoumitFrame1.gif" width="400px"> Ryan Doumit (bad)</p>
+</div>
+</section><section id="example-catcher-framing-1" class="slide level2">
+<h2>Example: Catcher Framing</h2>
+<div class="double">
+<p><img src="http://ia601701.us.archive.org/31/items/JoseMolinaryanDoumitGifs/MolinaFrame3.gif" width="400px"> Jose Molina (good)</p>
+<p><img src="http://ia601701.us.archive.org/31/items/JoseMolinaryanDoumitGifs/DoumitFrame3.gif" width="400px"> Ryan Doumit (bad)</p>
+</div>
+<p class="note">
+Learn more at <a href="http://espn.go.com/espn/feature/story/_/id/11127248/how-catcher-framing-becoming-great-skill-smart-teams-new-york-yankees-espn-magazine">ESPN</a> or <a href="http://grantland.com/features/studying-art-pitch-framing-catchers-such-francisco-cervelli-chris-stewart-jose-molina-others/">Grantland</a>
+</p>
+<!--
+
+## Example: Fielding
+
+<div class="double">
+- [Ultimate Zone Rating](https://en.wikipedia.org/wiki/Ultimate_zone_rating) (UZR)
+- [Defensive Runs Saved](https://en.wikipedia.org/wiki/Defensive_Runs_Saved) (DRS)
+- [A Probabilistic Model of Range](http://www.baseballmusings.com/archives/cat_probabilistic_model_of_range.php)
+
+  <img src="http://www.hardballtimes.com/wp-content/images/tht/zone_rating.jpg" width="500px">
+</div>
+
+## Fielding: SAFE
+
+- [Spatial Aggregate Fielding Evaluation](http://www-stat.wharton.upenn.edu/~stjensen/research/safe.html) (SAFE)
+
+<div class="centered">
+  <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7Pp7QsU1psEuSBSZXf1gQ8DUYuCgmk2V21-6pzqwxSHH3edn0" width="700px">
+</div>
+
+## Fielding: Comparison of UZR and SAFE
+
+<div class="double">
+
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjSqUHmRm_Ld2cN8_F_c4z-Sk55zZk0KXTVWQRSWEvdNy4ukydEQ" width="400px">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQulfj4iw8Hu24zrLQEO8TBzdMAI7fAXVmHxKfHaVlDgxGP7uH71g" width="400px">
+
+</div>
+
+## Fielding: [Statcast](http://m.mlb.com/news/article/119234412/statcast-primer-baseball-will-never-be-the-same) {.flexbox .vcenter}
+
+<img src="http://mediadownloads.mlb.com/mlbam/2015/05/03/images/mlbf_99340783_th_45.jpg" width="800px">
+
+-->
+</section>
+<section id="data-scientists" class="titleslide slide level1"><h2 class="shout">Data scientists</h2></section><section id="what-skills-do-you-need" class="slide level2">
+<h2>What skills do you need?</h2>
+<div class="double">
+<ul>
+<li>programming with data
+<ul>
+<li>(R or Python) and SQL</li>
+</ul></li>
+<li>statistical modeling
+<ul>
+<li>not just regression</li>
+<li>mixed models, Bayesian methods, machine learning</li>
+</ul></li>
+<li>communication</li>
+<li>domain knowledge</li>
+</ul>
+<p><img src="https://s-media-cache-ak0.pinimg.com/originals/a1/1f/9b/a11f9ba7d5499ba31ef5b2959c96bae6.png" width="400px"></p>
+</div>
+</section><section id="moneyball-era-paul-depodesta" class="slide level2">
+<h2>Moneyball era: Paul DePodesta</h2>
+<div class="double">
+<p><img src="http://www.newyorker.com/wp-content/uploads/2011/09/Depodesta-Hill.jpg" width="400px"></p>
+<ul>
+<li>1995: BA, Harvard, economics
+<ul>
+<li>football and baseball</li>
+</ul></li>
+<li>2001–2004: GM of LA Dodgers</li>
+<li>former EVP of Padres, Mets</li>
+<li>Chief Strategy Officer, Browns</li>
+<li>deep knowledge of scouting</li>
+<li>Excel, regression</li>
+</ul>
+</div>
+</section><section id="statcast-era-daniel-mack" class="slide level2">
+<h2>Statcast era: <a href="https://www.linkedin.com/in/daniel-mack-2221114/">Daniel Mack</a></h2>
+<div class="double">
+<p><img src="https://pbs.twimg.com/media/CfxRL8jUsAI-URZ.jpg" width="400px"></p>
+<ul>
+<li>2015: Director, Baseball Analytics/Research Science, Kansas City Royals</li>
+<li>2013: PhD, CS (ML), Vanderbilt</li>
+<li>2008: MS, CS (ML), Columbia</li>
+<li>2006: BA, CS, Notre Dame</li>
+</ul>
+</div>
+</section><section id="what-sabermetrician-jobs-are-there-in-nyc" class="slide level2">
+<h2>What sabermetrician jobs are there in NYC?</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d96721.70097310595!2d-73.99671720870023!3d40.74985696094665!3m2!1i1024!2i768!4f13.1!2m1!1smets+yankees+stadium+new+york!5e0!3m2!1sen!2sus!4v1494356951555" width="800" height="400" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+</section><section id="what-data-science-jobs-are-there-in-nyc" class="slide level2">
+<h2>What data science jobs are there in NYC?</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d40666.8396453359!2d-73.99671710199995!3d40.749245688604645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbusiness+companies+new+york+city!5e0!3m2!1sen!2sus!4v1494335460153" width="800" height="400" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+</section><section id="data-science-jobs" class="slide level2">
+<h2>Data science jobs</h2>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Talk about in-demand: 2.7 Million New Data &amp; Analytics Job Openings Every Year by 2020, via <span class="citation" data-cites="IBMhttp://ow.ly/zx9p30bxfxi">@IBMhttp://ow.ly/zx9p30bxfxi</span> <a href="https://t.co/RzZAmVTYdx">pic.twitter.com/RzZAmVTYdx</a>
+</p>
+— This is Statistics (<span class="citation" data-cites="ThisisStats">@ThisisStats</span>) <a href="https://twitter.com/ThisisStats/status/861975385956921344">May 9, 2017</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section><section id="gender-equity-and-diversity" class="slide level2">
+<h2>Gender equity and diversity</h2>
+<div class="double">
+<ul>
+<li>BLS: <a href="https://www.bls.gov/cps/cpsaat11.htm">26% of employees in tech positions are women</a></li>
+<li>ASA: 53% of statisticians are women</li>
+<li><a href="https://ww2.amstat.org/meetings/wsds/2017/">Women in Statistics and Data Science Conference</a></li>
+<li><a href="https://www.smith.edu/news/in-demand-smith-earns-grant-from-massmutual-for-new-data-science-program/">Women in Data Science</a> grant (MassMutual + Smith, MHC)</li>
+</ul>
+<p><img src="http://mlb.mlb.com/images/2011/02/09/c5fzsE6W.jpg" width="400px"></p>
+<ul>
+<li><a href="Front%20Office%20and%20Field%20Staff%20Diversity%20Pipeline%20Program">Tyrone Brooks</a>, Senior Director, Front Office and Field Staff Diversity Pipeline Program, MLB</li>
+</ul>
+</div>
+</section><section id="hilary-parker" class="slide level2">
+<h2><a href="https://hilaryparker.com/about-hilary-parker/">Hilary Parker</a></h2>
+<div class="double">
+<p><img src="http://thisisstatistics.org/wp-content/uploads/2016/01/HilaryParker.jpg" width="400px"></p>
+<ul>
+<li>Data Scientist at <a href="https://www.stitchfix.com/">Stitch Fix</a></li>
+<li>co-host, <a href="https://soundcloud.com/nssd-podcast">Not So Standard Deviations</a></li>
+<li>2013: PhD in biostatistics, JHU</li>
+<li>2008: BA, Pomona, math, molecular biology</li>
+</ul>
+</div>
+</section><section id="emily-robinson" class="slide level2">
+<h2><a href="https://robinsones.github.io/about/">Emily Robinson</a></h2>
+<div class="double">
+<ul>
+<li>Data Analyst at Etsy</li>
+<li>2016: MS, organizational behavior, INSEAD</li>
+<li>2014: BA, decision sciences, Rice</li>
+</ul>
+<p><img src="https://pbs.twimg.com/profile_images/710528075629522944/vcLSVrwP.jpg" width="400px"></p>
+</div>
+</section><section id="dannia-guzman" class="slide level2">
+<h2><a href="https://www.linkedin.com/in/danniaguzman/">Dannia Guzman</a></h2>
+<div class="double">
+<p><img src="https://res.cloudinary.com/value-penguin/image/upload/f_auto,q_auto/v1490831175/Dannia_1_rwlttu.jpg" width="350px"></p>
+<ul>
+<li>Statistical programmer, MDRC</li>
+<li>co-author, <a href="https://storage.googleapis.com/vera-web-assets/downloads/Publications/new-york-citys-pretrial-supervised-release-program/legacy_downloads/Supervised-Release-Brief-2017.pdf"><em>New York City’s Pretrial Supervised Release Program</em></a></li>
+<li>2015: BA, psychology, Smith</li>
+</ul>
+</section>
+<section id="data-science-curriculum" class="titleslide slide level1"><h2 class="shout">Data science curriculum</h2></section><section id="how-do-you-develop-these-skills" class="slide level2">
+<h2>How do you develop these skills?</h2>
+<ul>
+<li>More than 550 degree program in data science worldwide</li>
+<li>PhD programs in <strong>data science</strong>
+<ul>
+<li><a href="https://www.wpi.edu/academics/study/data-science-phd">Worcester Polytechnic</a></li>
+<li><a href="http://cds.nyu.edu/phd-program/">New York U.</a></li>
+<li><a href="http://escience.washington.edu/education/phd/igert-data-science-phd-program/">U. Washington</a></li>
+<li>Carnegie Mellon U.: <a href="http://ml.cmu.edu/prospective-students/joint-phd-mlstat.html">joint statistics &amp; ML</a></li>
+</ul></li>
+<li>Is data science a science?</li>
+</ul>
+<p class="note">
+Donoho, <a href="http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf">50 Years of Data Science</a>
+</p>
+</section><section id="sds-major" class="slide level2 fullpage">
+<h2>SDS Major</h2>
+<p><img src="https://www.smith.edu/statistics/images/SDSMajorDiagram400.jpg" width="500px"></p>
+</section><section id="pcmi" class="slide level2 fullpage">
+<h2><a href="https://www.amstat.org/asa/files/pdfs/EDU-DataScienceGuidelines.pdf">PCMI</a></h2>
+<p><img src="pcmi_flowchart.png" class="cover"></p>
+</section><section id="high-impact-educational-practices" class="slide level2">
+<h2><a href="https://www.aacu.org/leap/hips">High-Impact Educational Practices</a></h2>
+<div class="double">
+<ul>
+<li><strong>First-Year Seminars</strong> and Experiences</li>
+<li>Common Intellectual Experiences</li>
+<li>Learning Communities</li>
+<li>Writing-Intensive Courses</li>
+<li><strong>Collaborative Assignments</strong> and Projects</li>
+<li>Undergraduate Research</li>
+<li>Diversity/Global Learning</li>
+<li>Service Learning, Community-Based Learning</li>
+<li>Internships</li>
+<li><strong>Capstone</strong> Courses and Projects</li>
+</ul>
+</div>
+</section>
+<section id="why" class="titleslide slide level1"><h2 class="shout">Why?</h2></section><section id="why-data-science" class="slide level2">
+<h2>Why data science?</h2>
+<div class="double">
+<p><img src="https://imgs.xkcd.com/comics/interdisciplinary.png"></p>
+<ul>
+<li>data science is
+<ul>
+<li>inherently interdisciplinary</li>
+<li>critical thinking</li>
+<li>not going away</li>
+</ul></li>
+<li>where there is data…
+<ul>
+<li>…there will be data science</li>
+</ul></li>
+</ul>
+</div>
+</section><section id="thank-you" class="slide level2 fullpage">
+<h2>Thank you!</h2>
+<p><img src="https://media.giphy.com/media/aAW7yJ4m7YCti/giphy.gif" width="400px"></p>
+</section>
+
+  <!--
+  To hide progress bar from entire presentation
+  just remove “progress” element.
+  -->
+  <!-- <div class="progress"></div> -->
+  <script src="macdougal_files/rmdshower/node_modules/shower/node_modules/shower-core/shower.min.js"></script>
+  <!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+  <!-- Photos by John Carey, fiftyfootshadows.net -->
+
+    <script>renderMathInElement(document.body);</script>
+  
+  
+</body>
+</html>
