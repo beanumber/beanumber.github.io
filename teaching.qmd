@@ -13,7 +13,8 @@ In 2019, I won the [Waller Education Award](https://www.amstat.org/ASA/Your-Care
 
 
 ```{r, include=FALSE}
-library(tidyverse)
+library(dplyr)
+library(tidyr)
 teaching <- tibble::tribble(
   ~year, ~semester, ~course, ~course_short, ~url,
   2022, "Fall", "Reproducible Computing with Data", "SDS 100", "https://smithcollege-sds.github.io/sds100",
