@@ -3,3 +3,6 @@
 .RData
 /.quarto/
 docs
+README.html
+README_files
+.Rbuildignore
