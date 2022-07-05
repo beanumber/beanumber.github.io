@@ -11,6 +11,7 @@ My student hours:
 
 In 2019, I won the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the Section on Statistics and Data Science Education of the American Statistical Association and the [Outstanding Undergraduate Teaching Award](https://community.amstat.org/bostonchapter/awards/teachingaward) from the Boston Chapter of the ASA. I was a Mary P. Dolciani [Project NExT](http://archives.math.utk.edu/projnext/) Fellow for 2012--2013.
 
+## Teaching history
 
 ```{r, include=FALSE}
 library(dplyr)

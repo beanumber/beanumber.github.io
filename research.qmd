@@ -124,6 +124,31 @@ Buy the book from:
 
 ::: {.grid}
 
+::: {.g-col-4}
+
+
+![DSC-WAV](https://dsc-wav.github.io/www/gfx/dsc-wav_medallion_black.png)
+
+:::
+
+::: {.g-col-8}
+
+#### DSC-WAV
+
+I am the PI on a nine institution, $1.2 million workforce developed project funded by the National Science Foundation. 
+
+The [DSC-WAV project](https://dsc-wav.github.io/www/) simultaneously addresses two problems: 1) the inability of community-based and non-profit organizations to tackle data science problems; and 2) the lack of real world experience gained by students studying data science. 
+
+This project addresses both issues by deploying teams of data science students to assist local organizations, thereby increasing the long-term capacity of the data science workforce.
+
+:::
+:::
+
+---
+
+
+::: {.grid}
+
 ::: {.g-col-8}
   
 #### OpenIntro

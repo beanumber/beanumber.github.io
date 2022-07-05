@@ -1,7 +1,9 @@
 project:
   type: website
   output-dir: "docs"
-  pre-render: cp ../cv/baumer_cv.pdf .
+  pre-render: 
+    - cp ../cv/baumer_cv.pdf .
+    - cp ../cv/references.bib .
 
 website:
   navbar: 
