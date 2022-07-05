@@ -1,0 +1,86 @@
+---
+title: "Teaching"
+---
+
+My student hours:
+
+- Tuesdays from 2:45 pm -- 4:00 pm ET in McConnell 214
+- Fridays from 10:00 am -- 11:30 am [via Zoom](https://smith.zoom.us/j/98675937227) 
+- by appointment (either in McConnell 214 or via Zoom)
+
+
+In 2019, I won the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the Section on Statistics and Data Science Education of the American Statistical Association and the [Outstanding Undergraduate Teaching Award](https://community.amstat.org/bostonchapter/awards/teachingaward) from the Boston Chapter of the ASA. I was a Mary P. Dolciani [Project NExT](http://archives.math.utk.edu/projnext/) Fellow for 2012--2013.
+
+
+```{r, include=FALSE}
+library(tidyverse)
+teaching <- tibble::tribble(
+  ~year, ~semester, ~course, ~course_short, ~url,
+  2022, "Fall", "Reproducible Computing with Data", "SDS 100", "https://smithcollege-sds.github.io/sds100",
+  2022, "Fall", "Introduction to Probability and Statistics", "SDS 220", NA,
+  2022, "Spring", "Advanced Programming for Data Science", "SDS 270", NA,
+  2022, "Spring", "Statistical & Data Sciences Capstone", "SDS 410", NA,
+  2021, "Fall", "Statistical & Data Sciences Capstone", "SDS 410", NA,
+  2021, "Spring", "Introduction to Data Science", "SDS 192", NA,
+  2020, "Fall", "Introduction to Data Science", "SDS 192", NA,
+  2020, "Spring", "Data Journalism", "SDS 236", NA,
+  2020, "Spring", "Introduction to Data Science", "SDS 192", NA,
+  2019, "Fall", "Topics in SDS: Programming for Data Science", "SDS 390", NA,
+  2019, "Fall", "Statistical & Data Sciences Capstone", "SDS 410", NA,
+  2019, "Spring", "Introduction to Data Science", "SDS 192", NA,
+  2019, "Spring", "Statistical & Data Sciences Capstone", "SDS 410", NA,
+  2018, "Spring", "Introduction to Data Science", "SDS 192",  "http://catalog.smith.edu//detail.php?term=201703&crn=41556",
+  2018, "Spring", "Statistical & Data Sciences Capstone", "SDS 410", NA,
+  2018, "Fall", "(on sabbatical)", "", NA,
+  2017, "Fall", "Introduction to Data Science", "SDS 192", "http://catalog.smith.edu//detail.php?term=201801&crn=10672",
+  2017, "Spring", "Introduction to Data Science", "SDS 192", "http://catalog.smith.edu//detail.php?term=201703&crn=41556",
+  2016, "Spring", "Introduction to Data Science", "SDS 192", "http://catalog.smith.edu//detail.php?term=201603&crn=41556",
+  2016, "Fall", "Introduction to Probability and Statistics", "MTH/SDS 220", "http://catalog.smith.edu//detail.php?term=201701&crn=20902",
+  2015, "Spring", "Introduction to Probability and Statistics", "MTH 220", "http://catalog.smith.edu//detail.php?term=201503&crn=40598",
+  2015, "Spring", "Multiple Regression", "MTH 291", "http://catalog.smith.edu//detail.php?term=201503&crn=40560",
+  2015, "Fall", "Introduction to Probability and Statistics", "MTH/SDS 220", "http://catalog.smith.edu//detail.php?term=201601&crn=20902", 
+  2014, "Spring", "Introduction to Probability and Statistics", "MTH 220", "http://catalog.smith.edu//detail.php?term=201403&crn=40598", 
+  2014, "Fall", "Introduction to Probability and Statistics", "MTH 220", "http://catalog.smith.edu//detail.php?term=201501&crn=20218", 
+  2014, "Fall", "Data Science", "MTH 292", "http://catalog.smith.edu//detail.php?term=201501&crn=20053",
+  2013, "Spring", "Introduction to Discrete Mathematics", "MTH 153", "http://catalog.smith.edu/detail.php?term=201303&crn=30589", 
+  2013, "Spring", "Probability & Statistics", "MTH 241", "http://catalog.smith.edu/detail.php?term=201303&crn=40049", 
+  2013, "Fall", "Introduction to Discrete Mathematics", "MTH 153", "http://catalog.smith.edu//detail.php?term=201401&crn=10838", 
+  2013, "Fall", "Data Science", "MTH 292", "http://catalog.smith.edu//detail.php?term=201401&crn=20053",
+  2012, "Spring", "(dissertation)", "", NA,
+  2012, "Fall", "Statistics: Introduction to Regression Analysis", "MTH 247", "http://catalog.smith.edu/detail.php?term=201301&crn=19319",
+  2011, "Spring", "(dissertation)", "", NA,
+  2011, "Fall", "(dissertation)", "", NA,
+  2010, "Spring", "(dissertation)", "", NA, 
+  2010, "Fall", "Combinatorics [Queens College]", "MATH636", "http://people.qc.cuny.edu/faculty/christopher.hanusa/courses/636fa10/Pages/default.aspx",
+  2009, "Spring", "Elementary Probability and Statistics [Hunter College]", "STAT113", "http://math.hunter.cuny.edu/courses.shtml", 
+  2009, "Fall", "Elementary Probability and Statistics [Hunter College]", "STAT113", "http://math.hunter.cuny.edu/courses.shtml", 
+  2008, "Fall", "Elementary Probability and Statistics [Hunter College]", "STAT113", "http://math.hunter.cuny.edu/courses.shtml", 
+) %>%
+  mutate(
+    html = ifelse(!is.na(url), 
+                  paste0(course, " ([", course_short, "](", url , "))"), 
+                  course)
+  )
+```
+
+In the past `r summarize(teaching, n_distinct(year))` years, I've taught `r nrow(teaching)` courses over `r summarize(teaching, n_distinct(year, semester))` semesters. 
+
+```{r, include=FALSE, eval=FALSE}
+teaching %>%
+  group_by(course_short) %>%
+  count() %>%
+  arrange(desc(n))
+```
+
+
+```{r teaching-record, echo=FALSE, message=FALSE}
+teaching %>%
+  select(year, semester, html) %>%
+  group_by(Year = year, semester) %>%
+  summarize(html = paste(html, collapse = "</br>")) %>%
+  spread(key = semester, value = html) %>%
+  arrange(desc(Year)) %>%
+  select(Year, Spring, Fall) %>%
+#  DT::datatable()
+  knitr::kable()
+```

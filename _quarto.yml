@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: "docs"
+  pre-render: cp ../cv/baumer_cv.pdf .
+
+website:
+  navbar: 
+    reader-mode: true
+    title: "Ben Baumer"
+    href: "https://beanumber.github.io/sds100"
+    background: primary
+    search: true
+    left:
+      - href: research.qmd
+      - href: teaching.qmd
+      - href: baseball.qmd
+    right: 
+      - icon: file-person
+        href: baumer_cv.pdf
+      - icon: envelope 
+        href: mailto:bbaumer@smith.edu
+      - icon: github
+        href: https://github.com/beanumber
+      - icon: twitter
+        href: http://www.twitter.com/BaumerBen
+      - icon: bi-linkedin
+        href: https://www.linkedin.com/in/ben-baumer-809b3a75
+
+  repo-url: https://github.com/beanumber/sds100
+  repo-actions: [edit, issue]
+  page-footer: 
+    left: "Created by Benjamin Baumer." 
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
