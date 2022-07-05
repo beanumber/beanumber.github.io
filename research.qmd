@@ -5,7 +5,6 @@ csl: ieee-with-url.csl
 nocite: | 
   @baumer2022ctv, @gem2021, @couch2021infer, @baumer2020tidyverse, @legacy2021dscwav, @horton2021dscwav, @baumer2019fertile, @baumer2020mdsr, @baumer2019ethics, @baumer2017datacamp, @barresi2017, @gem2019, @zimbalist2018college, @albert2018analyzing, @baumer2016compete, @baumer2016etl, @baumer2018oxford, @mcnamara2017donoho, @williams2017, @baumer2016lessons, @gem2017, @baumer2017peerj, @pcmi2016guidelines, @baumer2016mdsr, @baumer2016eval, @barnoy2016setit, @baumer2015we, @bar2016changing, @baumer2015data, @hardin2015data, @baumer2015openwar, @bar2015average, @baumer2015star, @horton2015stage, @baumer2015r, @baumer2014r, @baumer2014war, @baumer2014analyzing, @baumer2013quantifying, @baumer2013tsr, @baumer2014social, @bogdanov2013weakest, @barnoy2013setit, @baumer2012thesis, @barnoy2012changing, @baumer2012parsing, @barnoy2011maximizing, @baumer2011modeling, @baumer2009usb, @baumer2008bpb, @stoudt2014pursuit, @baumer2010improved, @baumer2010mapping, @baumer2009asm, @baumer2015espn, @baumer2014applied, @gould2014big 
 ---
-			  
 
 I am a data scientist. [Data science](http://en.wikipedia.org/wiki/Data_science) is an emerging field commonly described as "the practice of deriving valuable insights from data," and this thread runs through all of my work. My scholarly contributions have come in five main areas: 
 
