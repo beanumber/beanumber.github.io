@@ -11,7 +11,7 @@ You can reach me at [bbaumer@smith.edu](bbaumer@smith.edu).
 ---
 
 
-### Conference bio
+### Long conference bio
 
 ::: {.grid}
 

@@ -19,11 +19,13 @@ I am a data scientist. [Data science](http://en.wikipedia.org/wiki/Data_science)
 - statistics and data science consulting:
     - Aiding *your* research through statistical modeling and data visualization
 
-Subfields of interest to me include network science, applied statistics, sabermetrics, sports analytics, statistical modeling, analysis of algorithms, combinatorial optimization, data visualization, graph theory, and  combinatorics. My [Erd&ouml;s number](http://en.wikipedia.org/wiki/Erd%C5%91s_number) is 3, as I have co-authored a paper with Amotz Bar-Noy, who has co-authored a paper with Noga Alon, who has co-authored a paper with Paul Erd&ouml;s. 
+Subfields of interest to me include network science, applied statistics, sabermetrics, sports analytics, statistical modeling, analysis of algorithms, combinatorial optimization, data visualization, graph theory, and  combinatorics. My [Erd&ouml;s number](http://en.wikipedia.org/wiki/Erd%C5%91s_number) is 3, as I have co-authored a paper with [Amotz Bar-Noy](https://scholar.google.com/citations?user=MfLLOyMAAAAJ&hl=en), who has co-authored a paper with [Noga Alon](https://en.wikipedia.org/wiki/Noga_Alon), who has co-authored a paper with [Paul Erdős](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s). 
 
-My background is academically diverse, in that my undergraduate degree is in economics (my first declared major was English), my doctorate is in mathematics, my thesis advisor is in computer science, and my professional experience is in statistics. As such, my research tends to be interdisciplinary, with an emphasis on applying available techniques from any discpline to address the question of interest. 
+My background is academically diverse, in that my undergraduate degree is in economics (my first declared major was English), my doctorate is in mathematics, my thesis adviser is in computer science, and my professional experience is in statistics. 
+As such, my research tends to be interdisciplinary, with an emphasis on applying available techniques from any discipline to address the question of interest. 
 
-In 2012, I completed my Ph.D. in Mathematics at the [Graduate Center of the City University of New York](http://gc.cuny.edu), where my advisor was [Amotz Bar-Noy](http://www.sci.brooklyn.cuny.edu/~amotz/), also of Brooklyn College. Previously, I earned an M.A. in Applied Mathematics from the [University of California, San Diego](http://math.ucsd.edu), and a B.A. in Economics from [Wesleyan University](http://www.wesleyan.edu). 
+In 2012, I completed my Ph.D. in Mathematics at the [Graduate Center of the City University of New York](http://gc.cuny.edu), where my advisor was [Amotz Bar-Noy](http://www.sci.brooklyn.cuny.edu/~amotz/), also of Brooklyn College. 
+Previously, I earned an M.A. in Applied Mathematics from the [University of California, San Diego](http://math.ucsd.edu), and a B.A. in Economics from [Wesleyan University](http://www.wesleyan.edu). 
 
 In 2019, I won the [Significant Contributor Award](https://community.amstat.org/sis/aboutus/honorees) from the Section on Statistics in Sports of the American Statistical Association. 
 
@@ -103,14 +105,15 @@ Buy the book from:
   
 ### *The Sabermetric Revolution*
 
-Since leaving the Mets, I've written a book, entitled *[The Sabermetric Revolution](https://www.pennpress.org/9780812223392/the-sabermetric-revolution/): Assessing the Growth of Analytics in Baseball*, with leading sports economist [Andrew Zimbalist](https://en.wikipedia.org/wiki/Andrew_Zimbalist). We examine the evolution of sabermetrics in baseball and other sports since the publication of *Moneyball*, summarize the current state of sabermetric thinking, and address the question of whether there is any evidence that sabermetrics has actually worked. The book will be published by the University of Pennsylvania Press and is scheduled for a December 2013 release. 
+*[The Sabermetric Revolution](https://www.pennpress.org/9780812223392/the-sabermetric-revolution/): Assessing the Growth of Analytics in Baseball*, is co-authored with leading sports economist [Andrew Zimbalist](https://en.wikipedia.org/wiki/Andrew_Zimbalist). 
+We examine the evolution of sabermetrics in baseball and other sports since the publication of *Moneyball*, summarize the current state of sabermetric thinking, and address the question of whether there is any evidence that sabermetrics has actually worked. 
+The book was published by the University of Pennsylvania Press in 2014. 
 
 Buy the book from:
 
-* <a href="http://www.upenn.edu/pennpress/book/15168.html">UPenn Press</a>
-* <a href="http://www.amazon.com/dp/0812245725">Amazon</a>
-* <a href="http://www.barnesandnoble.com/w/the-sabermetric-revolution-benjamin-baumer/1115313029?ean=9780812245721">Barnes & Noble</a>
-* <a href="http://books.google.com/books/about/The_Sabermetric_Revolution.html?id=gjYUnAEACAAJ">Google Books</a>
+* [UPenn Press](https://www.pennpress.org/9780812223392/the-sabermetric-revolution/)
+* [Amazon](http://www.amazon.com/dp/0812245725)
+* [Google Books](http://books.google.com/books/about/The_Sabermetric_Revolution.html?id=gjYUnAEACAAJ)
 
 :::
 :::

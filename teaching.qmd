@@ -2,10 +2,10 @@
 title: "Teaching"
 ---
 
-My student hours:
+My student hours for **fall 2022**:
 
-- Tuesdays from 2:45 pm -- 4:00 pm ET in McConnell 214
-- Fridays from 10:00 am -- 11:30 am [via Zoom](https://smith.zoom.us/j/98675937227) 
+- Mondays from 2:00 pm -- 3:30 pm ET in McConnell 214
+- Thursdays from 2:00 pm -- 3:30 pm ET in McConnell 214
 - by appointment (either in McConnell 214 or via Zoom)
 
 
@@ -65,7 +65,7 @@ teaching <- tibble::tribble(
   )
 ```
 
-In the past `r summarize(teaching, n_distinct(year))` years, I've taught `r nrow(teaching)` courses over `r summarize(teaching, n_distinct(year, semester))` semesters. 
+Over the past `r summarize(teaching, n_distinct(year))` years, I've taught `r nrow(teaching)` sections of `r summarize(teaching, n_distinct(course))` different courses over `r summarize(teaching, n_distinct(year, semester))` semesters. 
 
 ```{r, include=FALSE, eval=FALSE}
 teaching %>%
