@@ -29,9 +29,8 @@ In 2019, I won the [Significant Contributor Award](https://community.amstat.org/
 
 `r fontawesome::fa("file")`: Please see my [C.V.](baumer_cv.pdf) for complete details on my work. 
 
----
 
-### Books
+## Books
 
 
 ::: {.grid}
@@ -44,7 +43,7 @@ In 2019, I won the [Significant Contributor Award](https://community.amstat.org/
 
 ::: {.g-col-8}
 
-#### [*Analyzing Baseball Data with R*, 2nd edition](https://baseballwithr.wordpress.com/)
+### [*Analyzing Baseball Data with R*, 2nd edition](https://baseballwithr.wordpress.com/)
 
 *Analyzing Baseball Data with R, 2nd Edition* introduces R to sabermetricians, baseball enthusiasts, and students interested in exploring the richness of baseball data. It equips you with the necessary skills and software tools to perform all the analysis steps, from importing the data to transforming them into an appropriate format to visualizing the data via graphs to performing a statistical analysis.
 
@@ -64,7 +63,7 @@ Buy the book from:
 
 ::: {.g-col-8}
 
-#### [*Modern Data Science with R*, 2nd edition](http://mdsr-book.github.io)
+### [*Modern Data Science with R*, 2nd edition](http://mdsr-book.github.io)
 
 Contemporary data science uses both statistical modeling and computer programming to extract meaning from data. It requires a tight integration of knowledge from statistics, computer science, mathematics, and a domain of application. This book, which is intended for readers with some background in statistics and modest prior experience with coding, helps them develop and practice the appropriate skills to tackle complex data science projects. Most of the examples are done in R, but SQL, Python, and other cutting-edge tools are discussed as well.
 
@@ -102,7 +101,7 @@ Buy the book from:
 ::: {.g-col-8}
   
   
-#### *The Sabermetric Revolution*
+### *The Sabermetric Revolution*
 
 Since leaving the Mets, I've written a book, entitled *[The Sabermetric Revolution](https://www.pennpress.org/9780812223392/the-sabermetric-revolution/): Assessing the Growth of Analytics in Baseball*, with leading sports economist [Andrew Zimbalist](https://en.wikipedia.org/wiki/Andrew_Zimbalist). We examine the evolution of sabermetrics in baseball and other sports since the publication of *Moneyball*, summarize the current state of sabermetric thinking, and address the question of whether there is any evidence that sabermetrics has actually worked. The book will be published by the University of Pennsylvania Press and is scheduled for a December 2013 release. 
 
@@ -116,9 +115,7 @@ Buy the book from:
 :::
 :::
 
----
-
-### Ongoing Projects
+## Ongoing Projects
 
 
 ::: {.grid}
@@ -132,7 +129,7 @@ Buy the book from:
 
 ::: {.g-col-8}
 
-#### DSC-WAV
+### DSC-WAV
 
 I am the PI on a nine institution, $1.2 million workforce developed project funded by the National Science Foundation. 
 
@@ -150,7 +147,7 @@ This project addresses both issues by deploying teams of data science students t
 
 ::: {.g-col-8}
   
-#### OpenIntro
+### OpenIntro
   
 I developed a series of courses on Introductory [Statistics with R sequence of courses](https://www.datacamp.com/tracks/statistics-with-r) for [DataCamp](https://www.datacamp.com), an interactive platform to [learn R](https://www.datacamp.com/courses/free-introduction-to-r) and data science. Mine Çetinkaya-Rundel (Duke), Andrew Bray (Reed), and Jo Hardin (Pomona) are working with me on these courses. We are horrified by the recent [sexual harassment scandal at DataCamp](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup) and the ensuing coverup. 
 
@@ -183,7 +180,7 @@ Much of that content is now available through [interactive tutorials](https://op
 
 ::: {.g-col-8}
 
-#### ETL packages for R
+### ETL packages for R
 
 `etl` is an R package to facilitate [Extract - Transform - Load (ETL)](https://en.wikipedia.org/wiki/Extract,_transform,_load) operations for **medium data**. The end result is generally a populated SQL database, but the user interaction takes place solely within R.
 
@@ -193,86 +190,32 @@ Much of that content is now available through [interactive tutorials](https://op
 
 
 
----
 
-### Publication List
+## Publication List
 
 Search for me on:
 
-<div class="row">
-  <div class="col-sm-3">
-  `r fontawesome::fa("google")`: [Google Scholar](http://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ)
-  </div>
-  <div class="col-sm-3">
-  `r fontawesome::fa("graduation-cap")`: [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html)
-  </div>
-  <div class="col-sm-3">
-  `r fontawesome::fa("scroll")`: [Publons](http://publons.com/a/1553312/)
-  </div>
-  <div class="col-sm-3">
-  `r fontawesome::fa("id-badge")`: [ORCID](https://orcid.org/0000-0002-3279-0516/)
-  </div>
-</div>
+::: {.grid}
 
+::: {.g-col-3}
 
----
+`r fontawesome::fa("google")`: [Google Scholar](http://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ)
 
+:::
+::: {.g-col-3}
 
+`r fontawesome::fa("graduation-cap")`: [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html)
 
+:::
+::: {.g-col-3}
 
-<!--
+`r fontawesome::fa("scroll")`: [Publons](http://publons.com/a/1553312/)
 
-#. [Changing of the Guards: Strip Cover with Duty Cycling](http://www.sciencedirect.com/science/article/pii/S0304397514006549) (with A. Bar-Noy and D. Rawitz)  
-    In *Theoretical Computer Science*, Special Issue,  610(B), pp. 135--148, 2016. [[pdf](pub/tcs2014_duty_cycling.pdf)]  
-#. We Found the Smallest Non-autograph (with G. Bloom, Y. Wei)  
-    *Discussiones Mathematicae Graph Theory*, in press. [[arXiv](http://arxiv.org/abs/1511.03913)]
-#. [A Data Science Course for Undergraduates: Thinking with Data](http://www.tandfonline.com/doi/abs/10.1080/00031305.2015.1081105)  
-    *The American Statistician*, 69(4), pp. 334-342, 2015. [[arXiv](http://arxiv.org/abs/1503.05570)]
-#. Star Search: Effective Subgroups in Collaborative Social Networks (with G. Rabanca, P. Basu, A. Bar-Noy)  
-    [*ASONAM '15*](http://asonam.cpsc.ucalgary.ca/2015/AcceptedIndustrialTrack.php), 2015.
-#. [openWAR: An Open Source System for Overall Player Performance in MLB](http://www.degruyter.com/view/j/jqas.2015.11.issue-2/jqas-2014-0098/jqas-2014-0098.xml) (with S. Jensen and G. Matthews)  
-  	*Journal of Quantitative Analysis in Sports*, editor's choice, 11(2), pp. 69--84, 2015 [[arXiv](http://arxiv.org/abs/1312.7158) |<a href="pub/openWARtalk.pdf">slides</a>]
-#. [Setting the stage for data science: integration of data management skills in introductory and second courses in statistics](http://chance.amstat.org/2015/04/setting-the-stage/) (with N. Horton and H. Wickham)  
-    *Chance*, 28(1). [[arXiv](http://arxiv.org/abs/1502.00318)]
-#. [R Markdown](http://onlinelibrary.wiley.com/doi/10.1002/wics.1348/abstract) (with D. Udwin)  
-  *Wiley Interdisciplinary Reviews: Computational Statistics*, 7(3), 2015. [[arXiv](http://arxiv.org/abs/1501.01613)]
-#. [In Pursuit of Perfection:  An Ensemble Method for Predicting March Madness Match-Up Probabilities](http://www.amstat.org/meetings/jsm/2014/onlineprogram/AbstractDetails.cfm?abstractid=314074) (with S. Stoudt and L. Santana)  
-    In *JSM Proceedings*, Statistics in Sports Section, 2014. [[pdf](pub/jsm2014_perfect_bracket.pdf)]
-#. Teaching Precursors of Data Science In Introductory and Second Courses in Statistics (with N. Horton and H. Wickham)  
-    In *ICOTS 9*, contributed paper C164, 2014. [[arXiv](http://arxiv.org/abs/1401.3269)]
-#. Social-Communication Composite Networks (with P. Basu, A. Bar-Noy, C. Chau)  
-    In [*Opportunistic Mobile Social Networks*](http://www.crcpress.com/product/isbn/9781466594944), CRC Press, Ch. 1, pp. 1--36, July 2014. [[pdf](pub/social-comm-composite-networks.pdf)]
-#. [R Markdown: Integrating A Reproducible Analysis Tool into Introductory Statistics](http://escholarship.org/uc/item/90b2f5xh) (with  M. Cetinkaya-Rundel, A. Bray, L. Loi, N. Horton)  
-		*Technology Innovations in Statistics Education*, 8(1), 2014. [[arXiv](http://arxiv.org/pdf/1402.1894v1)]
-#. [Average Case Network Lifetime on an Interval with Adjustable Sensing Ranges](http://link.springer.com/article/10.1007%2Fs00453-013-9853-5) (with A. Bar-Noy)  
-		*Algorithmica*, 72(1), pp 148-166, 2015. [[pdf](pub/algorithmica2013_average.pdf)]
-#. [There is No Avoiding WAR](http://chance.amstat.org/2014/09/avoiding-war/) (with G. Matthews)  
-    *Chance*, 27 (3), pp. 41-44, 2014.
-#. [Quanitfying Market Inefficiencies in the Baseball Players' Market](http://www.palgrave-journals.com/eej/journal/vaop/ncurrent/full/eej201343a.html) (with A. Zimbalist)  
-		*Eastern Economic Journal*, 40(4), pp. 488-498, 2013. [[pdf](pub/eej2013_quantifying.pdf)]
-#. [As Strong as the Weakest Link: Mining Diverse Cliques in Weighted Graphs](http://www.ecmlpkdd2013.org/accepted-papers/) (with P. Bogdanov, P. Basu, A. Bar-Noy, and A. Singh)  
-		In *ECML/PKDD '13*, pp. 525-540, 2013. [[pdf](pub/ecml2013_weakest.pdf) | [supplement pdf](pub/ecml2013_weakest_supplement.pdf)]
-#. [Sensor Strip Cover: Maximizing Network Lifetime on an Interval](http://proquest.umi.com/pqdlink?did=2677679131&Fmt=7&clientI d=79356&RQT=309&VName=PQD)  
-		Ph.D. Thesis, *ProQuest* AAT 3508641, 2012.	[<a href="pub/thesis2012.pdf">pdf</a>]
-#. [Parsing the Relationship between Baserunning and Batting Abilities within Lineups](http://www.degruyter.com/view/j/jqas.2012.8.issue-2/1559-0410.1429/1559-0410.1429.xml?format=INT) (with B. Null and J. Piette)  
-		*Journal of Quantitative Analysis in Sports*: 8(2):8, 2012. [<a href="pub/nessis2011_baserunning.pdf">pdf</a> | <a href="pub/nessis2011_gradient_poster.pdf">poster</a>]
-#. [Changing of the Guards: Strip Cover with Duty Cycling](http://www.springerlink.com/content/k178h4323373w25w/) (with A. Bar-Noy and D. Rawitz)  
-		In *SIROCCO '12*, pp. 36-47, 2012. [<a href="pub/sirocco2012_duty_cycling.pdf">pdf</a> | <a href="pub/sirocco2012_duty_cycling_slides.pdf">slides</a>]
-#. [Brief Announcement: Set It and Forget It: Approximating the Set Once Strip Cover Problem](http://dl.acm.org/citation.cfm?id=2486162) (with A. Bar-Noy and D. Rawitz)  
-		In *SPAA '13*, pp. 105-107, 2013. [<a href="pub/icalp2012_set-once.pdf">pdf</a> | <a href="http://arxiv.org/abs/1204.1082">arXiv</a>]
-#. [Maximizing Network Lifetime on the Line with Adjustable Sensing Ranges](http://www.springerlink.com/content/t126887151888kw2/) (with A. Bar-Noy)  
-		In *ALGOSENSORS '11*, pp. 28-41, 2011. [<a href="pub/algosensors2011_lifetime.pdf">pdf</a> | <a href="pub/algosensors2011_lifetime_slides.pdf">slides</a>]
-#. [Modeling and Analysis of Composite Network Embeddings](http://dl.acm.org/citation.cfm?id=2068956) (with A. Bar-Noy and P. Basu)  
-		In *MSWiM '11*, pp. 341-350, 2011. [<a href="pub/mswim2011_composite_stretch.pdf">pdf</a>]
-#. Improved Estimates for the Impact of Baserunning in Baseball (with P. Terlecky)  
-    In *JSM Proceedings*, Statistics in Sports Section, 2010. [<a href="pub/jsm2010_improved_baserunning.pdf">pdf</a>]
-#. Mapping Batter Ability in Baseball: A Study in Spatial Modeling (with D. Draghicescu)  
-		In *JSM Proceedings*, Statistics in Sports Section, 2010. [<a href="pub/jsm2010_hotzone_estimation.pdf">pdf</a>]
-#. A Survey of Methods for the Evaluation of Defensive Ability in Major League Baseball (with A. Galdi and R. Sebastian)  
-    In *JSM Proceedings*, Statistics in Sports Section, 2009. [<a href="pub/jsm2009_fielding_metrics.pdf">pdf</a>]
-#. [Using Simulation to Estimate the Impact of Baserunning Ability in Baseball](http://www.bepress.com/jqas/vol5/iss2/8/)  
-		*Journal of Quantitative Analysis in Sports*: 5(2):8, 2009.
-#. [Why On-Base Percentage is a Better Indicator of Future Performance than Batting Average: An Algebraic Proof](http://www.bepress.com/jqas/vol4/iss2/3/)  
-		*Journal of Quantitative Analysis in Sports*: 4(2):3, 2008.
--->
-	
+:::
+::: {.g-col-3}
+
+`r fontawesome::fa("id-badge")`: [ORCID](https://orcid.org/0000-0002-3279-0516/)
+
+:::
+:::
+
