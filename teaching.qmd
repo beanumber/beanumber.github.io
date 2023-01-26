@@ -2,10 +2,10 @@
 title: "Teaching"
 ---
 
-My student hours for **fall 2022**:
+My student hours for **spring 2023**:
 
-- Mondays from 2:00 pm -- 3:30 pm ET in McConnell 214
-- Thursdays from 2:00 pm -- 3:30 pm ET in McConnell 214
+- Tuesdays from 2:00 pm -- 3:00 pm ET in McConnell 214
+- Fridays from 11:00 am -- 12:00 pm ET in McConnell 214
 - by appointment (either in McConnell 214 or via Zoom)
 
 
@@ -18,6 +18,7 @@ library(dplyr)
 library(tidyr)
 teaching <- tibble::tribble(
   ~year, ~semester, ~course, ~course_short, ~url,
+  2023, "Spring", "Data Journalism", "SDS 236", NA,
   2022, "Fall", "Reproducible Computing with Data", "SDS 100", "https://smithcollege-sds.github.io/sds100",
   2022, "Fall", "Introduction to Probability and Statistics", "SDS 220", NA,
   2022, "Spring", "Advanced Programming for Data Science", "SDS 270", NA,
