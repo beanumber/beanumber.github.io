@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.646">
+<meta name="generator" content="quarto-1.2.313">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
@@ -52,7 +57,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,49 +88,54 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ben Baumer</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page">Research</a>
+    <a class="nav-link active" href="./research.html" aria-current="page">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html">Teaching</a>
+    <a class="nav-link" href="./teaching.html">
+ <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./baseball.html">Baseball</a>
+    <a class="nav-link" href="./baseball.html">
+ <span class="menu-text">Baseball</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
     <a class="nav-link" href="./baumer_cv.pdf"><i class="bi bi-file-person" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="mailto:bbaumer@smith.edu"><i class="bi bi-envelope" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/beanumber"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="http://www.twitter.com/BaumerBen"><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/ben-baumer-809b3a75"><i class="bi bi-linkedin" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -138,7 +148,7 @@ div.csl-indent {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -161,6 +171,7 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -194,7 +205,7 @@ div.csl-indent {
 <p>My background is academically diverse, in that my undergraduate degree is in economics (my first declared major was English), my doctorate is in mathematics, my thesis adviser is in computer science, and my professional experience is in statistics. As such, my research tends to be interdisciplinary, with an emphasis on applying available techniques from any discipline to address the question of interest.</p>
 <p>In 2012, I completed my Ph.D.&nbsp;in Mathematics at the <a href="http://gc.cuny.edu">Graduate Center of the City University of New York</a>, where my advisor was <a href="http://www.sci.brooklyn.cuny.edu/~amotz/">Amotz Bar-Noy</a>, also of Brooklyn College. Previously, I earned an M.A.&nbsp;in Applied Mathematics from the <a href="http://math.ucsd.edu">University of California, San Diego</a>, and a B.A. in Economics from <a href="http://www.wesleyan.edu">Wesleyan University</a>.</p>
 <p>In 2019, I won the <a href="https://community.amstat.org/sis/aboutus/honorees">Significant Contributor Award</a> from the Section on Statistics in Sports of the American Statistical Association.</p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg>: Please see my <a href="baumer_cv.pdf">C.V.</a> for complete details on my work.</p>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM336 448V160H256C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V448C48 456.8 55.16 464 64 464H320C328.8 464 336 456.8 336 448z"></path></svg>: Please see my <a href="baumer_cv.pdf">C.V.</a> for complete details on my work.</p>
 <section id="books" class="level2">
 <h2 class="anchored" data-anchor-id="books">Books</h2>
 <div class="grid">
@@ -202,7 +213,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://baseballwithr.wordpress.com/"><img src="https://images.tandf.co.uk/common/jackets/amazon/978081535/9780815353515.jpg" class="img-fluid figure-img"></a></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Analyzing Baseball Data with R cover</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Analyzing Baseball Data with R cover</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -221,7 +232,7 @@ div.csl-indent {
 <section id="modern-data-science-with-r-2nd-edition" class="level3 g-col-8">
 <h3 class="anchored" data-anchor-id="modern-data-science-with-r-2nd-edition"><a href="http://mdsr-book.github.io"><em>Modern Data Science with R</em>, 2nd edition</a></h3>
 <p>Contemporary data science uses both statistical modeling and computer programming to extract meaning from data. It requires a tight integration of knowledge from statistics, computer science, mathematics, and a domain of application. This book, which is intended for readers with some background in statistics and modest prior experience with coding, helps them develop and practice the appropriate skills to tackle complex data science projects. Most of the examples are done in R, but SQL, Python, and other cutting-edge tools are discussed as well.</p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"></path></svg> Read the <a href="https://mdsr-book.github.io/mdsr2e">2nd edition</a></p>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C87.5 32 35.1 48.6 9 59.9c-5.6 2.4-9 8-9 14V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V73.9c0-6.1-3.4-11.6-9-14C540.9 48.6 488.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path></svg> Read the <a href="https://mdsr-book.github.io/mdsr2e">2nd edition</a></p>
 <p>Buy the book from:</p>
 <ul>
 <li><a href="https://www.crcpress.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487">CRC Press</a></li>
@@ -232,7 +243,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="http://mdsr-book.github.io"><img src="https://mdsr-book.github.io/mdsr2e/gfx/mdsr2e_cover.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Modern Data Science with R cover</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Modern Data Science with R cover</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -243,7 +254,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://pennsylvania-press-us.imgix.net/covers/9780812223392.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">The Sabermetric Revolution cover</figcaption><p></p>
+<p></p><figcaption class="figure-caption">The Sabermetric Revolution cover</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -266,7 +277,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://dsc-wav.github.io/www/gfx/dsc-wav_medallion_black.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">DSC-WAV</figcaption><p></p>
+<p></p><figcaption class="figure-caption">DSC-WAV</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -288,7 +299,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://openintrostat.github.io/ims-tutorials/logo/openintro-hex.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">OpenIntro</figcaption><p></p>
+<p></p><figcaption class="figure-caption">OpenIntro</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -312,13 +323,13 @@ div.csl-indent {
 <p><svg aria-hidden="true" role="img" viewbox="0 0 488 512" style="height:1em;width:0.95em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>: <a href="http://scholar.google.com/citations?hl=en&amp;user=HWo0CDEAAAAJ">Google Scholar</a></p>
 </div>
 <div class="g-col-3">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>: <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html">DBLP</a></p>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"></path></svg>: <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html">DBLP</a></p>
 </div>
 <div class="g-col-3">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M48 0C21.53 0 0 21.53 0 48v64c0 8.84 7.16 16 16 16h80V48C96 21.53 74.47 0 48 0zm208 412.57V352h288V96c0-52.94-43.06-96-96-96H111.59C121.74 13.41 128 29.92 128 48v368c0 38.87 34.65 69.65 74.75 63.12C234.22 474 256 444.46 256 412.57zM288 384v32c0 52.93-43.06 96-96 96h336c61.86 0 112-50.14 112-112 0-8.84-7.16-16-16-16H288z"></path></svg>: <a href="http://publons.com/a/1553312/">Publons</a></p>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 80v48c0 17.7 14.3 32 32 32H48 96V80c0-26.5-21.5-48-48-48S0 53.5 0 80zM112 32c10 13.4 16 30 16 48V384c0 35.3 28.7 64 64 64s64-28.7 64-64v-5.3c0-32.4 26.3-58.7 58.7-58.7H480V128c0-53-43-96-96-96H112zM464 480c61.9 0 112-50.1 112-112c0-8.8-7.2-16-16-16H314.7c-14.7 0-26.7 11.9-26.7 26.7V384c0 53-43 96-96 96H368h96z"></path></svg>: <a href="http://publons.com/a/1553312/">Publons</a></p>
 </div>
 <div class="g-col-3">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M336 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM144 32h96c8.8 0 16 7.2 16 16s-7.2 16-16 16h-96c-8.8 0-16-7.2-16-16s7.2-16 16-16zm48 128c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H102.4C90 416 80 407.4 80 396.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"></path></svg>: <a href="https://orcid.org/0000-0002-3279-0516/">ORCID</a></p>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M320 0H64C28.65 0 0 28.65 0 64v384c0 35.35 28.65 64 64 64h256c35.35 0 64-28.65 64-64V64C384 28.65 355.3 0 320 0zM336 448c0 8.836-7.164 16-16 16H64c-8.836 0-16-7.164-16-16V64c0-8.838 7.164-16 16-16h64V64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V48h64c8.836 0 16 7.162 16 16V448zM192 288c35.35 0 64-28.65 64-64s-28.65-64-64-64C156.7 160 128 188.7 128 224S156.7 288 192 288zM224 320H160c-44.18 0-80 35.82-80 80C80 408.8 87.16 416 96 416h192c8.836 0 16-7.164 16-16C304 355.8 268.2 320 224 320z"></path></svg>: <a href="https://orcid.org/0000-0002-3279-0516/">ORCID</a></p>
 </div>
 </div>
 
@@ -328,13 +339,13 @@ div.csl-indent {
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-baumer2022ctv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">B. S. Baumer, Q. Nguyen, and G. J. Matthews, <span>“<span>CRAN</span> task view: Sports analytics.”</span> The Comprehensive R Archive Network, May-2022 [Online]. Available: <a href="https://github.com/cran-task-views/SportsAnalytics">https://github.com/cran-task-views/SportsAnalytics</a></div>
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">B. S. Baumer, Q. Nguyen, and G. J. Matthews, <span>“<span>CRAN</span> task view: Sports analytics.”</span> The Comprehensive R Archive Network; The Comprehensive R Archive Network, May-2022 [Online]. Available: <a href="https://cran.r-project.org/web/views/SportsAnalytics.html">https://cran.r-project.org/web/views/SportsAnalytics.html</a></div>
 </div>
 <div id="ref-couch2021infer" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline">S. P. Couch, A. P. Bray, C. Ismay, E. Chasnovski, B. S. Baumer, and M. Çetinkaya-Rundel, <span>“Infer: An <span>R</span> package for tidyverse-friendly statistical inference,”</span> <em>Journal of Open Source Software</em>, vol. 6, no. 65, p. 3661, Sep. 2021 [Online]. Available: <a href="https://doi.org/10.21105/joss.03661">https://doi.org/10.21105/joss.03661</a></div>
 </div>
 <div id="ref-legacy2021dscwav" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">C. Legacy, A. Zieffler, B. S. Baumer, V. Barr, and N. J. Horton, <span>“Facilitating team-based data science: Lessons learned from the <span>DSC-WAV</span> project,”</span> <em>Foundations of Data Science</em>, 2022 [Online]. Available: <a href="http://dx.doi.org/10.3934/fods.2022003">http://dx.doi.org/10.3934/fods.2022003</a></div>
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">C. Legacy, A. Zieffler, B. S. Baumer, V. Barr, and N. J. Horton, <span>“<a href="https://doi.org/10.3934/fods.2022003">Facilitating team-based data science: Lessons learned from the <span>DSC-WAV</span> project</a>,”</span> <em>Foundations of Data Science</em>, 2022. </div>
 </div>
 <div id="ref-horton2021dscwav" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[4] </div><div class="csl-right-inline">N. J. Horton, B. S. Baumer, A. Zieffler, and V. Barr, <span>“The <span>Data Science Corps Wrangle-Analyze-Visualize</span> program: Building data acumen for undergraduate students,”</span> <em>Harvard Data Science Review</em>, vol. 3, no. 1, pp. 1–8, Feb. 2021 [Online]. Available: <a href="https://hdsr.mitpress.mit.edu/pub/nvflcexe">https://hdsr.mitpress.mit.edu/pub/nvflcexe</a></div>
@@ -379,10 +390,10 @@ div.csl-indent {
 <div class="csl-left-margin">[17] </div><div class="csl-right-inline">B. S. Baumer, <span>“Lessons from between the white lines for isolated data scientists,”</span> <em>PeerJ Preprints</em>, vol. 5, p. e3160v2, Aug. 2017 [Online]. Available: <a href="https://doi.org/10.7287/peerj.preprints.3160v2">https://doi.org/10.7287/peerj.preprints.3160v2</a></div>
 </div>
 <div id="ref-baumer2016compete" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">[18] </div><div class="csl-right-inline">M. Lopez, G. J. Matthews, and B. S. Baumer, <span>“How often does the best team win? <span>A</span> unified approach to understanding randomness in <span>N</span>orth <span>A</span>merican sport,”</span> <em>Annals of Applied Statistics</em>, vol. 12, no. 4, pp. 2483–2516, 2018 [Online]. Available: <a href="https://projecteuclid.org/euclid.aoas/1542078053">https://projecteuclid.org/euclid.aoas/1542078053</a></div>
+<div class="csl-left-margin">[18] </div><div class="csl-right-inline">M. Lopez, G. J. Matthews, and B. S. Baumer, <span>“<a href="https://doi.org/10.1214/18-AOAS1165">How often does the best team win? <span>A</span> unified approach to understanding randomness in <span>N</span>orth <span>A</span>merican sport</a>,”</span> <em>Annals of Applied Statistics</em>, vol. 12, no. 4, pp. 2483–2516, 2018. </div>
 </div>
 <div id="ref-baumer2020tidyverse" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">[19] </div><div class="csl-right-inline">M. Çetinkaya-Rundel, J. S. Hardin, B. S. Baumer, A. A. McNamara, N. J. Horton, and C. W. Rundel, <span>“An educator’s perspective of the tidyverse,”</span> <em>Technology Innovations in Statistics Education</em>, 2022 [Online]. Available: <a href="https://doi.org/10.5070/T514154352">https://doi.org/10.5070/T514154352</a></div>
+<div class="csl-left-margin">[19] </div><div class="csl-right-inline">M. Çetinkaya-Rundel, J. S. Hardin, B. S. Baumer, A. A. McNamara, N. J. Horton, and C. W. Rundel, <span>“<a href="https://doi.org/10.5070/T514154352">An educator’s perspective of the tidyverse</a>,”</span> <em>Technology Innovations in Statistics Education</em>, vol. 14, no. 1, 2022. </div>
 </div>
 <div id="ref-baumer2017datacamp" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[20] </div><div class="csl-right-inline">B. S. Baumer, A. S. Bray, M. Çetinkaya-Rundel, and J. Hardin, <span>“Teaching introductory statistics with <span>DataCamp</span>,”</span> <em>Journal of Statistics Education</em>, vol. 28, no. 1, Mar. 2020 [Online]. Available: <a href="https://www.tandfonline.com/doi/ref/10.1080/10691898.2020.1730734">https://www.tandfonline.com/doi/ref/10.1080/10691898.2020.1730734</a></div>
@@ -400,7 +411,7 @@ div.csl-indent {
 <div class="csl-left-margin">[24] </div><div class="csl-right-inline">B. Baumer, <span>“In a <span>M</span>oneyball world, a number of teams remain slow to buy into sabermetrics,”</span> in <em>The great analytics rankings</em>, R. Webb, Ed. ESPN.com; ESPN.com, 2015 [Online]. Available: <a href="http://espn.go.com/espn/feature/story/_/id/12331388/the-great-analytics-rankings#!mlb">http://espn.go.com/espn/feature/story/_/id/12331388/the-great-analytics-rankings#!mlb</a></div>
 </div>
 <div id="ref-baumer2018oxford" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">[25] </div><div class="csl-right-inline">B. S. Baumer, <span>“The <span>O</span>xford anthology of statistics in sports: Volume 1: 2000-2004 by <span>James J. Cochran, Jay Bennett, Jim Albert</span>,”</span> <em>The American Statistician</em>, vol. 72, no. 3. Taylor &amp; Francis, pp. 297–298, 2018 [Online]. Available: <a href="https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1496649">https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1496649</a></div>
+<div class="csl-left-margin">[25] </div><div class="csl-right-inline">B. S. Baumer, <span>“The <span class="nocase">Oxford Anthology of Statistics in Sports</span>: Volume 1: 2000-2004 by <span>James J. Cochran, Jay Bennett, Jim Albert</span>,”</span> <em>The American Statistician</em>, vol. 72, no. 3. Taylor &amp; Francis, pp. 297–298, 2018 [Online]. Available: <a href="https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1496649">https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1496649</a></div>
 </div>
 <div id="ref-baumer2014analyzing" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[26] </div><div class="csl-right-inline">B. S. Baumer, <span>“Analyzing baseball data with <span>R</span> by <span>Max Marchi, Jim Albert</span>,”</span> <em>International Statistical Review</em>, vol. 82, no. 2. Wiley Online Library, pp. 313–315, Aug-2014 [Online]. Available: <a href="http://onlinelibrary.wiley.com/doi/10.1111/insr.12068_5/full">http://onlinelibrary.wiley.com/doi/10.1111/insr.12068_5/full</a></div>
@@ -501,6 +512,24 @@ div.csl-indent {
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -522,7 +551,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -550,31 +596,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
