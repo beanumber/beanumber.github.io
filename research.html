@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -74,7 +74,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -93,52 +94,54 @@ div.csl-indent {
     <span class="navbar-title">Ben Baumer</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page">
+    <a class="nav-link active" href="./research.html" rel="" target="" aria-current="page">
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html">
+    <a class="nav-link" href="./teaching.html" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./baseball.html">
+    <a class="nav-link" href="./baseball.html" rel="" target="">
  <span class="menu-text">Baseball</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./baumer_cv.pdf"><i class="bi bi-file-person" role="img">
+    <a class="nav-link" href="./baumer_cv.pdf" rel="" target=""><i class="bi bi-file-person" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:bbaumer@smith.edu"><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:bbaumer@smith.edu" rel="" target=""><i class="bi bi-envelope" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beanumber"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/beanumber" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="http://www.twitter.com/BaumerBen"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="http://www.twitter.com/BaumerBen" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/ben-baumer-809b3a75"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/ben-baumer-809b3a75" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -205,7 +208,7 @@ div.csl-indent {
 <p>My background is academically diverse, in that my undergraduate degree is in economics (my first declared major was English), my doctorate is in mathematics, my thesis adviser is in computer science, and my professional experience is in statistics. As such, my research tends to be interdisciplinary, with an emphasis on applying available techniques from any discipline to address the question of interest.</p>
 <p>In 2012, I completed my Ph.D.&nbsp;in Mathematics at the <a href="http://gc.cuny.edu">Graduate Center of the City University of New York</a>, where my advisor was <a href="http://www.sci.brooklyn.cuny.edu/~amotz/">Amotz Bar-Noy</a>, also of Brooklyn College. Previously, I earned an M.A.&nbsp;in Applied Mathematics from the <a href="http://math.ucsd.edu">University of California, San Diego</a>, and a B.A. in Economics from <a href="http://www.wesleyan.edu">Wesleyan University</a>.</p>
 <p>In 2019, I won the <a href="https://community.amstat.org/sis/aboutus/honorees">Significant Contributor Award</a> from the Section on Statistics in Sports of the American Statistical Association.</p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM336 448V160H256C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V448C48 456.8 55.16 464 64 464H320C328.8 464 336 456.8 336 448z"></path></svg>: Please see my <a href="baumer_cv.pdf">C.V.</a> for complete details on my work.</p>
+<p><code>r fontawesome::fa("file")</code>: Please see my <a href="baumer_cv.pdf">C.V.</a> for complete details on my work.</p>
 <section id="books" class="level2">
 <h2 class="anchored" data-anchor-id="books">Books</h2>
 <div class="grid">
@@ -213,7 +216,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="https://baseballwithr.wordpress.com/"><img src="https://images.tandf.co.uk/common/jackets/amazon/978081535/9780815353515.jpg" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">Analyzing Baseball Data with R cover</figcaption><p></p>
+<figcaption class="figure-caption">Analyzing Baseball Data with R cover</figcaption>
 </figure>
 </div>
 </div>
@@ -232,7 +235,7 @@ div.csl-indent {
 <section id="modern-data-science-with-r-2nd-edition" class="level3 g-col-8">
 <h3 class="anchored" data-anchor-id="modern-data-science-with-r-2nd-edition"><a href="http://mdsr-book.github.io"><em>Modern Data Science with R</em>, 2nd edition</a></h3>
 <p>Contemporary data science uses both statistical modeling and computer programming to extract meaning from data. It requires a tight integration of knowledge from statistics, computer science, mathematics, and a domain of application. This book, which is intended for readers with some background in statistics and modest prior experience with coding, helps them develop and practice the appropriate skills to tackle complex data science projects. Most of the examples are done in R, but SQL, Python, and other cutting-edge tools are discussed as well.</p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C87.5 32 35.1 48.6 9 59.9c-5.6 2.4-9 8-9 14V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V73.9c0-6.1-3.4-11.6-9-14C540.9 48.6 488.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path></svg> Read the <a href="https://mdsr-book.github.io/mdsr2e">2nd edition</a></p>
+<p><code>r fontawesome::fa("book-open")</code> Read the <a href="https://mdsr-book.github.io/mdsr2e">2nd edition</a></p>
 <p>Buy the book from:</p>
 <ul>
 <li><a href="https://www.crcpress.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9781498724487">CRC Press</a></li>
@@ -243,7 +246,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="http://mdsr-book.github.io"><img src="https://mdsr-book.github.io/mdsr2e/gfx/mdsr2e_cover.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">Modern Data Science with R cover</figcaption><p></p>
+<figcaption class="figure-caption">Modern Data Science with R cover</figcaption>
 </figure>
 </div>
 </div>
@@ -254,7 +257,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://pennsylvania-press-us.imgix.net/covers/9780812223392.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The Sabermetric Revolution cover</figcaption><p></p>
+<figcaption class="figure-caption">The Sabermetric Revolution cover</figcaption>
 </figure>
 </div>
 </div>
@@ -277,7 +280,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://dsc-wav.github.io/www/gfx/dsc-wav_medallion_black.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">DSC-WAV</figcaption><p></p>
+<figcaption class="figure-caption">DSC-WAV</figcaption>
 </figure>
 </div>
 </div>
@@ -299,7 +302,7 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://openintrostat.github.io/ims-tutorials/logo/openintro-hex.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">OpenIntro</figcaption><p></p>
+<figcaption class="figure-caption">OpenIntro</figcaption>
 </figure>
 </div>
 </div>
@@ -320,16 +323,16 @@ div.csl-indent {
 <p>Search for me on:</p>
 <div class="grid">
 <div class="g-col-3">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 488 512" style="height:1em;width:0.95em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>: <a href="http://scholar.google.com/citations?hl=en&amp;user=HWo0CDEAAAAJ">Google Scholar</a></p>
+<p><code>r fontawesome::fa("google")</code>: <a href="http://scholar.google.com/citations?hl=en&amp;user=HWo0CDEAAAAJ">Google Scholar</a></p>
 </div>
 <div class="g-col-3">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"></path></svg>: <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html">DBLP</a></p>
+<p><code>r fontawesome::fa("graduation-cap")</code>: <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html">DBLP</a></p>
 </div>
 <div class="g-col-3">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 80v48c0 17.7 14.3 32 32 32H48 96V80c0-26.5-21.5-48-48-48S0 53.5 0 80zM112 32c10 13.4 16 30 16 48V384c0 35.3 28.7 64 64 64s64-28.7 64-64v-5.3c0-32.4 26.3-58.7 58.7-58.7H480V128c0-53-43-96-96-96H112zM464 480c61.9 0 112-50.1 112-112c0-8.8-7.2-16-16-16H314.7c-14.7 0-26.7 11.9-26.7 26.7V384c0 53-43 96-96 96H368h96z"></path></svg>: <a href="http://publons.com/a/1553312/">Publons</a></p>
+<p><code>r fontawesome::fa("scroll")</code>: <a href="http://publons.com/a/1553312/">Publons</a></p>
 </div>
 <div class="g-col-3">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M320 0H64C28.65 0 0 28.65 0 64v384c0 35.35 28.65 64 64 64h256c35.35 0 64-28.65 64-64V64C384 28.65 355.3 0 320 0zM336 448c0 8.836-7.164 16-16 16H64c-8.836 0-16-7.164-16-16V64c0-8.838 7.164-16 16-16h64V64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V48h64c8.836 0 16 7.162 16 16V448zM192 288c35.35 0 64-28.65 64-64s-28.65-64-64-64C156.7 160 128 188.7 128 224S156.7 288 192 288zM224 320H160c-44.18 0-80 35.82-80 80C80 408.8 87.16 416 96 416h192c8.836 0 16-7.164 16-16C304 355.8 268.2 320 224 320z"></path></svg>: <a href="https://orcid.org/0000-0002-3279-0516/">ORCID</a></p>
+<p><code>r fontawesome::fa("id-badge")</code>: <a href="https://orcid.org/0000-0002-3279-0516/">ORCID</a></p>
 </div>
 </div>
 
@@ -337,176 +340,176 @@ div.csl-indent {
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-baumer2022ctv" class="csl-entry" role="doc-biblioentry">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-baumer2022ctv" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">B. S. Baumer, Q. Nguyen, and G. J. Matthews, <span>“<span>CRAN</span> task view: Sports analytics.”</span> The Comprehensive R Archive Network; The Comprehensive R Archive Network, May-2022 [Online]. Available: <a href="https://cran.r-project.org/web/views/SportsAnalytics.html">https://cran.r-project.org/web/views/SportsAnalytics.html</a></div>
 </div>
-<div id="ref-couch2021infer" class="csl-entry" role="doc-biblioentry">
+<div id="ref-couch2021infer" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[2] </div><div class="csl-right-inline">S. P. Couch, A. P. Bray, C. Ismay, E. Chasnovski, B. S. Baumer, and M. Çetinkaya-Rundel, <span>“Infer: An <span>R</span> package for tidyverse-friendly statistical inference,”</span> <em>Journal of Open Source Software</em>, vol. 6, no. 65, p. 3661, Sep. 2021 [Online]. Available: <a href="https://doi.org/10.21105/joss.03661">https://doi.org/10.21105/joss.03661</a></div>
 </div>
-<div id="ref-legacy2021dscwav" class="csl-entry" role="doc-biblioentry">
+<div id="ref-legacy2021dscwav" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[3] </div><div class="csl-right-inline">C. Legacy, A. Zieffler, B. S. Baumer, V. Barr, and N. J. Horton, <span>“<a href="https://doi.org/10.3934/fods.2022003">Facilitating team-based data science: Lessons learned from the <span>DSC-WAV</span> project</a>,”</span> <em>Foundations of Data Science</em>, 2022. </div>
 </div>
-<div id="ref-horton2021dscwav" class="csl-entry" role="doc-biblioentry">
+<div id="ref-horton2021dscwav" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[4] </div><div class="csl-right-inline">N. J. Horton, B. S. Baumer, A. Zieffler, and V. Barr, <span>“The <span>Data Science Corps Wrangle-Analyze-Visualize</span> program: Building data acumen for undergraduate students,”</span> <em>Harvard Data Science Review</em>, vol. 3, no. 1, pp. 1–8, Feb. 2021 [Online]. Available: <a href="https://hdsr.mitpress.mit.edu/pub/nvflcexe">https://hdsr.mitpress.mit.edu/pub/nvflcexe</a></div>
 </div>
-<div id="ref-mcnamara2017donoho" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mcnamara2017donoho" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[5] </div><div class="csl-right-inline">A. A. McNamara, N. J. Horton, and B. S. Baumer, <span>“Greater data science at baccalaureate institutions,”</span> <em>Journal of Computational and Graphical Statistics</em>, vol. 26, no. 4, pp. 781–783, 2017 [Online]. Available: <a href="https://doi.org/10.1080/10618600.2017.1386568">https://doi.org/10.1080/10618600.2017.1386568</a></div>
 </div>
-<div id="ref-baumer2019ethics" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2019ethics" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[6] </div><div class="csl-right-inline">B. S. Baumer, R. L. Garcia, A. Y. Kim, K. M. Kinnaird, and M. Q. Ott, <span>“Integrating data science ethics into an undergraduate major: A case study,”</span> <em>Journal of Statistics and Data Science Education</em>, vol. 30, no. 1, pp. 15–28, 2022 [Online]. Available: <a href="https://doi.org/10.1080/26939169.2022.2038041">https://doi.org/10.1080/26939169.2022.2038041</a></div>
 </div>
-<div id="ref-albert2018analyzing" class="csl-entry" role="doc-biblioentry">
+<div id="ref-albert2018analyzing" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[7] </div><div class="csl-right-inline">J. Albert, M. Marchi, and B. S. Baumer, <em>Analyzing baseball data with <span>R</span></em>, 2nd ed. CRC Press: Boca Raton, FL, 2018, p. 342 [Online]. Available: <a href="https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515">https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515</a></div>
 </div>
-<div id="ref-gem2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gem2017" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[8] </div><div class="csl-right-inline">D. J. Kelley, B. S. Baumer, C. G. Brush, M. Cole, M. Dean, M. Madavi, M. Majbouri, P. Greene, and R. Heavlow, <span>“Global entrepreneurship monitor 2016/2017 women’s entrepreneurship report,”</span> Global Entrepreneurship Monitor; Global Entrepreneurship Research Association, Jul. 2017. </div>
 </div>
-<div id="ref-gem2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gem2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[9] </div><div class="csl-right-inline">A. B. Elam, C. G. Brush, P. G. Greene, B. S. Baumer, M. Dean, and R. Heavlow, <span>“Global entrepreneurship monitor 2018/2019 women’s entrepreneurship report,”</span> Global Entrepreneurship Monitor; Global Entrepreneurship Research Association: London, Nov. 2019 [Online]. Available: <a href="https://www.gemconsortium.org/file/open?fileId=50405">https://www.gemconsortium.org/file/open?fileId=50405</a></div>
 </div>
-<div id="ref-gem2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gem2021" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[10] </div><div class="csl-right-inline">A. B. Elam, C. G. Brush, P. G. Greene, B. S. Baumer, and R. Heavlow, <span>“Global entrepreneurship monitor women’s entrepreneurship 2020/2021: Thriving through crisis,”</span> Global Entrepreneurship Monitor; Global Entrepreneurship Research Association: London, Nov. 2021 [Online]. Available: <a href="https://www.gemconsortium.org/file/open?fileId=50841">https://www.gemconsortium.org/file/open?fileId=50841</a></div>
 </div>
-<div id="ref-zimbalist2018college" class="csl-entry" role="doc-biblioentry">
+<div id="ref-zimbalist2018college" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[11] </div><div class="csl-right-inline">B. S. Baumer and A. S. Zimbalist, <span>“The impact of college athletic success on donations and applicant quality,”</span> <em>International Journal of Financial Studies</em>, vol. 7, no. 2, p. 19, 2019 [Online]. Available: <a href="https://www.mdpi.com/2227-7072/7/2/19">https://www.mdpi.com/2227-7072/7/2/19</a></div>
 </div>
-<div id="ref-williams2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-williams2017" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[12] </div><div class="csl-right-inline">M. Papaiakovou, N. Pilotte, B. S. Baumer, J. Grant, K. Asbjornsdottir, F. Schaer, Y. Hu, R. Aroian, J. Walson, and S. A. Williams, <span>“A comparative analysis of preservation techniques for the optimal molecular detection of hookworm <span>DNA</span> in human fecal specimens,”</span> <em>PLOS Neglected Tropical Diseases</em>, vol. 12, no. 1, pp. 1–17, Jan. 2018 [Online]. Available: <a href="http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0006130">http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0006130</a></div>
 </div>
-<div id="ref-barresi2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-barresi2017" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[13] </div><div class="csl-right-inline">M. S. Schwartz, J. Schnabl, M. P. H. Litz, B. S. Baumer, and M. Barresi, <span>“-<span>SCOPE</span>: A new method to quantify <span>3D</span> biological structures and identify differences in zebrafish forebrain development,”</span> <em>Developmental Biology</em>, vol. 460, no. 2, pp. 115–138, Apr. 2020 [Online]. Available: <a href="https://doi.org/10.1016/j.ydbio.2019.11.014">https://doi.org/10.1016/j.ydbio.2019.11.014</a></div>
 </div>
-<div id="ref-pcmi2016guidelines" class="csl-entry" role="doc-biblioentry">
+<div id="ref-pcmi2016guidelines" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[14] </div><div class="csl-right-inline">R. D. De Veaux, M. Agarwal, M. Averett, B. S. Baumer, A. Bray, T. C. Bressoud, L. Bryant, L. Z. Cheng, A. Francis, R. Gould, A. Y. Kim, M. Kretchmar, Q. Lu, A. Moskol, D. Nolan, R. Pelayo, S. Raleigh, R. J. Sethi, M. Sondjaja, N. Tiruviluamala, P. X. Uhlig, T. M. Washington, C. L. Wesley, D. White, and P. Ye, <span>“Curriculum guidelines for undergraduate programs in data science,”</span> <em>Annual Review of Statistics and Its Application</em>, vol. 4, no. 1, pp. 1–16, 2017 [Online]. Available: <a href="http://www.annualreviews.org/doi/abs/10.1146/annurev-statistics-060116-053930">http://www.annualreviews.org/doi/abs/10.1146/annurev-statistics-060116-053930</a></div>
 </div>
-<div id="ref-baumer2019fertile" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2019fertile" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[15] </div><div class="csl-right-inline">A. M. Bertin and B. S. Baumer, <span>“Creating optimal conditions for reproducible data analysis in <span>R</span> with <span>‘fertile’</span>,”</span> <em>Stat</em>, vol. 10, no. 1, p. e332, Dec. 2020 [Online]. Available: <a href="https://doi.org/10.1002/sta4.332">https://doi.org/10.1002/sta4.332</a></div>
 </div>
-<div id="ref-baumer2016lessons" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2016lessons" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[16] </div><div class="csl-right-inline">B. S. Baumer, <span>“Lessons from between the white lines for isolated data scientists,”</span> <em>The American Statistican</em>, vol. 72, no. 1, pp. 66–71, 2018 [Online]. Available: <a href="http://amstat.tandfonline.com/doi/full/10.1080/00031305.2017.1375985">http://amstat.tandfonline.com/doi/full/10.1080/00031305.2017.1375985</a></div>
 </div>
-<div id="ref-baumer2017peerj" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2017peerj" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[17] </div><div class="csl-right-inline">B. S. Baumer, <span>“Lessons from between the white lines for isolated data scientists,”</span> <em>PeerJ Preprints</em>, vol. 5, p. e3160v2, Aug. 2017 [Online]. Available: <a href="https://doi.org/10.7287/peerj.preprints.3160v2">https://doi.org/10.7287/peerj.preprints.3160v2</a></div>
 </div>
-<div id="ref-baumer2016compete" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2016compete" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[18] </div><div class="csl-right-inline">M. Lopez, G. J. Matthews, and B. S. Baumer, <span>“<a href="https://doi.org/10.1214/18-AOAS1165">How often does the best team win? <span>A</span> unified approach to understanding randomness in <span>N</span>orth <span>A</span>merican sport</a>,”</span> <em>Annals of Applied Statistics</em>, vol. 12, no. 4, pp. 2483–2516, 2018. </div>
 </div>
-<div id="ref-baumer2020tidyverse" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2020tidyverse" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[19] </div><div class="csl-right-inline">M. Çetinkaya-Rundel, J. S. Hardin, B. S. Baumer, A. A. McNamara, N. J. Horton, and C. W. Rundel, <span>“<a href="https://doi.org/10.5070/T514154352">An educator’s perspective of the tidyverse</a>,”</span> <em>Technology Innovations in Statistics Education</em>, vol. 14, no. 1, 2022. </div>
 </div>
-<div id="ref-baumer2017datacamp" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2017datacamp" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[20] </div><div class="csl-right-inline">B. S. Baumer, A. S. Bray, M. Çetinkaya-Rundel, and J. Hardin, <span>“Teaching introductory statistics with <span>DataCamp</span>,”</span> <em>Journal of Statistics Education</em>, vol. 28, no. 1, Mar. 2020 [Online]. Available: <a href="https://www.tandfonline.com/doi/ref/10.1080/10691898.2020.1730734">https://www.tandfonline.com/doi/ref/10.1080/10691898.2020.1730734</a></div>
 </div>
-<div id="ref-baumer2016etl" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2016etl" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[21] </div><div class="csl-right-inline">B. S. Baumer, <span>“A grammar for reproducible and painless extract-transform-load operations on medium data,”</span> <em>Journal of Computational and Statistical Graphics</em>, vol. 28, no. 2, pp. 256–264, 2019 [Online]. Available: <a href="https://amstat.tandfonline.com/doi/full/10.1080/10618600.2018.1512867">https://amstat.tandfonline.com/doi/full/10.1080/10618600.2018.1512867</a></div>
 </div>
-<div id="ref-gould2014big" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gould2014big" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[22] </div><div class="csl-right-inline">R. Gould, B. Baumer, M. Çetinkaya-Rundel, and A. Bray, <span>“Big data goes to college,”</span> <em>AMSTAT News</em>, no. 444, pp. 17–19, 2014 [Online]. Available: <a href="http://magazine.amstat.org/blog/2014/06/01/datafest/">http://magazine.amstat.org/blog/2014/06/01/datafest/</a></div>
 </div>
-<div id="ref-baumer2014applied" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2014applied" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[23] </div><div class="csl-right-inline">B. Baumer, <span>“Applied mathematics at the ballpark: The life of one sabermetrician,”</span> <em>Math Horizons</em>, vol. 22, no. 1, pp. 18–20, 2014 [Online]. Available: <a href="http://www.jstor.org/stable/10.4169/mathhorizons.22.1.18">http://www.jstor.org/stable/10.4169/mathhorizons.22.1.18</a></div>
 </div>
-<div id="ref-baumer2015espn" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2015espn" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[24] </div><div class="csl-right-inline">B. Baumer, <span>“In a <span>M</span>oneyball world, a number of teams remain slow to buy into sabermetrics,”</span> in <em>The great analytics rankings</em>, R. Webb, Ed. ESPN.com; ESPN.com, 2015 [Online]. Available: <a href="http://espn.go.com/espn/feature/story/_/id/12331388/the-great-analytics-rankings#!mlb">http://espn.go.com/espn/feature/story/_/id/12331388/the-great-analytics-rankings#!mlb</a></div>
 </div>
-<div id="ref-baumer2018oxford" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2018oxford" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[25] </div><div class="csl-right-inline">B. S. Baumer, <span>“The <span class="nocase">Oxford Anthology of Statistics in Sports</span>: Volume 1: 2000-2004 by <span>James J. Cochran, Jay Bennett, Jim Albert</span>,”</span> <em>The American Statistician</em>, vol. 72, no. 3. Taylor &amp; Francis, pp. 297–298, 2018 [Online]. Available: <a href="https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1496649">https://www.tandfonline.com/doi/abs/10.1080/00031305.2018.1496649</a></div>
 </div>
-<div id="ref-baumer2014analyzing" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2014analyzing" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[26] </div><div class="csl-right-inline">B. S. Baumer, <span>“Analyzing baseball data with <span>R</span> by <span>Max Marchi, Jim Albert</span>,”</span> <em>International Statistical Review</em>, vol. 82, no. 2. Wiley Online Library, pp. 313–315, Aug-2014 [Online]. Available: <a href="http://onlinelibrary.wiley.com/doi/10.1111/insr.12068_5/full">http://onlinelibrary.wiley.com/doi/10.1111/insr.12068_5/full</a></div>
 </div>
-<div id="ref-stoudt2014pursuit" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stoudt2014pursuit" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[27] </div><div class="csl-right-inline">S. Stoudt, L. Santana, and B. Baumer, <span>“In pursuit of perfection: An ensemble method for predicting march madness match-up probabilities,”</span> in <em>JSM proceedings</em>, 2014. </div>
 </div>
-<div id="ref-baumer2015r" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2015r" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[28] </div><div class="csl-right-inline">B. Baumer and D. Udwin, <span>“<span class="nocase">R <span>M</span>arkdown</span>,”</span> <em>Wiley Interdisciplinary Reviews: Computational Statistics</em>, vol. 7, no. 3, pp. 167–177, 2015 [Online]. Available: <a href="http://onlinelibrary.wiley.com/doi/10.1002/wics.1348/full">http://onlinelibrary.wiley.com/doi/10.1002/wics.1348/full</a></div>
 </div>
-<div id="ref-horton2015stage" class="csl-entry" role="doc-biblioentry">
+<div id="ref-horton2015stage" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[29] </div><div class="csl-right-inline">N. J. Horton, B. S. Baumer, and H. Wickham, <span>“Setting the stage for data science: Integration of data management skills in introductory and second courses in statistics,”</span> <em>CHANCE</em>, vol. 28, no. 3, pp. 40–50, 2015 [Online]. Available: <a href="http://chance.amstat.org/2015/04/setting-the-stage/">http://chance.amstat.org/2015/04/setting-the-stage/</a></div>
 </div>
-<div id="ref-baumer2014war" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2014war" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[30] </div><div class="csl-right-inline">B. S. Baumer and G. J. Matthews, <span>“There is no avoiding <span>WAR</span>,”</span> <em>CHANCE</em>, vol. 27, no. 3, pp. 41–44, 2014 [Online]. Available: <a href="http://chance.amstat.org/2014/09/avoiding-war/">http://chance.amstat.org/2014/09/avoiding-war/</a></div>
 </div>
-<div id="ref-baumer2016eval" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2016eval" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[31] </div><div class="csl-right-inline">B. S. Baumer and P. Badian-Pessot, <span>“Evaluation of batters and base runners,”</span> in <em>Handbook of statistical methods and analyses in sports</em>, J. Albert, M. E. Glickman, T. B. Swartz, and R. H. Koning, Eds. Chapman; Hall/CRC Press: Boca Raton, FL, 2016, pp. 1–37 [Online]. Available: <a href="https://www.crcpress.com/Handbook-of-Statistical-Methods-and-Analyses-in-Sports/Albert-Glickman-Swartz-Koning/p/book/9781498737364">https://www.crcpress.com/Handbook-of-Statistical-Methods-and-Analyses-in-Sports/Albert-Glickman-Swartz-Koning/p/book/9781498737364</a></div>
 </div>
-<div id="ref-baumer2015we" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2015we" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[32] </div><div class="csl-right-inline">B. S. Baumer, Y. Wei, and G. S. Bloom, <span>“The smallest non-autograph,”</span> <em>Discussiones Mathematicae Graph Theory</em>, vol. 36, no. 3, pp. 577–602, 2016 [Online]. Available: <a href="http://www.discuss.wmie.uz.zgora.pl/gt/index.php?doi=10.7151/dmgt.1881">http://www.discuss.wmie.uz.zgora.pl/gt/index.php?doi=10.7151/dmgt.1881</a></div>
 </div>
-<div id="ref-baumer2016mdsr" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2016mdsr" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[33] </div><div class="csl-right-inline">B. S. Baumer, D. T. Kaplan, and N. J. Horton, <em><span class="nocase">Modern Data Science with R</span></em>. Chapman; Hall/CRC Press: Boca Raton, 2017, p. 551 [Online]. Available: <a href="https://www.crcpress.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/9781498724487">https://www.crcpress.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/9781498724487</a></div>
 </div>
-<div id="ref-baumer2020mdsr" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2020mdsr" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[34] </div><div class="csl-right-inline">B. S. Baumer, D. T. Kaplan, and N. J. Horton, <em><span class="nocase">Modern Data Science with R</span></em>, 2nd ed. Chapman; Hall/CRC Press: Boca Raton, 2021, pp. 1–673 [Online]. Available: <a href="https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498">https://www.routledge.com/Modern-Data-Science-with-R/Baumer-Kaplan-Horton/p/book/9780367191498</a></div>
 </div>
-<div id="ref-baumer2015star" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2015star" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[35] </div><div class="csl-right-inline">B. Baumer, G. Rabanca, A. Bar-Noy, and P. Basu, <span>“Star search: Effective subgroups in collaborative social networks.”</span> ACM; ACM, New York, NY, USA, pp. 729–736, 2015 [Online]. Available: <a href="http://dl.acm.org/citation.cfm?id=2810062">http://dl.acm.org/citation.cfm?id=2810062</a></div>
 </div>
-<div id="ref-hardin2015data" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hardin2015data" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[36] </div><div class="csl-right-inline">J. Hardin, R. Hoerl, N. J. Horton, D. Nolan, B. Baumer, O. Hall-Holt, P. Murrell, R. Peng, P. Roback, D. Temple Lang, and others, <span>“Data science in statistics curricula: Preparing students to <span>‘think with data’</span>,”</span> <em>The American Statistician</em>, vol. 69, no. 4, pp. 343–353, 2015 [Online]. Available: <a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.2015.1077729">http://www.tandfonline.com/doi/abs/10.1080/00031305.2015.1077729</a></div>
 </div>
-<div id="ref-baumer2015data" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2015data" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[37] </div><div class="csl-right-inline">B. Baumer, <span>“A data science course for undergraduates: Thinking with data,”</span> <em>The American Statistician</em>, vol. 69, no. 4, pp. 334–342, 2015 [Online]. Available: <a href="http://amstat.tandfonline.com/doi/abs/10.1080/00031305.2015.1081105">http://amstat.tandfonline.com/doi/abs/10.1080/00031305.2015.1081105</a></div>
 </div>
-<div id="ref-baumer2014r" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2014r" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[38] </div><div class="csl-right-inline">B. Baumer, M. Çetinkaya-Rundel, A. Bray, L. Loi, and N. J. Horton, <span>“R <span>M</span>arkdown: Integrating a reproducible analysis tool into introductory statistics,”</span> <em>Technology Innovations in Statistics Education</em>, vol. 8, no. 1, 2014 [Online]. Available: <a href="http://escholarship.org/uc/item/90b2f5xh">http://escholarship.org/uc/item/90b2f5xh</a></div>
 </div>
-<div id="ref-bar2015average" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bar2015average" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[39] </div><div class="csl-right-inline">A. Bar-Noy and B. Baumer, <span>“Average case network lifetime on an interval with adjustable sensing ranges,”</span> <em>Algorithmica</em>, vol. 72, no. 1, pp. 148–166, 2015 [Online]. Available: <a href="http://link.springer.com/article/10.1007/s00453-013-9853-5">http://link.springer.com/article/10.1007/s00453-013-9853-5</a></div>
 </div>
-<div id="ref-baumer2013quantifying" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2013quantifying" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[40] </div><div class="csl-right-inline">B. Baumer and A. Zimbalist, <span>“<span class="nocase">Quantifying Market Inefficiencies in the Baseball Players’ Market</span>,”</span> <em>Eastern Economic Journal</em>, vol. 40, pp. 488–498, Dec. 2014 [Online]. Available: <a href="http://www.palgrave-journals.com/eej/journal/vaop/ncurrent/full/eej201343a.html">http://www.palgrave-journals.com/eej/journal/vaop/ncurrent/full/eej201343a.html</a></div>
 </div>
-<div id="ref-bar2016changing" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bar2016changing" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[41] </div><div class="csl-right-inline">A. Bar-Noy, B. Baumer, and D. Rawitz, <span>“Changing of the guards: Strip cover with duty cycling,”</span> <em>Theoretical Computer Science</em>, vol. 610, pp. 135–148, 2016 [Online]. Available: <a href="https://doi.org/10.1016/j.tcs.2014.09.002">https://doi.org/10.1016/j.tcs.2014.09.002</a></div>
 </div>
-<div id="ref-baumer2015openwar" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2015openwar" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[42] </div><div class="csl-right-inline">B. S. Baumer, S. T. Jensen, and G. J. Matthews, <span>“Open<span>WAR</span>: An open source system for evaluating overall player performance in <span>M</span>ajor <span>L</span>eague <span>B</span>aseball,”</span> <em>Journal of Quantitative Analysis in Sports</em>, vol. 11, no. 2, pp. 69–84, 2015 [Online]. Available: <a href="https://doi.org/10.1515/jqas-2014-0098">https://doi.org/10.1515/jqas-2014-0098</a></div>
 </div>
-<div id="ref-baumer2014social" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2014social" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[43] </div><div class="csl-right-inline">B. Baumer, P. Basu, A. Bar-Noy, and C. Chau, <span>“Social-communication composite networks,”</span> in <em>Opportunistic mobile social networks</em>, CRC Press, 2014, pp. 1–36 [Online]. Available: <a href="https://www.crcpress.com/Opportunistic-Mobile-Social-Networks/Wu-Wang/p/book/9781466594944">https://www.crcpress.com/Opportunistic-Mobile-Social-Networks/Wu-Wang/p/book/9781466594944</a></div>
 </div>
-<div id="ref-bogdanov2013weakest" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bogdanov2013weakest" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[44] </div><div class="csl-right-inline">P. Bogdanov, B. Baumer, P. Basu, A. Bar-Noy, and A. K. Singh, <span>“As strong as the weakest link: Mining diverse cliques in weighted graphs,”</span> vol. 8188. Springer, pp. 525–540, 2013 [Online]. Available: <a href="https://link.springer.com/chapter/10.1007/978-3-642-40988-2_34">https://link.springer.com/chapter/10.1007/978-3-642-40988-2_34</a></div>
 </div>
-<div id="ref-baumer2013tsr" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2013tsr" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[45] </div><div class="csl-right-inline">B. Baumer and A. Zimbalist, <em><span class="nocase">The Sabermetric Revolution: Assessing the Growth of Analytics in Baseball</span></em>. University of Pennsylvania Press, 2014, p. 240 [Online]. Available: <a href="http://www.upenn.edu/pennpress/book/15168.html">http://www.upenn.edu/pennpress/book/15168.html</a></div>
 </div>
-<div id="ref-barnoy2013setit" class="csl-entry" role="doc-biblioentry">
+<div id="ref-barnoy2013setit" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[46] </div><div class="csl-right-inline">A. Bar-Noy, B. Baumer, and D. Rawitz, <span>“Brief announcement: Set it and forget it - approximating the set once strip cover problem.”</span> ACM, pp. 105–107, 2013 [Online]. Available: <a href="https://dl.acm.org/citation.cfm?id=2486162">https://dl.acm.org/citation.cfm?id=2486162</a></div>
 </div>
-<div id="ref-baumer2012thesis" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2012thesis" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[47] </div><div class="csl-right-inline">B. S. Baumer, <span>“Sensor strip cover: Maximizing network lifetime on an interval,”</span> PhD thesis, City University of New York, 2012 [Online]. Available: <a href="http://proquest.umi.com/pqdweb?did=2677679131&amp;sid=1&amp;Fmt=2&amp;clientId=29054&amp;RQT=309&amp;VName=PQD">http://proquest.umi.com/pqdweb?did=2677679131&amp;sid=1&amp;Fmt=2&amp;clientId=29054&amp;RQT=309&amp;VName=PQD</a></div>
 </div>
-<div id="ref-baumer2012parsing" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2012parsing" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[48] </div><div class="csl-right-inline">B. S. Baumer, J. Piette, and B. Null, <span>“Parsing the relationship between baserunning and batting abilities within lineups,”</span> <em>Journal of Quantitative Analysis in Sports</em>, vol. 8, no. 2, pp. 1–17, 2012 [Online]. Available: <a href="https://doi.org/10.1515/1559-0410.1429">https://doi.org/10.1515/1559-0410.1429</a></div>
 </div>
-<div id="ref-barnoy2011maximizing" class="csl-entry" role="doc-biblioentry">
+<div id="ref-barnoy2011maximizing" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[49] </div><div class="csl-right-inline">A. Bar-Noy and B. Baumer, <span>“Maximizing network lifetime on the line with adjustable sensing ranges,”</span> in <em>ALGOSENSORS</em>, 2011, vol. 7111, pp. 28–41 [Online]. Available: <a href="https://link.springer.com/content/pdf/10.1007/978-3-642-28209-6.pdf#page=38">https://link.springer.com/content/pdf/10.1007/978-3-642-28209-6.pdf#page=38</a></div>
 </div>
-<div id="ref-barnoy2012changing" class="csl-entry" role="doc-biblioentry">
+<div id="ref-barnoy2012changing" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[50] </div><div class="csl-right-inline">A. Bar-Noy, B. Baumer, and D. Rawitz, <span>“Changing of the guards: Strip cover with duty cycling,”</span> vol. 7355. Springer, pp. 36–47, 2012 [Online]. Available: <a href="http://www.springer.com/us/book/9783642311031">http://www.springer.com/us/book/9783642311031</a></div>
 </div>
-<div id="ref-baumer2011modeling" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2011modeling" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[51] </div><div class="csl-right-inline">B. Baumer, P. Basu, and A. Bar-Noy, <span>“Modeling and analysis of composite network embeddings,”</span> in <em>MSWiM</em>, 2011, pp. 341–350 [Online]. Available: <a href="https://dl.acm.org/citation.cfm?id=2068956">https://dl.acm.org/citation.cfm?id=2068956</a></div>
 </div>
-<div id="ref-barnoy2016setit" class="csl-entry" role="doc-biblioentry">
+<div id="ref-barnoy2016setit" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[52] </div><div class="csl-right-inline">A. Bar-Noy, B. Baumer, and D. Rawitz, <span>“Set it and forget it: Tighter approximation bounds for <span class="smallcaps">RoundRobin</span> in a restricted lifetime model,”</span> <em>Algorithmica</em>, vol. 76, no. 2, pp. 1–19, Oct. 2016 [Online]. Available: <a href="http://link.springer.com/article/10.1007/s00453-016-0198-8">http://link.springer.com/article/10.1007/s00453-016-0198-8</a></div>
 </div>
-<div id="ref-baumer2010improved" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2010improved" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[53] </div><div class="csl-right-inline">B. S. Baumer and P. Terlecky, <span>“<span class="nocase">Improved Estimates for the Impact of Baserunning in Baseball</span>,”</span> in <em>JSM proceedings</em>, 2010. </div>
 </div>
-<div id="ref-baumer2010mapping" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2010mapping" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[54] </div><div class="csl-right-inline">B. S. Baumer and D. Draghicescu, <span>“<span class="nocase">Mapping Batter Ability in Baseball: A Study in Spatial Modeling</span>,”</span> in <em>JSM proceedings</em>, 2010. </div>
 </div>
-<div id="ref-baumer2009asm" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2009asm" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[55] </div><div class="csl-right-inline">B. S. Baumer, A. Galdi, and R. Sebastian, <span>“<span class="nocase">A Survey of Methods for the Statistical Evaluation of Defensive Ability in Major League Baseball</span>,”</span> in <em>JSM proceedings</em>, 2009. </div>
 </div>
-<div id="ref-baumer2009usb" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2009usb" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[56] </div><div class="csl-right-inline">B. S. Baumer, <span>“<span class="nocase">Using Simulation to Estimate the Impact of Baserunning Ability in Baseball</span>,”</span> <em>Journal of Quantitative Analysis in Sports</em>, vol. 5, no. 2, pp. 1–16, 2009 [Online]. Available: <a href="https://doi.org/10.2202/1559-0410.1174">https://doi.org/10.2202/1559-0410.1174</a></div>
 </div>
-<div id="ref-baumer2008bpb" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baumer2008bpb" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[57] </div><div class="csl-right-inline">B. S. Baumer, <span>“<span class="nocase">Why On-Base Percentage is a Better Indicator of Future Performance than Batting Average: An Algebraic Proof</span>,”</span> <em>Journal of Quantitative Analysis in Sports</em>, vol. 4, no. 2, pp. 1–11, 2008 [Online]. Available: <a href="https://doi.org/10.2202/1559-0410.1101">https://doi.org/10.2202/1559-0410.1101</a></div>
 </div>
 </div></section></div></main> <!-- /main -->
@@ -537,9 +540,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -604,6 +621,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -647,6 +750,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Created by Benjamin Baumer.</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 
