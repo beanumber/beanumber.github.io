@@ -3,7 +3,7 @@ title: "Research"
 bibliography: references.bib
 csl: ieee-with-url.csl
 nocite: | 
-  @baumer2021tools, @baumer2022symposium, @baumer2022transfer, @baumer2022ctv, @gem2021, @couch2021infer, @baumer2020tidyverse, @legacy2021dscwav, @horton2021dscwav, @baumer2019fertile, @baumer2020mdsr, @baumer2019ethics, @baumer2017datacamp, @barresi2017, @gem2019, @zimbalist2018college, @albert2018analyzing, @baumer2016compete, @baumer2016etl, @baumer2018oxford, @mcnamara2017donoho, @williams2017, @baumer2016lessons, @gem2017, @baumer2017peerj, @pcmi2016guidelines, @baumer2016mdsr, @baumer2016eval, @barnoy2016setit, @baumer2015we, @bar2016changing, @baumer2015data, @hardin2015data, @baumer2015openwar, @bar2015average, @baumer2015star, @horton2015stage, @baumer2015r, @baumer2014r, @baumer2014war, @baumer2014analyzing, @baumer2013quantifying, @baumer2013tsr, @baumer2014social, @bogdanov2013weakest, @barnoy2013setit, @baumer2012thesis, @barnoy2012changing, @baumer2012parsing, @barnoy2011maximizing, @baumer2011modeling, @baumer2009usb, @baumer2008bpb, @stoudt2014pursuit, @baumer2010improved, @baumer2010mapping, @baumer2009asm, @baumer2015espn, @baumer2014applied, @gould2014big 
+  @albert2024analyzing, @baumer2024editor, @baumer2021tools, @baumer2022symposium, @baumer2022transfer, @baumer2022ctv, @gem2021, @couch2021infer, @baumer2020tidyverse, @legacy2021dscwav, @horton2021dscwav, @baumer2019fertile, @baumer2020mdsr, @baumer2019ethics, @baumer2017datacamp, @barresi2017, @gem2019, @zimbalist2018college, @albert2018analyzing, @baumer2016compete, @baumer2016etl, @baumer2018oxford, @mcnamara2017donoho, @williams2017, @baumer2016lessons, @gem2017, @baumer2017peerj, @pcmi2016guidelines, @baumer2016mdsr, @baumer2016eval, @barnoy2016setit, @baumer2015we, @bar2016changing, @baumer2015data, @hardin2015data, @baumer2015openwar, @bar2015average, @baumer2015star, @horton2015stage, @baumer2015r, @baumer2014r, @baumer2014war, @baumer2014analyzing, @baumer2013quantifying, @baumer2013tsr, @baumer2014social, @bogdanov2013weakest, @barnoy2013setit, @baumer2012thesis, @barnoy2012changing, @baumer2012parsing, @barnoy2011maximizing, @baumer2011modeling, @baumer2009usb, @baumer2008bpb, @stoudt2014pursuit, @baumer2010improved, @baumer2010mapping, @baumer2009asm, @baumer2015espn, @baumer2014applied, @gould2014big 
 ---
 
 I am a data scientist. [Data science](http://en.wikipedia.org/wiki/Data_science) is an emerging field commonly described as "the practice of deriving valuable insights from data," and this thread runs through all of my work. My scholarly contributions have come in five main areas: 
@@ -31,6 +31,10 @@ In 2019, I won the [Significant Contributor Award](https://community.amstat.org/
 
 `r fontawesome::fa("file")`: Please see my [C.V.](baumer_cv.pdf) for complete details on my work. 
 
+```{r}
+#| include: false
+fontawesome::fa("file")
+```
 
 ## Books
 
@@ -118,7 +122,7 @@ Buy the book from:
 :::
 :::
 
-## Ongoing Projects
+## Recent Projects
 
 
 ::: {.grid}
@@ -134,11 +138,11 @@ Buy the book from:
 
 ### DSC-WAV
 
-I am the PI on a nine institution, $1.2 million workforce developed project funded by the National Science Foundation. 
+I was the PI on a nine institution, $1.2 million workforce developed project funded by the National Science Foundation. 
 
-The [DSC-WAV project](https://dsc-wav.github.io/www/) simultaneously addresses two problems: 1) the inability of community-based and non-profit organizations to tackle data science problems; and 2) the lack of real world experience gained by students studying data science. 
+The [DSC-WAV project](https://dsc-wav.github.io/www/) simultaneously addressed two problems: 1) the inability of community-based and non-profit organizations to tackle data science problems; and 2) the lack of real world experience gained by students studying data science. 
 
-This project addresses both issues by deploying teams of data science students to assist local organizations, thereby increasing the long-term capacity of the data science workforce.
+This project addressed both issues by deploying teams of data science students to assist local organizations, thereby increasing the long-term capacity of the data science workforce.
 
 :::
 :::
@@ -173,8 +177,8 @@ Much of that content is now available through [interactive tutorials](https://op
 ::: {.grid}
 
 ::: {.g-col-4}
-  
-[![Travis-CI Build Status](https://travis-ci.org/beanumber/etl.svg?branch=master)](https://travis-ci.org/beanumber/etl)
+
+[![R-CMD-check](https://github.com/beanumber/etl/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/beanumber/etl/actions/workflows/R-CMD-check.yaml)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/etl)](https://cran.r-project.org/package=etl)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/etl)](http://www.r-pkg.org/pkg/etl)
 

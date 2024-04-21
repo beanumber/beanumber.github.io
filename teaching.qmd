@@ -2,9 +2,11 @@
 title: "Teaching"
 ---
 
-I am **on sabbatical** for the 2023--2024 academic year. 
+I am **on sabbatical** for the 2023--2024 academic year, and am spending the year at [Universidad EAFIT](https://www.eafit.edu.co/) in Medellín, Colombia. 
 
-In 2019, I won the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the Section on Statistics and Data Science Education of the American Statistical Association and the [Outstanding Undergraduate Teaching Award](https://community.amstat.org/bostonchapter/awards/teachingaward) from the Boston Chapter of the ASA. I was a Mary P. Dolciani [Project NExT](http://archives.math.utk.edu/projnext/) Fellow for 2012--2013.
+
+In 2019, I won the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the Section on Statistics and Data Science Education of the American Statistical Association and the [Outstanding Undergraduate Teaching Award](https://community.amstat.org/bostonchapter/awards/teachingaward) from the Boston Chapter of the ASA. 
+I was a Mary P. Dolciani [Project NExT](http://archives.math.utk.edu/projnext/) Fellow for 2012--2013.
 
 ## Teaching history
 
@@ -13,6 +15,8 @@ library(dplyr)
 library(tidyr)
 teaching <- tibble::tribble(
   ~year, ~semester, ~course, ~course_short, ~url,
+  2024, "Fall", "Advanced Programming for Data Science", "SDS 270", NA,
+  2024, "Fall", "Statistical & Data Sciences Capstone", "SDS 410", NA,
   2024, "Spring", "(on sabbatical)", "", NA,
   2023, "Fall", "(on sabbatical)", "", NA,
   2023, "Spring", "Data Journalism", "SDS 236", NA,
