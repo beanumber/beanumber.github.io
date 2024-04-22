@@ -23,6 +23,14 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
       
       - uses: quarto-dev/quarto-actions/setup@v2
+      
+      - uses: actions/download-artifact@v4
+        with:
+          repository: beanumber/cv
+          name: baumer_cv
+
+      - name: Display structure of downloaded files
+          run: ls -R
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
