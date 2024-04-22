@@ -17,7 +17,7 @@ website:
       - href: teaching.qmd
       - href: baseball.qmd
     right: 
-      - icon: file-person
+      - icon: filetype-pdf
         href: https://beanumber.github.io/cv/baumer_cv.pdf
       - icon: envelope 
         href: mailto:bbaumer@smith.edu
@@ -31,7 +31,7 @@ website:
   repo-url: https://github.com/beanumber/sds100
   repo-actions: [edit, issue]
   page-footer: 
-    left: "Created by Benjamin Baumer." 
+    left: "Created by Benjamin S. Baumer." 
 
 
 format:

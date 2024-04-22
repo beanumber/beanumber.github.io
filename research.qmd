@@ -31,16 +31,11 @@ In 2019, I won the [Significant Contributor Award](https://community.amstat.org/
 
 ```{r}
 #| include: false
-fontawesome::fa("file")
-
-icon <- function(x) {
-  class <- paste0("bi bi-", x)
-  htmltools::tag("i", list(class = class))
-}
-icon("filetype-pdf")
+library(bsicons)
 ```
 
-[`r icon("filetype-pdf")` Download my CV](https://beanumber.github.io/cv/baumer_cv.pdf){.btn .btn-primary type="button"} Please see my C.V. for complete details on my work. 
+
+[`r bs_icon("filetype-pdf")` Download my CV](https://beanumber.github.io/cv/baumer_cv.pdf){.btn .btn-primary type="button"} Please see my C.V. for complete details on my work. 
 
 
 ## Books
@@ -81,7 +76,7 @@ Buy the book from:
 Contemporary data science uses both statistical modeling and computer programming to extract meaning from data. It requires a tight integration of knowledge from statistics, computer science, mathematics, and a domain of application. This book, which is intended for readers with some background in statistics and modest prior experience with coding, helps them develop and practice the appropriate skills to tackle complex data science projects. Most of the examples are done in R, but SQL, Python, and other cutting-edge tools are discussed as well.
 
 
-`r fontawesome::fa("book-open")` Read the [2nd edition](https://mdsr-book.github.io/mdsr2e)
+`r bs_icon("book")` Read the [2nd edition](https://mdsr-book.github.io/mdsr2e)
 
 Buy the book from:
 
@@ -213,22 +208,22 @@ Search for me on:
 
 ::: {.g-col-3}
 
-`r fontawesome::fa("google")`: [Google Scholar](http://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ)
+`r bs_icon("google")`: [Google Scholar](http://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ)
 
 :::
 ::: {.g-col-3}
 
-`r fontawesome::fa("graduation-cap")`: [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html)
+`r bs_icon("mortarboard")`: [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html)
 
 :::
 ::: {.g-col-3}
 
-`r fontawesome::fa("scroll")`: [Publons](http://publons.com/a/1553312/)
+`r bs_icon("journals")`: [Publons](http://publons.com/a/1553312/)
 
 :::
 ::: {.g-col-3}
 
-`r fontawesome::fa("id-badge")`: [ORCID](https://orcid.org/0000-0002-3279-0516/)
+`r bs_icon("file-person")`: [ORCID](https://orcid.org/0000-0002-3279-0516/)
 
 :::
 :::

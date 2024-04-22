@@ -12,7 +12,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
 Imports: 
     dplyr,
-    fontawesome,
+    bsicons,
     knitr,
     rmarkdown,
     tidyr
