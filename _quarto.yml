@@ -2,14 +2,13 @@ project:
   type: website
   output-dir: "docs"
   pre-render: 
-    - cp ../cv/baumer_cv.pdf .
     - cp ../cv/references.bib .
 
 website:
   navbar: 
     reader-mode: true
     title: "Ben Baumer"
-    href: "https://beanumber.github.io/sds100"
+    href: "https://beanumber.github.io/www/"
     background: primary
     search: true
     left:
@@ -18,7 +17,7 @@ website:
       - href: baseball.qmd
     right: 
       - icon: file-person
-        href: baumer_cv.pdf
+        href: https://beanumber.github.io/cv/baumer_cv.pdf
       - icon: envelope 
         href: mailto:bbaumer@smith.edu
       - icon: github

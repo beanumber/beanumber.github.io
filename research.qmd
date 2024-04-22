@@ -29,7 +29,7 @@ Previously, I earned an M.A. in Applied Mathematics from the [University of Cali
 
 In 2019, I won the [Significant Contributor Award](https://community.amstat.org/sis/aboutus/honorees) from the Section on Statistics in Sports of the American Statistical Association. 
 
-`r fontawesome::fa("file")`: Please see my [C.V.](baumer_cv.pdf) for complete details on my work. 
+`r fontawesome::fa("file")`: Please see my [C.V.](https://beanumber.github.io/cv/baumer_cv.pdf) for complete details on my work. 
 
 ```{r}
 #| include: false
