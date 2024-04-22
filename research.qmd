@@ -29,12 +29,19 @@ Previously, I earned an M.A. in Applied Mathematics from the [University of Cali
 
 In 2019, I won the [Significant Contributor Award](https://community.amstat.org/sis/aboutus/honorees) from the Section on Statistics in Sports of the American Statistical Association. 
 
-`r fontawesome::fa("file")`: Please see my [C.V.](https://beanumber.github.io/cv/baumer_cv.pdf) for complete details on my work. 
-
 ```{r}
 #| include: false
 fontawesome::fa("file")
+
+icon <- function(x) {
+  class <- paste0("bi bi-", x)
+  htmltools::tag("i", list(class = class))
+}
+icon("filetype-pdf")
 ```
+
+[`r icon("filetype-pdf")` Download my CV](https://beanumber.github.io/cv/baumer_cv.pdf){.btn .btn-primary type="button"} Please see my C.V. for complete details on my work. 
+
 
 ## Books
 
