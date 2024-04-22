@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,7 +45,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -61,16 +68,15 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ben Baumer</span>
     </a>
@@ -82,48 +88,48 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./research.html" rel="" target="">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html" rel="" target="">
- <span class="menu-text">Teaching</span></a>
+    <a class="nav-link" href="./teaching.html"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./baseball.html" rel="" target="">
- <span class="menu-text">Baseball</span></a>
+    <a class="nav-link" href="./baseball.html"> 
+<span class="menu-text">Baseball</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="./baumer_cv.pdf" rel="" target=""><i class="bi bi-file-person" role="img">
+    <a class="nav-link" href="https://beanumber.github.io/cv/baumer_cv.pdf"> <i class="bi bi-file-person" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:bbaumer@smith.edu" rel="" target=""><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:bbaumer@smith.edu"> <i class="bi bi-envelope" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beanumber" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/beanumber"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="http://www.twitter.com/BaumerBen" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="http://www.twitter.com/BaumerBen"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/ben-baumer-809b3a75" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/ben-baumer-809b3a75"> <i class="bi bi-linkedin" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -139,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#long-conference-bio" id="toc-long-conference-bio" class="nav-link active" data-scroll-target="#long-conference-bio">Long conference bio</a></li>
   <li><a href="#short-conference-bio" id="toc-short-conference-bio" class="nav-link" data-scroll-target="#short-conference-bio">Short conference bio</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/beanumber/sds100/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/beanumber/sds100/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/beanumber/sds100/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beanumber/sds100/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -159,7 +165,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>I am a <a href="https://www.smith.edu/academics/faculty/ben-baumer">professor</a> in the Program in <a href="http://www.smith.edu/statistics">Statistical &amp; Data Sciences</a> Program at <a href="http://www.smith.edu">Smith College</a>. I completed my Ph.D.&nbsp;in Mathematics at the <a href="http://gc.cuny.edu">Graduate Center of the City University of New York</a> in 2012. Since 2014, I am an <a href="https://www.amstat.org/accreditation/memberlist.cfm">Accredited Professional Statistician</a>™ by the <a href="http://www.amstat.org/">American Statistical Association</a>.</p>
 <p>Previously, I was the Statistical Analyst for the Baseball Operations department of the <a href="http://www.mets.com">New York Mets</a>, a position I held from 2004 to 2012.</p>
@@ -169,18 +177,25 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="long-conference-bio">Long conference bio</h3>
 <div class="grid">
 <div class="g-col-4">
-<p><img src="gfx/2b1e031.jpg" class="img-fluid"></p>
+<p><img src="https://www.smith.edu/sites/default/files/styles/content_faculty_profile_full_large/public/media/Faculty/ben_baumer_crop.jpg.webp?itok=_RP8Ryp8" class="img-fluid"></p>
 </div>
 <div class="g-col-8">
-<p><a href="http://www.science.smith.edu/~bbaumer">Benjamin S. Baumer</a> is a <a href="https://www.smith.edu/academics/faculty/ben-baumer">professor</a> in the <a href="http://www.smith.edu/academics/statistics">Statistical &amp; Data Sciences</a> program at Smith College. He has been a practicing data scientist since 2004, when he became the first full-time statistical analyst for the <a href="http://www.nymets.com/">New York Mets</a>. Ben is a co-author of <a href="http://www.upenn.edu/pennpress/book/15168.html"><em>The Sabermetric Revolution</em></a>, <a href="http://mdsr-book.github.io/index.html"><em>Modern Data Science with R</em></a>, and the second edition of <a href="https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515"><em>Analyzing Baseball Data with R</em></a>. He received his Ph.D.&nbsp;in Mathematics from the <a href="http://gc.cuny.edu">City University of New York</a> in 2012, and is accredited as a professional statistician by the <a href="http://www.amstat.org/">American Statistical Association</a>. His research interests include sports analytics, data science, statistics and data science education, statistical computing, and network science.</p>
-<p>Ben won the <a href="https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx">Waller Education Award</a> from the ASA Section on Statistics and Data Science Education, and the <a href="https://community.amstat.org/sis/aboutus/honorees">Significant Contributor Award</a> from the ASA Section on Statistics in Sports in 2019. He shared the <a href="http://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards">2016 Contemporary Baseball Analysis Award</a> from the Society for American Baseball Research. Currently, Ben is the primary investigator on a three-year, nine-institution, $1.2 million <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924017&amp;HistoricalAwards=false">award from the National Science Foundation</a> for workforce development under the <a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505536">Data Science Corps program</a>.</p>
+<p><a href="http://www.science.smith.edu/~bbaumer">Benjamin S. Baumer</a> is a <a href="https://www.smith.edu/academics/faculty/ben-baumer">professor</a> in the <a href="http://www.smith.edu/academics/statistics">Statistical &amp; Data Sciences</a> program at Smith College. He has been a practicing data scientist since 2004, when he became the first full-time statistical analyst for the <a href="http://www.nymets.com/">New York Mets</a>. Ben is a co-author of <a href="http://www.upenn.edu/pennpress/book/15168.html"><em>The Sabermetric Revolution</em></a>, <a href="http://mdsr-book.github.io/index.html"><em>Modern Data Science with R</em></a>, and the second and third editions of <a href="https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515"><em>Analyzing Baseball Data with R</em></a>. He received his Ph.D.&nbsp;in Mathematics from the <a href="http://gc.cuny.edu">City University of New York</a> in 2012, and is accredited as a professional statistician by the <a href="http://www.amstat.org/">American Statistical Association</a>. His research interests include sports analytics, data science, statistics and data science education, statistical computing, and network science.</p>
+<p>Ben won the <a href="https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx">Waller Education Award</a> from the ASA Section on Statistics and Data Science Education, and the <a href="https://community.amstat.org/sis/aboutus/honorees">Significant Contributor Award</a> from the ASA Section on Statistics in Sports in 2019. He shared the <a href="http://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards">2016 Contemporary Baseball Analysis Award</a> from the Society for American Baseball Research. Recently, Ben was the primary investigator on a three-year, nine-institution, $1.2 million <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924017&amp;HistoricalAwards=false">award from the National Science Foundation</a> for workforce development under the <a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505536">Data Science Corps program</a>.</p>
 </div>
 </div>
 <hr>
 </section>
 <section id="short-conference-bio" class="level3">
 <h3 class="anchored" data-anchor-id="short-conference-bio">Short conference bio</h3>
-<p><a href="http://www.science.smith.edu/~bbaumer">Benjamin S. Baumer</a> is a <a href="https://www.smith.edu/academics/faculty/ben-baumer">professor</a> in the <a href="http://www.smith.edu/academics/statistics">Statistical &amp; Data Sciences</a> program at Smith College. Ben is a co-author of <a href="http://www.upenn.edu/pennpress/book/15168.html"><em>The Sabermetric Revolution</em></a>, <a href="http://mdsr-book.github.io/index.html"><em>Modern Data Science with R</em></a>, and the second edition of <a href="https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515"><em>Analyzing Baseball Data with R</em></a>. Ben has received the <a href="https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx">Waller Education Award</a> from the ASA Section on Statistics and Data Science Education, the <a href="https://community.amstat.org/sis/aboutus/honorees">Significant Contributor Award</a> from the ASA Section on Statistics in Sports, and the <a href="http://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards">Contemporary Baseball Analysis Award</a> from the Society for American Baseball Research. His research interests include sports analytics, data science, statistics and data science education, statistical computing, and network science.</p>
+<div class="grid">
+<div class="g-col-8">
+<p><a href="http://www.science.smith.edu/~bbaumer">Benjamin S. Baumer</a> is a <a href="https://www.smith.edu/academics/faculty/ben-baumer">professor</a> in the <a href="http://www.smith.edu/academics/statistics">Statistical &amp; Data Sciences</a> program at Smith College. Ben is a co-author of <a href="http://www.upenn.edu/pennpress/book/15168.html"><em>The Sabermetric Revolution</em></a>, <a href="http://mdsr-book.github.io/index.html"><em>Modern Data Science with R</em></a>, and the second and third editions of <a href="https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515"><em>Analyzing Baseball Data with R</em></a>. Ben has received the <a href="https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx">Waller Education Award</a> from the ASA Section on Statistics and Data Science Education, the <a href="https://community.amstat.org/sis/aboutus/honorees">Significant Contributor Award</a> from the ASA Section on Statistics in Sports, and the <a href="http://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards">Contemporary Baseball Analysis Award</a> from the Society for American Baseball Research. His research interests include sports analytics, data science, statistics and data science education, statistical computing, and network science.</p>
+</div>
+<div class="g-col-4">
+<p><img src="gfx/2b1e031.jpg" class="img-fluid"></p>
+</div>
+</div>
 <hr>
 
 
@@ -266,10 +281,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/beanumber\.github\.io\/www\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -279,8 +311,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -292,7 +333,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -336,6 +500,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -361,6 +526,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -423,15 +614,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Created by Benjamin Baumer.</div>   
+    <div class="nav-footer-left">
+<p>Created by Benjamin Baumer.</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beanumber/sds100/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beanumber/sds100/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 
