@@ -28,6 +28,7 @@ jobs:
         with:
           repository: beanumber/cv
           name: baumer_cv
+          github-token: ${{ secrets.GITHUB_TOKEN }} # token with actions:read permissions on target repo
 
       - name: Display structure of downloaded files
         run: ls -R
