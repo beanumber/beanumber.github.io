@@ -30,7 +30,7 @@ jobs:
           name: baumer_cv
 
       - name: Display structure of downloaded files
-          run: ls -R
+        run: ls -R
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
