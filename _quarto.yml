@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: "docs"
   pre-render: 
-    - cp ../cv/references.bib .
+    - cp ../cv/references.bib . | true
 
 website:
   navbar: 
