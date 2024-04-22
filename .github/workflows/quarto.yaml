@@ -27,6 +27,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           repository: beanumber/cv
+          run-id: 8785299269
 #          name: baumer_cv
           github-token: ${{ secrets.GITHUB_TOKEN }} # token with actions:read permissions on target repo
 
