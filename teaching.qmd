@@ -2,7 +2,13 @@
 title: "Teaching"
 ---
 
-I am **on sabbatical** for the 2023--2024 academic year, and am spending the year at [Universidad EAFIT](https://www.eafit.edu.co/) in Medellín, Colombia. 
+My tentative office hours for Fall 2024 are:
+
+- Tuesdays, 2--3 pm
+- Fridays, 10--11 am
+- by appointment
+
+I was on sabbatical for the 2023--2024 academic year, and I spent the year at [Universidad EAFIT](https://www.eafit.edu.co/) in Medellín, Colombia. 
 
 
 In 2019, I won the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the Section on Statistics and Data Science Education of the American Statistical Association and the [Outstanding Undergraduate Teaching Award](https://community.amstat.org/bostonchapter/awards/teachingaward) from the Boston Chapter of the ASA. 
@@ -15,6 +21,8 @@ library(dplyr)
 library(tidyr)
 teaching <- tibble::tribble(
   ~year, ~semester, ~course, ~course_short, ~url,
+  2025, "Spring", "Data Journalism", "SDS 236", NA,
+  2025, "Spring", "Statistical & Data Sciences Capstone", "SDS 410", NA,
   2024, "Fall", "Advanced Programming for Data Science", "SDS 270", NA,
   2024, "Fall", "Statistical & Data Sciences Capstone", "SDS 410", NA,
   2024, "Spring", "(on sabbatical)", "", NA,
