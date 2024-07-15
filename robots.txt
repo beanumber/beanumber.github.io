@@ -1,1 +1,1 @@
-Sitemap: https://beanumber.github.io/www/sitemap.xml
+Sitemap: https://beanumber.github.io/sitemap.xml
