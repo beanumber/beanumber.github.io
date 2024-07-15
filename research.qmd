@@ -45,21 +45,22 @@ library(bsicons)
 
 ::: {.g-col-4}
 
-[![Analyzing Baseball Data with R cover](https://images.tandf.co.uk/common/jackets/amazon/978081535/9780815353515.jpg)](https://baseballwithr.wordpress.com/)
+[![Analyzing Baseball Data with R cover](https://beanumber.github.io/abdwr3e/figures/9781032668093_cover.png)](https://beanumber.github.io/abdwr3e/)
 
 :::
 
 ::: {.g-col-8}
 
-### [*Analyzing Baseball Data with R*, 2nd edition](https://baseballwithr.wordpress.com/)
+### [*Analyzing Baseball Data with R*, 3nd edition](https://beanumber.github.io/abdwr3e/)
 
-*Analyzing Baseball Data with R, 2nd Edition* introduces R to sabermetricians, baseball enthusiasts, and students interested in exploring the richness of baseball data. It equips you with the necessary skills and software tools to perform all the analysis steps, from importing the data to transforming them into an appropriate format to visualizing the data via graphs to performing a statistical analysis.
+*Analyzing Baseball Data with R, 3rd Edition* introduces R to sabermetricians, baseball enthusiasts, and students interested in exploring the richness of baseball data. It equips you with the necessary skills and software tools to perform all the analysis steps, from importing the data to transforming them into an appropriate format to visualizing the data via graphs to performing a statistical analysis.
 
+`r bs_icon("book")` Read the [3rd edition](https://beanumber.github.io/abdwr3e/)
 
 Buy the book from:
 
-* [CRC Press](https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515)
-* [Amazon](https://www.amazon.com/Analyzing-Baseball-Data-Second-Chapman/dp/0815353510)
+* [CRC Press](https://www.routledge.com/Analyzing-Baseball-Data-with-R/Albert-Baumer-Marchi/p/book/9781032668093)
+* [Amazon](https://www.amazon.co.uk/Analyzing-Baseball-Data-Chapman-Hall/dp/1032668091)
 
 :::
 
@@ -75,8 +76,10 @@ Buy the book from:
 
 Contemporary data science uses both statistical modeling and computer programming to extract meaning from data. It requires a tight integration of knowledge from statistics, computer science, mathematics, and a domain of application. This book, which is intended for readers with some background in statistics and modest prior experience with coding, helps them develop and practice the appropriate skills to tackle complex data science projects. Most of the examples are done in R, but SQL, Python, and other cutting-edge tools are discussed as well.
 
+Read the:
 
-`r bs_icon("book")` Read the [2nd edition](https://mdsr-book.github.io/mdsr2e)
+- `r bs_icon("book")` [2nd edition](https://mdsr-book.github.io/mdsr2e)
+- `r bs_icon("book")` lightly revised [3rd edition](https://mdsr-book.github.io/mdsr3e)
 
 Buy the book from:
 
@@ -213,7 +216,7 @@ Search for me on:
 :::
 ::: {.g-col-3}
 
-`r bs_icon("mortarboard")`: [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baumer:Ben.html)
+`r bs_icon("mortarboard")`: [DBLP](https://dblp.org/pid/35/10486.html)
 
 :::
 ::: {.g-col-3}
