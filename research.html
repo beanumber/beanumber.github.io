@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,10 +55,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ae44de7e3b26b230a7801128389852ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -380,10 +380,10 @@ div.csl-indent {
 <div class="csl-left-margin">[8] </div><div class="csl-right-inline">B. S. Baumer, R. L. Garcia, A. Y. Kim, K. M. Kinnaird, and M. Q. Ott, <span>“<a href="https://doi.org/10.1080/26939169.2022.2038041">Integrating data science ethics into an undergraduate major: A case study</a>,”</span> <em>Journal of Statistics and Data Science Education</em>, vol. 30, no. 1, pp. 15–28, 2022. </div>
 </div>
 <div id="ref-albert2018analyzing" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[9] </div><div class="csl-right-inline">J. Albert, M. Marchi, and B. S. Baumer, <em>Analyzing baseball data with <span>R</span></em>, 2nd ed. Boca Raton, FL: CRC Press, 2018, p. 342 [Online]. Available: <a href="https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515">https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515</a></div>
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">J. Albert, M. Marchi, and B. S. Baumer, <em>Analyzing baseball data with <span>R</span></em>, 2nd ed. Boca Raton, FL: Chapman &amp; Hall/CRC Press, 2018, p. 342 [Online]. Available: <a href="https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515">https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515</a></div>
 </div>
 <div id="ref-albert2024analyzing" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[10] </div><div class="csl-right-inline">J. Albert, B. S. Baumer, and M. Marchi, <em>Analyzing baseball data with <span>R</span></em>, 3rd ed. Boca Raton, FL: CRC Press, 2024, p. 430 [Online]. Available: <a href="https://www.routledge.com/Analyzing-Baseball-Data-with-R/Albert-Baumer-Marchi/p/book/9781032668093">https://www.routledge.com/Analyzing-Baseball-Data-with-R/Albert-Baumer-Marchi/p/book/9781032668093</a></div>
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">J. Albert, B. S. Baumer, and M. Marchi, <em>Analyzing baseball data with <span>R</span></em>, 3rd ed. Boca Raton, FL: Chapman &amp; Hall/CRC Press, 2024, p. 418 [Online]. Available: <a href="https://www.routledge.com/Analyzing-Baseball-Data-with-R/Albert-Baumer-Marchi/p/book/9781032668093">https://www.routledge.com/Analyzing-Baseball-Data-with-R/Albert-Baumer-Marchi/p/book/9781032668093</a></div>
 </div>
 <div id="ref-gem2017" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[11] </div><div class="csl-right-inline">D. J. Kelley, B. S. Baumer, C. G. Brush, M. Cole, M. Dean, M. Madavi, M. Majbouri, P. Greene, and R. Heavlow, <span>“Global entrepreneurship monitor 2016/2017 women’s entrepreneurship report,”</span> Global Entrepreneurship Monitor; Global Entrepreneurship Research Association, Jul. 2017. </div>
@@ -624,8 +624,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -736,7 +734,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
