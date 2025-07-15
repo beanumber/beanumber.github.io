@@ -22,6 +22,8 @@ library(dplyr)
 library(tidyr)
 teaching <- tibble::tribble(
   ~year, ~semester, ~course, ~course_short, ~url,
+  2025, "Fall", "Multiple Regression", "SDS 291", NA,
+  2025, "Fall", "Sports Analytics", "SDS 355", NA,
   2025, "Spring", "Data Journalism", "SDS 236", NA,
   2025, "Spring", "Statistical & Data Sciences Capstone", "SDS 410", NA,
   2024, "Fall", "Advanced Programming for Data Science", "SDS 270", NA,
