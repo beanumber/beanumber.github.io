@@ -6,7 +6,7 @@ I am a [professor](https://www.smith.edu/academics/faculty/ben-baumer) in the Pr
 
 Previously, I was the Statistical Analyst for the Baseball Operations department of the [New York Mets](http://www.mets.com), a position I held from 2004 to 2012. 
 
-You can reach me at [bbaumer@smith.edu](bbaumer@smith.edu).
+You can reach me at <bbaumer@smith.edu>
 
 ---
 
@@ -23,12 +23,12 @@ You can reach me at [bbaumer@smith.edu](bbaumer@smith.edu).
 [Benjamin S. Baumer](http://www.science.smith.edu/~bbaumer) is a [professor](https://www.smith.edu/academics/faculty/ben-baumer) in the [Statistical & Data Sciences](http://www.smith.edu/academics/statistics) program at Smith College. 
 He has been a practicing data scientist since 2004, when he became the first full-time statistical analyst for the [New York Mets](http://www.nymets.com/). 
 Ben is a co-author of [*The Sabermetric Revolution*](http://www.upenn.edu/pennpress/book/15168.html), [*Modern Data Science with R*](http://mdsr-book.github.io/index.html), and the second and third editions of [*Analyzing Baseball Data with R*](https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515). 
-He received his Ph.D. in Mathematics from the [City University of New York](http://gc.cuny.edu) in 2012, and is accredited as a professional statistician by the [American Statistical Association](http://www.amstat.org/). 
+He received his Ph.D. in Mathematics from the [City University of New York](http://gc.cuny.edu) in 2012, and is a [Fellow](https://www.amstat.org/news-listing/2025/04/21/asa-recognizes-2025-founders-and-fellows) of the [American Statistical Association](http://www.amstat.org/). 
 His research interests include sports analytics, data science, statistics and data science education, statistical computing, and network science. 
 
 Ben won the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the ASA Section on Statistics and Data Science Education, and the [Significant Contributor Award](https://community.amstat.org/sis/aboutus/honorees) from the ASA Section on Statistics in Sports in 2019. 
 He shared the [2016 Contemporary Baseball Analysis Award](http://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards) from the Society for American Baseball Research. 
-Recently, Ben was the primary investigator on a three-year, nine-institution, $1.2 million [award from the National Science Foundation](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924017&HistoricalAwards=false) for workforce development under the [Data Science Corps program](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505536). 
+Ben was the primary investigator on a three-year, nine-institution, $1.2 million [award from the National Science Foundation](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1924017&HistoricalAwards=false) for workforce development under the [Data Science Corps program](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505536). 
 
 :::
 
@@ -45,7 +45,7 @@ Recently, Ben was the primary investigator on a three-year, nine-institution, $1
 
 [Benjamin S. Baumer](http://www.science.smith.edu/~bbaumer) is a [professor](https://www.smith.edu/academics/faculty/ben-baumer) in the [Statistical & Data Sciences](http://www.smith.edu/academics/statistics) program at Smith College. 
 Ben is a co-author of [*The Sabermetric Revolution*](http://www.upenn.edu/pennpress/book/15168.html), [*Modern Data Science with R*](http://mdsr-book.github.io/index.html), and the second and third editions of [*Analyzing Baseball Data with R*](https://www.crcpress.com/Analyzing-Baseball-Data-with-R-Second-Edition/Marchi-Albert-Baumer/p/book/9780815353515). 
-Ben has received the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the ASA Section on Statistics and Data Science Education, the [Significant Contributor Award](https://community.amstat.org/sis/aboutus/honorees) from the ASA Section on Statistics in Sports, and the [Contemporary Baseball Analysis Award](http://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards) from the Society for American Baseball Research. 
+Ben has received the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the ASA Section on Statistics and Data Science Education, the [Significant Contributor Award](https://community.amstat.org/sis/aboutus/honorees) from the ASA Section on Statistics in Sports, the [Contemporary Baseball Analysis Award](http://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards) from the Society for American Baseball Research, and is a [Fellow](https://www.amstat.org/news-listing/2025/04/21/asa-recognizes-2025-founders-and-fellows) of the [American Statistical Association](http://www.amstat.org/). 
 His research interests include sports analytics, data science, statistics and data science education, statistical computing, and network science. 
 
 :::
