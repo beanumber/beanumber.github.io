@@ -1,0 +1,23 @@
+---
+title: "My thoughts on generative artificial intelligence in education"
+author: "Benjamin S. Baumer"
+date: last-modified
+---
+
+- [This op-ed](https://www.nytimes.com/2025/08/26/opinion/culture/ai-chatgpt-college-cheating-medieval.html) pretty much captures my thinking about this issue
+- I'm also pretty much on board with [this position on phones and laptops in the classroom](https://www.nytimes.com/2025/08/21/opinion/mobile-phones-college-classrooms.html)
+
+As of this writing, I remain steadfast in my belief that the skills developed in our courses---specifically including the ability to read, write, and understand code in the service of achieving the learning goals for the course---are valuable to the students who choose to take my courses.
+
+Nevertheless, I acknowledge that generative artificial intelligence tools, such as ChatGPT, are putting pressure on that belief [@ellis2023new; @deluca2025developing].
+There is a reasonable skepticism towards the value of programming ability growing among our student populations and society at large: If generative AI tools can write code (as well or better than me), why should I bother to learn to program?
+
+I offer the following rebuttals, not all of which I fully believe, but all of which I think contain some kernel of truth:
+
+-   No matter how much of the work the computers are doing, there will always be a need for people to program the computers. Wouldn't you rather be one of those people? After all, if you're not programming the computer, the computer may be programming you.
+-   The death of the need for programmers has been greatly exaggerated for almost as long as there have been programmers. In fact, the number of programmers has only grown *despite* the continual evolution in programming interfaces, all of which have been designed to make programming more accessible [@pittir21695].
+-   Generative AI is simply the latest in a long line of technological breakthroughs that have impacted education that includes the calculator, the Internet, and Google search. Just as these other tools have, generative AI will change the *way* we do our work, but not fundamentally *eliminate* the work.
+-   This argument is reductive in the manner of the timeless annoyance: "is this going to be on the test?" *Learning is its own reward* and one's goal in life should not be to minimize the number of things learned. It is a fool's errand to try and predict which skills will prove most useful in the future. Rather, one should rejoice in the slow accumulation of skills and knowledge that over a lifetime, present as wisdom.
+-   If you are willing to outsource all programming to AI, then why would anyone hire you? Would it be for your management skills or interpersonal skills, which are still developing and (as a group) at the lowest levels seen in generations (in no small part due to your overreliance on technology)?
+
+## References

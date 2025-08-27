@@ -39,5 +39,6 @@ format:
     theme: cosmo
     toc: true
 
+bibliography: [references.bib, refs.bib]
 
 
