@@ -30,13 +30,7 @@ Previously, I earned an M.A. in Applied Mathematics from the [University of Cali
 In 2019, I won the [Significant Contributor Award](https://community.amstat.org/sis/aboutus/honorees) from the Section on Statistics in Sports of the American Statistical Association. 
 In 2025, I was elected a a [Fellow](https://www.amstat.org/news-listing/2025/04/21/asa-recognizes-2025-founders-and-fellows) of the [American Statistical Association](http://www.amstat.org/).
 
-```{r}
-#| include: false
-library(bsicons)
-```
-
-
-[`r bs_icon("filetype-pdf")` Download my CV](https://beanumber.github.io/cv/baumer_cv.pdf){.btn .btn-primary type="button"} Please see my C.V. for complete details on my work. 
+[{{< ai cv >}}: Download my CV](https://beanumber.github.io/cv/baumer_cv.pdf){.btn .btn-primary type="button"} Please see my C.V. for complete details on my work. 
 
 
 ## Books
@@ -56,7 +50,7 @@ library(bsicons)
 
 *Analyzing Baseball Data with R, 3rd Edition* introduces R to sabermetricians, baseball enthusiasts, and students interested in exploring the richness of baseball data. It equips you with the necessary skills and software tools to perform all the analysis steps, from importing the data to transforming them into an appropriate format to visualizing the data via graphs to performing a statistical analysis.
 
-`r bs_icon("book")` Read the [3rd edition](https://beanumber.github.io/abdwr3e/)
+{{< ai open-access >}}: Read the [3rd edition](https://beanumber.github.io/abdwr3e/)
 
 Buy the book from:
 
@@ -79,8 +73,8 @@ Contemporary data science uses both statistical modeling and computer programmin
 
 Read the:
 
-- `r bs_icon("book")` [2nd edition](https://mdsr-book.github.io/mdsr2e)
-- `r bs_icon("book")` lightly revised [3rd edition](https://mdsr-book.github.io/mdsr3e)
+- {{< ai open-access >}}: [2nd edition](https://mdsr-book.github.io/mdsr2e)
+- {{< ai open-access >}}: lightly revised [3rd edition](https://mdsr-book.github.io/mdsr3e)
 
 Buy the book from:
 
@@ -212,22 +206,22 @@ Search for me on:
 
 ::: {.g-col-3}
 
-`r bs_icon("google")`: [Google Scholar](http://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ)
+{{< ai google-scholar >}}: [Google Scholar](http://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ)
 
 :::
 ::: {.g-col-3}
 
-`r bs_icon("mortarboard")`: [DBLP](https://dblp.org/pid/35/10486.html)
+{{< ai dblp >}}: [DBLP](https://dblp.org/pid/35/10486.html)
 
 :::
 ::: {.g-col-3}
 
-`r bs_icon("journals")`: [Publons](http://publons.com/a/1553312/)
+{{< ai publons >}}: [Publons](http://publons.com/a/1553312/)
 
 :::
 ::: {.g-col-3}
 
-`r bs_icon("file-person")`: [ORCID](https://orcid.org/0000-0002-3279-0516/)
+{{< ai orcid >}}: [ORCID](https://orcid.org/0000-0002-3279-0516/)
 
 :::
 :::

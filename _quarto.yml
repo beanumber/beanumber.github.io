@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: "docs"
   pre-render: 
     - pre-render.R
 #    - [[ -e ../cv/references.bib ]] && cp ../cv/references.bib .

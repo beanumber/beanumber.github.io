@@ -6,3 +6,6 @@ docs
 README.html
 README_files
 .Rbuildignore
+
+_site/
+_extensions/
