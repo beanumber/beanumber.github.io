@@ -27,8 +27,6 @@ jobs:
             any::remotes
             any::rmarkdown
             any::tidyr
-      
-      - uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install Quarto Extensions
         run: quarto install extension schochastics/academicons --no-prompt
