@@ -2,15 +2,13 @@
 title: "Teaching"
 ---
 
-My office hours for spring 2025 are:
+My office hours for spring 2026 are:
 
-- Tuesdays, 2:45--3:30 pm
-- Wednesdays, 2:45--3:30 pm
-- Fridays, 9:45--11:15 am
+- Mondays, 2:00--3:30 pm
+- Thursdays, 10:00--11:30 am
 - by appointment
 
 I was on sabbatical for the 2023--2024 academic year, and I spent the year at [Universidad EAFIT](https://www.eafit.edu.co/) in Medellín, Colombia. 
-
 
 In 2019, I won the [Waller Education Award](https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx) from the Section on Statistics and Data Science Education of the American Statistical Association and the [Outstanding Undergraduate Teaching Award](https://community.amstat.org/bostonchapter/awards/teachingaward) from the Boston Chapter of the ASA. 
 I was a Mary P. Dolciani [Project NExT](http://archives.math.utk.edu/projnext/) Fellow for 2012--2013.
@@ -22,6 +20,8 @@ library(dplyr)
 library(tidyr)
 teaching <- tibble::tribble(
   ~year, ~semester, ~course, ~course_short, ~url,
+  2026, "Spring", "Introduction to Statistics", "SDS 210", NA,
+  2026, "Spring", "Data Journalism", "SDS 236", NA,
   2025, "Fall", "Multiple Regression", "SDS 291", NA,
   2025, "Fall", "Sports Analytics", "SDS 355", NA,
   2025, "Spring", "Data Journalism", "SDS 236", NA,
