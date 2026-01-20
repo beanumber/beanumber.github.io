@@ -31,7 +31,7 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install Quarto Extensions
-        run: quarto install extension quarto-ext/icons --no-prompt
+        run: quarto install extension schochastics/academicons --no-prompt
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
