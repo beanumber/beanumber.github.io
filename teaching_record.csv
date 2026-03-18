@@ -1,0 +1,57 @@
+year,semester,course,course_short,enrollment,institution,url
+2026,Spring,Introduction to Statistics,SDS 210,41,Smith College,
+2026,Spring,Data Journalism,SDS 236,13,Smith College,
+2025,Fall,Multiple Regression,SDS 291,29,Smith College,
+2025,Fall,Sports Analytics,SDS 355,8,Smith College,
+2025,Spring,Data Journalism,SDS 236,14,Smith College,
+2025,Spring,Statistical & Data Sciences Capstone,SDS 410,23,Smith College,
+2024,Fall,Advanced Programming for Data Science in R,SDS 270,35,Smith College,
+2024,Fall,Statistical & Data Sciences Capstone,SDS 410,28,Smith College,
+2024,Spring,(on sabbatical),,,Smith College,
+2023,Fall,(on sabbatical),,,Smith College,
+2023,Spring,Data Journalism,SDS 236,17,Smith College,
+2022,Fall,Reproducible Scientific Computing with Data,SDS 100,30,Smith College,https://smithcollege-sds.github.io/sds100
+2022,Fall,Introduction to Probability and Statistics,SDS 220,38,Smith College,
+2022,Spring,Advanced Programming for Data Science,SDS 270,36,Smith College,
+2022,Spring,Statistical & Data Sciences Capstone,SDS 410,23,Smith College,
+2021,Fall,Statistical & Data Sciences Capstone,SDS 410,19,Smith College,
+2021,Spring,Statistical & Data Sciences Capstone,SDS 410,27,Smith College,
+2021,Spring,Introduction to Data Science,SDS 192,90,Smith College,
+2020,Fall,Introduction to Data Science,SDS 192,54,Smith College,
+2020,Spring,Data Journalism,SDS 236,20,Smith College,
+2020,Spring,Introduction to Data Science,SDS 192,60,Smith College,
+2019,Fall,Topics in SDS: Programming for Data Science,SDS 390,24,Smith College,
+2019,Fall,Statistical & Data Sciences Capstone,SDS 410,15,Smith College,
+2019,Spring,Introduction to Data Science,SDS 192,73,Smith College,
+2019,Spring,Statistical & Data Sciences Capstone,SDS 410,21,Smith College,
+2018,Fall,(on sabbatical),,,Smith College,
+2018,Spring,Introduction to Data Science,SDS 192,75,Smith College,http://catalog.smith.edu//detail.php?term=201703&crn=41556
+2018,Spring,Statistical & Data Sciences Capstone,SDS 410,11,Smith College,
+2017,Fall,Introduction to Data Science,SDS 192,76,Smith College,http://catalog.smith.edu//detail.php?term=201801&crn=10672
+2017,Spring,Introduction to Data Science,SDS 192,83,Smith College,http://catalog.smith.edu//detail.php?term=201703&crn=41556
+2016,Fall,Introduction to Probability and Statistics,MTH/SDS 220,42,Smith College,http://catalog.smith.edu//detail.php?term=201701&crn=20902
+2016,Fall,Introduction to Probability and Statistics Labs,MTH/SDS 220L,42,Smith College,
+2016,Spring,Introduction to Data Science,SDS 192,25,Smith College,http://catalog.smith.edu//detail.php?term=201603&crn=41556
+2015,Fall,Introduction to Probability and Statistics,MTH/SDS 220,40,Smith College,http://catalog.smith.edu//detail.php?term=201601&crn=20902
+2015,Fall,Introduction to Probability and Statistics Labs,MTH/SDS 220L,40,Smith College,
+2015,Spring,Introduction to Probability and Statistics,MTH 220,36,Smith College,http://catalog.smith.edu//detail.php?term=201503&crn=40598
+2015,Spring,Multiple Regression,MTH 291,29,Smith College,http://catalog.smith.edu//detail.php?term=201503&crn=40560
+2014,Fall,Introduction to Probability and Statistics,MTH 220,39,Smith College,http://catalog.smith.edu//detail.php?term=201501&crn=20218
+2014,Fall,Data Science,MTH 292,23,Smith College,http://catalog.smith.edu//detail.php?term=201501&crn=20053
+2014,Spring,Introduction to Probability and Statistics,MTH 220,42,Smith College,http://catalog.smith.edu//detail.php?term=201403&crn=40598
+2014,Spring,Introduction to Probability and Statistics Labs,MTH/SDS 220L,60,Smith College,
+2013,Fall,Introduction to Discrete Mathematics,MTH 153,25,Smith College,http://catalog.smith.edu//detail.php?term=201401&crn=10838
+2013,Fall,Data Science,MTH 292,18,Smith College,http://catalog.smith.edu//detail.php?term=201401&crn=20053
+2013,Spring,Introduction to Discrete Mathematics,MTH 153,18,Smith College,http://catalog.smith.edu/detail.php?term=201303&crn=30589
+2013,Spring,Probability & Statistics,MTH 241,23,Smith College,http://catalog.smith.edu/detail.php?term=201303&crn=40049
+2013,Spring,Probability & Statistics,MTH 241,25,Smith College,http://catalog.smith.edu/detail.php?term=201303&crn=40049
+2012,Fall,Statistics: Introduction to Regression Analysis,MTH 247,33,Smith College,http://catalog.smith.edu/detail.php?term=201301&crn=19319
+2012,Fall,Introduction to Probability and Statistics Labs,MTH 245L,42,Smith College,
+2012,Spring,(dissertation),,,,
+2011,Fall,(dissertation),,,,
+2011,Spring,(dissertation),,,,
+2010,Fall,Combinatorics,MATH636,,Queens College,http://people.qc.cuny.edu/faculty/christopher.hanusa/courses/636fa10/Pages/default.aspx
+2010,Spring,(dissertation),,,,
+2009,Fall,Elementary Probability and Statistics,STAT113,,Hunter College,http://math.hunter.cuny.edu/courses.shtml
+2009,Spring,Elementary Probability and Statistics,STAT113,,Hunter College,http://math.hunter.cuny.edu/courses.shtml
+2008,Fall,Elementary Probability and Statistics,STAT113,,Hunter College,http://math.hunter.cuny.edu/courses.shtml

@@ -1050,63 +1050,20 @@ tribble(
 
 ```{r}
 #| output: asis
-tribble(
-  ~course, ~title, ~enrollment, ~date,
-   "SDS 236", "Data Journalism", "17", "Spring 2026",
-   "SDS 210", "Introductory Statistics", "40", "Spring 2026",
-   "SDS 355", "Sports Analytics", "8", "Fall 2025",
-   "SDS 291", "Multiple Regression", "29", "Fall 2025",
-   "SDS 236", "Data Journalism", "14", "Spring 2025",
-   "SDS 410", "Statistical & Data Sciences Capstone", "23", "Spring 2025",
-   "SDS 270", "Advanced Programming for Data Science", "35", "Fall 2024",
-   "SDS 410", "Statistical & Data Sciences Capstone", "28", "Fall 2024",
-   "SDS 236", "Data Journalism", "17", "Spring 2023",
-   "SDS 100", "Reproducible Scientific Computing with Data", "30", "Fall 2022",
-   "SDS 220", "Introduction to Probability and Statistics", "38", "Fall 2022",
-   "SDS 270", "Advanced Programming for Data Science", "36", "Spring 2022",
-   "SDS 410", "Statistical & Data Sciences Capstone", "23", "Spring 2022",
-   "SDS 410", "Statistical & Data Sciences Capstone", "19", "Fall 2021",
-   "SDS 410", "Statistical & Data Sciences Capstone", "27", "Spring 2021",
-   "SDS 192", "Introduction to Data Science", "90", "Interterm 2021",
-   "SDS 192", "Introduction to Data Science", "54", "Fall 2020",
-   "SDS 192", "Introduction to Data Science", "60", "Spring 2020",
-   "SDS 236", "Data Journalism", "20", "Spring 2020",
-   "SDS 390", "Advanced Programming for Data Science", "24", "Fall 2019",
-   "SDS 410", "Statistical & Data Sciences Capstone", "15", "Fall 2019",
-   "SDS 192", "Introduction to Data Science", "73", "Spring 2019",
-   "SDS 410", "Statistical & Data Sciences Capstone", "21", "Spring 2019",
-   "SDS 192", "Introduction to Data Science", "75", "Spring 2018",
-   "SDS 410", "Statistical & Data Sciences Capstone", "11", "Spring 2018",
-   "SDS 192", "Introduction to Data Science", "76", "Fall 2017",
-   "SDS 192", "Introduction to Data Science", "83", "Spring 2017",
-   "MTH/SDS 220", "Introduction to Probability and Statistics", "42", "Fall 2016",
-   "MTH/SDS 220L", "Introduction to Probability and Statistics Labs", "42", "Fall 2016",
-   "SDS 192", "Introduction to Data Science", "25", "Spring 2016",
-   "MTH/SDS 220", "Introduction to Probability and Statistics", "40", "Fall 2015",
-   "MTH/SDS 220L", "Introduction to Probability and Statistics Labs", "40", "Fall 2015",
-   "MTH 291", "Multiple Regression", "29", "Spring 2015",
-   "MTH 220", "Introduction to Probability and Statistics", "36", "Spring 2015",
-   "MTH 220", "Introduction to Probability and Statistics", "39", "Fall 2014",
-   "MTH 292", "Data Science", "23", "Fall 2014",
-   "MTH 220", "Introduction to Probability and Statistics", "42", "Spring 2014",
-   "MTH 220L", "Introduction to Probability and Statistics Labs", "60", "Spring 2014",
-   "MTH 292", "Data Science", "18", "Fall 2013",
-   "MTH 153", "Introduction to Discrete Mathematics", "25", "Fall 2013",
-   "MTH 241", "Introduction to Probability and Statistics", "23", "Spring 2013",
-   "MTH 241", "Introduction to Probability and Statistics", "25", "Spring 2013",
-   "MTH 153", "Introduction to Discrete Mathematics", "18", "Spring 2013",
-   "MTH 247", "Multiple Regression", "33", "Fall 2012",
-   "MTH 245L", "Introduction to Probability and Statistics Labs", "42", "Fall 2012",
-) |>
-  group_by(title) |>
-  summarize(
-    description = paste(n(), "times: ", paste(course, date, collapse = ", ")),
-    date = paste0(min(date), "-", max(date))
-  ) |>
-  arrange(desc(description)) |>
+read_csv("teaching_record.csv") |>
+  filter(!is.na(course_short)) |>
   mutate(
-    location = "Smith College"
+    course = ifelse(course_short %in% c("SDS 390", "SDS 270"), "Advanced Programming for Data Science in R", course),
+    course = ifelse(str_detect(course_short, "220|241|245|210"), "Introduction to Statistics", course),
+    course = ifelse(str_detect(course_short, "247|291"), "Multiple Regression", course)
   ) |>
+  group_by(title = course, location = institution) |>
+  summarize(
+    num_times = n(),
+    description = paste(n(), "times: ", paste(semester, year, collapse = ", ")),
+    date = paste0(min(year), "-", max(year))
+  ) |>
+  arrange(desc(num_times)) |>
   resume_entry()
 ```
 
