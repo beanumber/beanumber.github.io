@@ -8,7 +8,7 @@ README_files
 .Rbuildignore
 
 _site/
-_extensions/
+_extensions/schochastics/
 site_libs/
 
 **/*.quarto_ipynb

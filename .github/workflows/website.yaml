@@ -22,11 +22,23 @@ jobs:
         with:
           upgrade: 'TRUE'
           packages:
-            any::dplyr
+            any::emoji
             any::knitr
             any::remotes
             any::rmarkdown
-            any::tidyr
+            any::tidyverse
+
+      - name: Install GitHub packages
+        run: |
+          Rscript -e 'install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")'
+
+      - name: Install EB Garamond fonts
+        run: |
+          ls -al fonts/*
+          sudo cp fonts/*.ttf /usr/local/share/fonts/
+          ls -lR /usr/local/share/fonts/
+          sudo fc-cache -f -v
+          quarto typst fonts
 
       - name: Install Quarto Extensions
         run: quarto install extension schochastics/academicons --no-prompt
