@@ -18,12 +18,14 @@ website:
         href: baumer_cv.qmd
       - icon: envelope 
         href: mailto:bbaumer@smith.edu
+      - icon: google
+        href: https://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ
       - icon: github
         href: https://github.com/beanumber
-      - icon: twitter
-        href: http://www.twitter.com/BaumerBen
       - icon: bi-linkedin
         href: https://www.linkedin.com/in/ben-baumer-809b3a75
+      - icon: wikipedia
+        href: https://en.wikipedia.org/wiki/Ben_Baumer
 
   repo-url: https://github.com/beanumber/sds100
   repo-actions: [edit, issue]
