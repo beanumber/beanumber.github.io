@@ -36,7 +36,7 @@ format:
     number-sections: true
     font-paths: ["fonts"] # This tells Typst to check your local folder
 keep-typ: true
-bibliography: ["references.bib", "talks.bib", "pkgs.bib"]
+bibliography: ["references.bib", "talks.bib", "pkgs_cran.bib", "pkgs_gh.bib"]
 # use citeproc
 citeproc: true
 csl: csl/apa-cv.csl
@@ -48,8 +48,58 @@ execute:
 ---
 
 ```{r}
-# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
+#| eval: false
+#| include: false
 library(tidyverse)
+unlink("pkgs_cran.bib")
+
+pkgs_cran <- c(
+  "teamcolors", 
+  "infer", 
+  "etl",  
+  "fec16", 
+  "mdsr", 
+  "macleish", 
+  "tidychangepoint"
+)
+
+pkgs_cran |>
+  knitr::write_bib(file = "pkgs_cran.bib")
+
+pkgs <- bib2df::bib2df("pkgs_cran.bib")
+
+pkgs |>
+  mutate(
+    DOI = ifelse(
+      is.na(DOI) & str_detect(NOTE, "R package version"), 
+      paste0("10.32614/CRAN.package.", str_remove_all(BIBTEXKEY, "R-")), 
+      DOI
+    )
+  ) |> 
+  bib2df::df2bib("pkgs_cran.bib")
+```
+
+```{r}
+#| eval: false
+#| include: false
+library(tidyverse)
+unlink("pkgs_cran.bib")
+
+pkgs_gh <- c(
+  "openWAR",  
+  "airlines", 
+  "fec", 
+  "imdb", 
+  "fertile"
+)
+
+pkgs_gh |>
+  knitr::write_bib(file = "pkgs_gh.bib")
+```
+
+```{r}
+library(tidyverse)
+# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
 library(typstcv)
 
 # https://www.smith.edu/academics/provostdean-faculty/employment/reappointment-tenure-promotion
@@ -111,7 +161,7 @@ educ <- tribble(
   "https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx", "Waller Education Award", "ASA Section on Statistics and Data Science Education", 2019, "Won. Honors individuals for innovation in the instruction of elementary statistics.",
   "https://community.amstat.org/sis/aboutus/honorees", "Significant Contributor Award", "ASA Section on Statistics and Sports", 2019, "Won. Honors a significant contributor to statistics in sports who is invited to speak at the section's annual luncheon at the JSM.", 
   "https://community.amstat.org/bostonchapter/awards/teachingaward", "Outstanding Undergraduate Teaching Award", "ASA Boston Chapter", 2019, "Won. Recognizes exceptional efforts in teaching statistics at the undergraduate level.", 
-  "https://www.amstat.org/ASA/Your-Career/Awards/Statistical-Partnerships-Among-Academe-Industry-and-Government-Award.aspx", "SPAIG Award", "American Statistical Association", 2019, "Won, on behalf of the Five Colleges and MassMutual. Recognizes outstanding **s**tatistical **p**artnerships between **a**cademe, **i**ndustry, and **g**overnment organizations, as well as to promote new partnerships among these organizations.",
+  "https://www.amstat.org/ASA/Your-Career/Awards/Statistical-Partnerships-Among-Academe-Industry-and-Government-Award.aspx", "SPAIG Award", "American Statistical Association", 2019, "Won, on behalf of the Five Colleges and MassMutual. Recognizes outstanding statistical partnerships between academe, industry, and government organizations, as well as to promote new partnerships among these organizations.",
   "https://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards", "Contemporary Baseball Analysis Award", "Society for American Baseball Research", 2016, "Won, for _OpenWAR: An open source system for evaluating overall player performance in Major League Baseball_. Awarded annually to outstanding research projects that have 'significantly expanded our knowledge or understanding of baseball'.",
   "http://www.editorandpublisher.com/Features/Article/Editor---Publisher-Announces-the-2015-EPPY-Award-Finalists", "EPPY Award", "Editor & Publisher", 2015, "Nominated, for _The Great Analytics Rankings_ article for ESPN.com. Best Innovation Project with 1 million unique monthly visitors and over."
 ) |>
