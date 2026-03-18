@@ -12,3 +12,10 @@ _extensions/schochastics/
 site_libs/
 
 **/*.quarto_ipynb
+
+_latex/
+_typst/
+gfx_old/
+_cv_archive/
+baumer_cv.typ
+_data-raw/
