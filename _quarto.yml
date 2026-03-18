@@ -1,8 +1,5 @@
 project:
   type: website
-  pre-render: 
-    - pre-render.R
-#    - [[ -e ../cv/references.bib ]] && cp ../cv/references.bib .
 
 website:
   navbar: 
@@ -17,7 +14,8 @@ website:
       - href: baseball.qmd
     right: 
       - icon: filetype-pdf
-        href: https://beanumber.github.io/cv/baumer_cv.pdf
+        text: CV
+        href: baumer_cv.qmd
       - icon: envelope 
         href: mailto:bbaumer@smith.edu
       - icon: github

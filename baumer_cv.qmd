@@ -1,0 +1,1210 @@
+---
+title: "Benjamin Baumer CV"
+author:
+  firstname: Benjamin S.
+  lastname: Baumer
+  address: "48 Lexington Ave, Florence, MA, USA"
+  position: Professor of Statistical and Data Sciences
+  contacts:
+    - icon: fa envelope
+      text: bbaumer@smith.edu
+      url: "mailto:bbaumer@smith.edu"
+    - icon: fa house-chimney
+      text: Homepage
+      url: https://beanumber.github.io/
+    - icon: fa brands orcid
+      text: 0000-0002-3279-0516
+      url: https://orcid.org/0000-0002-3279-0516/
+    - icon: fa brands github
+      text: GitHub
+      url: https://github.com/beanumber/
+    - icon: fa brands linkedin
+      text: LinkedIn
+      url: https://linkedin.com/in/ben-baumer-809b3a75/
+#    - icon: fa brands x-twitter
+#      text: twitter
+#      url: https://twitter.com/example
+    - icon: fa brands google-scholar
+      text: Google Scholar
+      url: https://scholar.google.com/citations?hl=en&user=HWo0CDEAAAAJ
+style:
+   color-accent: "002855"
+   font-header: "Roboto"
+   font-text: "EB Garamond"
+format: 
+  awesomecv-typst:
+    number-sections: true
+    font-paths: ["fonts"] # This tells Typst to check your local folder
+keep-typ: true
+bibliography: ["references.bib", "talks.bib", "pkgs.bib"]
+# use citeproc
+citeproc: true
+csl: csl/apa-cv.csl
+suppress-bibliography: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
+library(tidyverse)
+library(typstcv)
+
+# https://www.smith.edu/academics/provostdean-faculty/employment/reappointment-tenure-promotion
+
+compact_entry <- function(data, title = "title", location = "location", date = "date", 
+                          description = "description", details = NULL) {
+  strings <- apply(data, 1, function(row) {
+    s <- "#compact-entry("
+    if (!is.na(row[title])) {
+      s <- sprintf("%stitle: \"%s\",", s, row[title])
+    }
+    if (!is.na(row[location])) {
+      s <- sprintf("%slocation: \"%s\",", s, row[location])
+    }
+    if (!is.na(row[date])) {
+      s <- sprintf("%sdate: \"%s\",", s, row[date])
+    }
+    if (!is.na(row[description])) {
+      s <- sprintf("%sdescription: \"%s\",", s, row[description])
+    }
+    s <- paste0(s, ")")
+    if (!is.null(details)) {
+      s <- paste0(s, "\n#resume-item[\n", paste0("- ", 
+                                                 row[details][!is.na(row[details])], collapse = "\n"), 
+                  "\n]")
+    }
+    return(s)
+  })
+  cat(paste0("```{=typst}\n", paste(strings, collapse = "\n"), 
+             "\n```"))
+}
+```
+
+# Degrees
+
+```{r}
+#| output: asis
+educ <- tribble(
+  ~title, ~date, ~location, ~description,
+  "PStat", 2014, "American Statistical Association (ASA)", "Statistics", 
+  "Ph.D.", 2012, "City University of New York", "Mathematics, Topic: _theoretical computer science, analysis of algorithms_",
+  "M.Phil., M.A.", 2011, "City University of New York", "Mathematics",
+#  "M.A.", 2011, "City University of New York", "Mathematics",
+  "M.A.", 2003, "University of California, San Diego", "Mathematics (Applied)",
+  "B.A.", 2000, "Wesleyan University", "Economics",
+) |>
+  mutate(across(everything(), as.character)) |>
+  resume_entry()
+```
+
+# Awards and honors
+
+```{r}
+#| output: asis
+educ <- tribble(
+  ~url, ~title, ~location, ~date, ~description,
+  "https://www.amstat.org/news-listing/2025/04/21/asa-recognizes-2025-founders-and-fellows", "Fellow", "American Statistical Association", 2025, "Won. The designation of ASA Fellow has been a significant honor for nearly 100 years. Under ASA bylaws, the Committee on Fellows can elect up to one-third of one percent of the total association membership as fellows each year. The Fellow designation is one of the highest honors the ASA bestows.",
+  "https://www.tandfonline.com/journals/ujse21/collections/best-paper-jackie-dietz-award", "Jackie Dietz Best Paper Award", "Journal of Statistics and Data Science Education", 2022, "Won. For _Integrating Data Science Ethics Into an Undergraduate Major: A Case Study_.",
+  "https://www.amstat.org/ASA/Your-Career/Awards/Waller-Awards.aspx", "Waller Education Award", "ASA Section on Statistics and Data Science Education", 2019, "Won. Honors individuals for innovation in the instruction of elementary statistics.",
+  "https://community.amstat.org/sis/aboutus/honorees", "Significant Contributor Award", "ASA Section on Statistics and Sports", 2019, "Won. Honors a significant contributor to statistics in sports who is invited to speak at the section's annual luncheon at the JSM.", 
+  "https://community.amstat.org/bostonchapter/awards/teachingaward", "Outstanding Undergraduate Teaching Award", "ASA Boston Chapter", 2019, "Won. Recognizes exceptional efforts in teaching statistics at the undergraduate level.", 
+  "https://www.amstat.org/ASA/Your-Career/Awards/Statistical-Partnerships-Among-Academe-Industry-and-Government-Award.aspx", "SPAIG Award", "American Statistical Association", 2019, "Won, on behalf of the Five Colleges and MassMutual. Recognizes outstanding **s**tatistical **p**artnerships between **a**cademe, **i**ndustry, and **g**overnment organizations, as well as to promote new partnerships among these organizations.",
+  "https://sabr.org/latest/baumer-brudnicki-mcmurray-win-2016-sabr-analytics-conference-research-awards", "Contemporary Baseball Analysis Award", "Society for American Baseball Research", 2016, "Won, for _OpenWAR: An open source system for evaluating overall player performance in Major League Baseball_. Awarded annually to outstanding research projects that have 'significantly expanded our knowledge or understanding of baseball'.",
+  "http://www.editorandpublisher.com/Features/Article/Editor---Publisher-Announces-the-2015-EPPY-Award-Finalists", "EPPY Award", "Editor & Publisher", 2015, "Nominated, for _The Great Analytics Rankings_ article for ESPN.com. Best Innovation Project with 1 million unique monthly visitors and over."
+) |>
+  resume_entry()
+```
+
+
+# Employment history
+
+```{r}
+#| output: asis
+work <- tribble(
+  ~employer, ~role, ~unit, ~begin, ~end, 
+  "Smith College", "Professor (with tenure)", "Statistical & Data Sciences", 2023, NA, 
+  "Universidad EAFIT", "Visiting Professor", "Computación y Analítica", 2023, 2024,
+  "Smith College", "Associate Professor (with tenure)", "Statistical & Data Sciences", 2020, 2023, 
+  "Smith College", "Assistant Professor", "Statistical & Data Sciences", 2015, 2020, 
+  "Smith College", "Visiting Assistant Professor", "Statistical & Data Sciences", 2014, 2015, 
+  "Smith College", "Visiting Assistant Professor", "Mathematics & Statistics", 2012, 2014, 
+  "Queens College", "Adjunct Lecturer", "Mathematics", 2010, 2010, 
+  "Hunter College", "Adjunct Lecturer", "Statistics", 2008, 2009, 
+  "New York Mets", "Statistical Analyst", "Baseball Operations", 2004, 2012
+)
+
+roll_up <- function(x) {
+  if (length(x) == 1) {
+    x
+  } else {
+    paste("-", paste(x, collapse = "\\\n- "))
+  }
+}
+
+# roll_up(letters[1:1])
+# roll_up(letters[1:4])
+
+work |>
+  mutate(
+    role_old = paste0(role, ", ", unit, " (", begin, "-", ifelse(is.na(end), "", end), ")"),
+  ) |>
+  group_by(location = employer) |>
+  summarize(
+    num_roles = n(),
+    title = first(role),
+    description = ifelse(n() == 1, unit, roll_up(role_old)),
+    date = paste0(min(begin), "-", ifelse(is.na(max(end)), "", max(end))),
+    last_date = max(replace_na(end, 9999)),
+  ) |>
+  arrange(desc(last_date)) |>
+  resume_entry()
+```
+
+# Grants received
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~location, ~date, ~description, 
+  "Kahn Institute Fellowship", "Smith College", "2025", "Possible Futures: AI and Human Experience",
+  "Susan B. Lindenauer '61 Fellowship", "Smith College", "2022-2023", "Support development of a new one-credit course, SDS 100: Reproductible Scientific Computing with Data, shaping students' ability to engage in data science work using modern workflows, open-source tools, and ethical practices.",
+  "The Data Science WAV", "National Science Foundation", "2019-2023", "Serving as PI on three-year, nine-institution, \\$1.2 million workforce development project for undergraduate data science that focuses on experiential learning with local community organizations. Funded under the Harnessing the Data Revolution, Data Science Corps program.",
+  "Ad-Hoc Faculty Working Group on Learning & Technology", "Smith College", "2019", "Studied the effect of integration of new technologies upon student learning and engagement",
+  "Design Thinking Initiative Curriculum Enhancement Grant", "Smith College", "2017-2018", "Integrated faculty from film and media studies and English language and literature into data journalism and ethics liberal arts modules in intro data science course",
+  "Jean M. Picker Fellowship", "Smith College", "2016-2017", "One-course release to pursue research in statistical and data sciences",
+  "Liberal Arts Modules to Promote Diversity and Achievement in STEM", "PKAL/TIDES", "2014-2017", "Converted data science into an intro course, integrated liberal arts modules, and incorporated inclusive teaching methods",
+  "Faculty Fellow", "Project Teaching Integrity in Empirical Research", "2015-2016", "Developed and promoted computational reproducible research methods across disciplines", 
+  "Maven and Contributor", "Project MOSAIC", "2013-2015", "Contributed to open-source codebase and promoted use of NSF-funded project to streamline mathematical and statistical computing",
+  "Tesla K40 GPU Hardware Grant", "NVIDIA Corp", "2015", "Received \\$5500 GPU card for research and education on computing with big data",
+  "Mary P. Dolciani Fellow", "Project NExT", "2012-2013", "Professional development program for early-career mathematicians and statisticians emphasizing active learning and professional networking", 
+) |>
+  resume_entry()
+```
+
+# Publications
+
+Note: student co-authors in **bold**. 
+Please see my Google Scholar profile (<https://scholar.google.com/citations?user=HWo0CDEAAAAJ>) for citations. 
+
+## Books
+
+1. @albert2024analyzing
+1. @baumer2020mdsr
+1. @albert2018analyzing
+1. @baumer2016mdsr
+1. @baumer2013tsr
+1. @baumer2012thesis
+
+Note: In computer science research, publications tend to come in pairs: a conference paper that represents the first public appearance of a finding; and (often) a corresponding journal publication that follows. Conference papers are considered more prestigious, since the peer-review process is more competitive. Journal papers are required to contain 25-40% more material than the corresponding conference paper, and are thus considered separate publications. Order of authors is usually alphabetical. In statistics, order of authors is usually based on strength of contribution. 
+
+## Articles (peer-reviewed journals)
+
+1. @sierra2026changepoint
+1. @jones2025earned
+1. @fernandez2024method
+1. @saidi2024ramps
+1. @baumer2021tools
+1. @baumer2022math
+1. @legacy2021dscwav
+1. @baumer2022transfer
+1. @baumer2020tidyverse
+1. @baumer2019ethics
+1. @couch2021infer
+1. @baumer2019fertile
+1. @baumer2017datacamp
+1. @barresi2017
+1. @baumer2016etl
+1. @zimbalist2018college
+1. @baumer2016compete
+1. @baumer2016lessons
+1. @williams2017
+1. @barnoy2016setit
+1. @baumer2015we
+1. @bar2016changing
+1. @baumer2015r
+1. @baumer2015data
+1. @hardin2015data
+1. @baumer2015openwar
+1. @bar2015average
+1. @horton2015stage
+1. @baumer2014r
+1. @baumer2014war
+1. @baumer2013quantifying
+1. @baumer2012parsing
+1. @baumer2009usb
+1. @baumer2008bpb
+
+## Articles (peer-reviewed conferences)
+
+1. @baumer2017peerj
+1. @baumer2015star
+1. @bogdanov2013weakest
+1. @barnoy2013setit
+1. @barnoy2012changing
+1. @barnoy2011maximizing
+1. @baumer2011modeling
+
+## Articles (not peer-reviewed)
+
+1. @gem2022
+1. @gem2021
+1. @gem2019
+1. @pcmi2016guidelines
+1. @gem2017
+1. @stoudt2014pursuit
+1. @baumer2010improved
+1. @baumer2010mapping
+1. @baumer2009asm
+
+## Chapters in books
+
+1. @baumer2016eval
+1. @baumer2014social
+
+## Book reviews
+
+1. @baumer2018oxford
+1. @baumer2014analyzing
+
+## Review articles and essays
+
+1. @baumer2024editor
+1. @baumer2022symposium
+1. @baumer2022ctv
+1. @horton2021dscwav
+1. @mcnamara2017donoho
+1. @baumer2015espn
+1. @baumer2014applied
+1. @gould2014big
+
+## R packages (published on CRAN)
+
+1. @R-tidychangepoint
+1. @R-fec16
+1. @R-etl
+1. @R-mdsr
+1. @R-macleish
+1. @R-teamcolors
+1. @R-infer
+
+## R packages (published on GitHub)
+
+1. @R-openWAR
+1. @R-airlines
+1. @R-fec
+1. @R-imdb
+
+## Acknowledgements in the work of others
+
+1. @jones2022novel
+
+## Reviews of my work
+
+1. @arai2022mdsr2e
+1. @hoyer2021mdsr2e
+1. @JSSv080b02
+1. @miller2018mdsr
+1. @bray2018mdsr
+1. @liu2018mdsr
+1. @prats2018twoways
+1. @hayden2017mdsr
+1. @JSSv090b01
+
+**Forthcoming**
+
+**Works in progress**
+
+## Articles (under review)
+
+1. @baumer2025lets
+
+## Articles (in progress)
+
+1. @baumer2025fairness
+1. @baumer2025ds2
+1. @baumer2021macleish
+1. @hancock2018
+
+# Concerts, performances, and exhibitions
+
+## Book readings
+
+1. @baumer2014booklink
+1. @baumer2014wneu
+1. @baumer2014quin
+
+# Scholarly lectures and other professional presentations
+
+## Keynotes and Invited Talks
+
+1. @basquet2025
+1. @icerm2025
+1. @baumer2022jsm
+1. @sdss2020
+1. @ams2019
+1. @bcasa2019
+1. @jsm2019
+1. @brynmawr2019
+1. @baumer2018toronto
+1. @baumer2017cmu
+1. @wachusett2017
+1. @macdougal2017
+1. @jsm2017
+1. @jsm2016panel
+1. @jsm2015data
+1. @jsm2014teaching
+1. @jsm2013openwar
+1. @ness2014openwar
+1. @sloan2013mr
+1. @njcu2010
+1. @jsm2009survey
+
+## Conference talks and posters
+
+1. @baumer2025nessis
+1. @csas2025
+1. @baumer2025jsm
+1. @sdss2020fertile
+1. @baumer2018jsm
+1. @baumer2018sdss
+1. @baumer2017nessis
+1. @useR2016
+1. @jmm2014openwar
+1. @nessis2013openwar
+1. @eea2013quantifying
+1. @jmm2013parsing
+1. @nessis2011parsing
+1. @jmm2013modeling
+1. @sirocco2012
+1. @starw2012
+1. @fall2011
+1. @mswim2011
+1. @algo2011
+1. @netsci2011
+1. @starw2011
+1. @informs2010
+1. @fall2010
+1. @jsm2010
+1. @ncssors2008
+1. @nessis2007
+
+## Seminars and Colloquium talks
+
+1. @union2026
+1. @barcelona2025
+1. @kahn2025
+1. @smith2025
+1. @williams2025
+1. @fsu2022
+1. @hcc2023
+1. @ucsf2023
+1. @jsdse2022webinar
+1. @liberal2021
+1. @baumer2018dartmouth
+1. @asa2017webinar
+1. @baumer2017umass
+1. @meetup2013
+1. @liberal2013
+1. @stmikes2013
+1. @bcasa2014
+1. @smith2013
+1. @umass2012
+1. @trinity2011
+1. @smith2012
+1. @trinity2012
+1. @nyupoly2011
+1. @cuny2010mapping
+1. @cuny2009survey
+1. @babson2009
+1. @ucsd2009
+1. @swarthmore2008
+1. @wes2005
+1. @scitech2016
+1. @science2016
+1. @teaching2016
+1. @teaching2024
+1. @amherst2024
+
+## Panels and Guest Lectures
+
+1. @jsm2021
+1. @tier2021
+1. @williams2020
+1. @nova2018
+1. @uml2018
+1. @baumer2018torontopanel
+1. @baumer2017sigmaxi
+1. @saber2014
+1. @nessis2013baseball
+1. @hofstra2012
+1. @jhu2012
+1. @sabr2012
+1. @qac2011
+1. @dd2012
+1. @nyu2010
+
+
+# Other professional activities
+
+## Grant proposals
+
+```{r}
+#| output: asis
+tribble(
+  ~location, ~description, ~role, ~amount, ~funded, ~date,
+  "National Science Foundation", "Guidelines for Unified Introductory Data Science Education (GUIDE)", "Co-PI", "\\$109,381", "No", "2025-2027",
+  "Fulbright US Scholar", "Data Science and Sports Analytics in Colombia", "PI", "\\$22,200", "No", "2023-2024",
+  "National Science Foundation", "The Data Science WAV: Experiential Learning with Local Community Organizations", "PI", "\\$581,902", "Yes", "2019-2022",
+  "National Science Foundation", "Vertically Coherent Online Data Science Program Using R for Production Engineering", "Co-PI", "\\$64,130", "No", "2019",
+  "National Science Foundation", "MRI: Revealing the Living System, an Acquisition of a Lightsheet Microscope with Big Data Processing", "Co-PI", "\\$1,461,581", "No", "2018-2019",
+  "rOpenSci", "Improved Grammar for Reproducible and Painless Extract-Transform-Load Operations on Medium Data", "PI", "\\$46,757", "No", "2017"
+) |> 
+  mutate(
+    title = paste0(
+      role, ". ", 
+      if_else(funded == "Yes", paste("*Funded*", emoji::emoji("money_with_wings")), "Not Funded"), ". ", 
+      amount, "."
+    )
+  ) |>
+  resume_entry()
+```
+
+## Blog posts
+
+1. @baumer2018scale
+1. @baumer2016scraping
+1. @baumer2014openwarblog
+1. @baumer2014hof
+1. @baumer2014does
+1. @baumer2014defspec
+1. @baumer2014marcel
+1. @baumer2014hexbin
+1. @baumer2014erm
+
+## Events co-organized
+
+1. @aalac2026
+1. @fcdf2025
+1. @jsm2025
+1. @fcdf2023
+1. @facdev22,
+1. @facdev21,
+1. @uscots2021team
+1. @fcdf2019
+1. @fcdf2018
+1. @wds2018
+1. @jsm2018
+1. @interface2018
+1. @wsds2017
+1. @fcdf2017
+1. @wids2017
+1. @asa2016webinar
+1. @aalac2016
+1. @jsm2016
+1. @fcdf2016
+1. @fcdf2015
+1. @fcdf2014
+1. @cvc2015
+1. @jsm2013markdown
+1. @uscots2013r
+
+## Workshops attended
+
+1. @d4bl2017
+1. @aacu2016
+1. @pcmi2016
+1. @tier2016
+1. @tides2015
+1. @aacu2014
+1. @jsm2014bayesian
+1. @online2014
+1. @bayes2013
+1. @catalst2013
+1. @randomization2013
+1. @bigdata2013
+1. @mosaic2012
+1. @stat22012
+1. @jmm2012discrete
+1. @wes2012
+1. @wes2011
+1. @ipam2009
+
+## Refereeing papers
+
+&nbsp;
+
+Note: Please see my Publons profile (<http://publons.com/author/1553312/>) for more information.
+
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~desc, ~begin, ~end,
+  "Regular reviewer", "Journal of Quantitative Analysis in Sports", 2012, NA,
+  "Regular reviewer", "Journal of Statistics & Data Science Education", 2013, NA,
+  "Regular reviewer", "The American Statistician", 2016, NA,
+  "Regular reviewer", "Technology Innovations in Statistics Education", 2016, NA,
+  "Regular reviewer", "Harvard Data Science Review", 2019, NA,
+  "At least one review", "By The Numbers: Newsletter of the SABR Statistics Committee", 2004, NA,
+  "At least one review", "R Journal", 2025, NA,
+  "At least one review", "INFORMS Transactions on Education", 2022, NA,
+  "At least one review", "National Academies of Sciences, Engineering, and Medicine", 2020, NA,
+  "At least one review", "Teaching Statistics", 2020, 2021,
+  "At least one review", "IEEE Transactions on Mobile Computing", 2013, 2017,
+  "At least one review", "The Mathematical Ingelligencer", 2018, NA,
+  "At least one review", "IEEE Computer Graphics and Applications", 2016, NA,
+  "At least one review", "American Political Thought", 2016, NA,
+  "At least one review", "MIT Sloan Sports Analytics", 2016, NA,
+  "At least one review", "Transactions on Knowledge and Data Engineering", 2014, NA,
+  "At least one review", "Transactions on Sensor Networks", 2012, 2013,
+  "At least one review", "IEEE Journal on Selected Areas in Communications", 2012, NA,
+) |>
+  group_by(title) |>
+  summarize(
+    description = paste(paste0("_", desc, "_"), collapse = ", "),
+    date = paste0(min(begin), "-", ifelse(is.na(max(end)), "present"))
+  ) |>
+  arrange(desc(title)) |>
+  resume_entry()
+```
+
+## Professional statistical consulting
+
+```{r}
+#| output: asis
+tribble(
+  ~desc, ~begin, ~end,
+  "Racial Equity Partners", 2022, 2022,
+  "Major League Baseball Players Association", 2019, 2020,
+  "RStudio, Inc.", 2018, 2018,
+  "MassMutual Data Science Development Program", 2014, 2018,
+  "MVP Sports Group", 2018, 2018, 
+  "Christine Doktor for State Representative", 2018, 2018,
+  "MassMutual Data Science Development Program Academic Advisory Board", 2014, 2017,
+  "New England Patriots", 2014, 2014,
+  "?What If! Innovation", 2012, 2014,
+  "New York Mets", 2012, 2013,
+  "CUNY Research Foundation", 2012, 2013
+) |>
+  mutate(title = "Consultant") |>
+  group_by(title) |>
+  summarize(
+    description = paste(desc, collapse = ", "),
+    date = paste0(min(begin), "-", ifelse(is.na(max(end)), "present", max(end)))
+  ) |>
+  resume_entry()
+```
+
+## External Program Reviews
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~desc, ~location, ~date,
+  "Review Chair", "Data Science", "Siena College", "2025",
+  "Reviewer", "Mathematics, Statistics, and Computer Science", "St. Olaf College", "2022",
+  "Reviewer", "Quantitative Analysis Center", "Wesleyan University", "2022",
+  "Reviewer", "Mathematics, Statistics, and Computer Science", "Macalester College", "2022",
+#  "Reviewer", "Statistics", "Simmons College", "2020"
+) |>
+  group_by(title) |>
+  summarize(
+    description = roll_up(paste(desc, ", ", location)),
+    date = paste0(min(date), "-", ifelse(is.na(max(date)), "present", max(date)))
+  ) |>
+  resume_entry()
+```
+
+## Editorial Service
+
+```{r}
+#| output: asis
+tribble(
+  ~role, ~location, ~begin, ~end,
+  "Interim Editor", "Journal of Quantitative Analysis in Sports", 2023, 2023,
+  "Co-Editor", "Journal of Quantitative Analysis in Sports", 2022, 2023,
+  "Associate Editor", "Journal of Statistics and Data Science Education", 2024, NA,
+  "Associate Editor", "Journal of Quantitative Analysis in Sports", 2012, NA,
+) |>
+  group_by(location) |>
+  summarize(
+    title = "Editorial Service",
+    description = roll_up(paste0(role, " (", begin, "-", ifelse(is.na(end), "present", end), ")")),
+    date = paste0(min(begin), "-", ifelse(is.na(max(end)), "present", max(end)))
+  ) |>
+  resume_entry()
+```
+
+## ASA Service
+
+```{r}
+#| output: asis
+tribble(
+  ~role, ~description, ~unit, ~begin, ~end,
+  "Non-PhD Rep (candidate)", "", "Caucus of Academic Representatives", 2025, 2028,
+  "Member", "Waller Education Awards Committee", "Section on Statistics and Data Science Education", 2025, 2027,
+  "Program Chair", "JSM 2026", "Section on Statistical Computing", 2025, 2026,
+  "Contributor", "College GAISE Revision Writing Team", "Section on Statistics and Data Science Education", 2025, 2025,
+  "Mentor", "Emily Robinson", "Section on Statistics and Data Science Education", 2021, 2022,
+  "Mentor", "Julia Costacurta", "Section on Statistics and Data Science Education", 2024, 2025, 
+  "Program Chair", "JSM 2022", "Section on Statistics in Sports", 2021, 2022,
+  "Member", "ASA Data Science Ad Hoc Advisory Committee", "ASA", 2019, 2020,
+  "Current Committee", "", "Section on Statistics Education", 2018, 2019,
+  "Program Committee", "ASA Symposium on Data Science and Statistics, co-sponsored by the Interface Foundation of North America", "Section on Statistical Learning and Data Science", 2018, 2018,
+  "Council of Sections Rep", "", "Section on Statistical Learning and Data Science", 2017, 2019,
+  "Core Member", "", "ASA DataFest", 2014, NA,
+) |>
+  group_by(title = unit) |>
+  summarize(
+    description = roll_up(paste0(role, ", ", description)),
+    date = paste0(min(begin), "-", max(end))
+  ) |>
+  mutate(
+    location = "American Statistical Association"
+  ) |>
+  resume_entry()
+```
+
+
+## Other External service
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~location, ~date,
+  "Member", "Holyoke Community College Computer Science Info Systems Advisory Board", "2026-2027",
+  "Panel Reviewer", "NSF Data Science Corps", "2024",
+  "University Partner Advisor", "Golda Meir Sports Analytics Club", "2022-2023",
+  "Secretary/Treasurer", "Five College Statistics", "2019-2022",
+  "MAA Board Representative", "ASA-MAA Joint Committee on Statistics Education", "2020-2023",
+  "Program Observer", "ABET data science accreditation", "2021",
+  "University Partner Advisor", "Jeremiah E. Burke Sports Analytics Club", "2020-2021",
+  "Member", "Data Science for Common Good Advisory Board, UMass Center for Data Science", "2019-2020",
+  "Smith representative", "Five College Statistics", "2016-2017",
+  "Director", "Five College Statistics", "2015-2016, 2025-2026",
+  "Webmaster", "Five College Statistics", "2013-2015",
+) |>
+  compact_entry()
+```
+
+
+## Tenure and promotion review service
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~candidate, ~location, ~degree, ~date,
+   "External Reviewer", "[redacted]", "Williams College", "Statistics", 2025,
+   "External Reviewer", "[redacted]", "Emory University", "Statistics", 2025,
+   "External Reviewer", "[redacted]", "Williams College", "Statistics", 2024,
+   "External Reviewer", "[redacted]", "Carnegie Mellon University", "Statistics", 2022
+) |>  
+  group_by(title) |>
+  summarize(
+    description = roll_up(paste0(candidate, ", ", degree, ", ", location)),
+    date = paste0(min(date), "-", max(date))
+  ) |>
+  mutate(
+    location = ""
+  ) |>
+  resume_entry()
+```
+
+
+
+## Graduate thesis service
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~candidate, ~location, ~degree, ~date,
+   "External Reader", "Nina Roche", "University of Massachusetts, Amherst", "M.A., Computer Science", 2023,
+   "External Reader", "Jesse Jeter", "The George Washington University", "Ph.D., Statistics", 2018
+) |>
+  group_by(title) |>
+  summarize(
+    description = roll_up(paste0(candidate, ", ", degree, ", ", location)),
+    date = paste0(min(date), "-", max(date))
+  ) |>
+  mutate(
+    location = ""
+  ) |>
+  resume_entry()
+```
+
+
+# Professional memberships
+
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~date, 
+  "American Statistical Association (ASA)", "2009-present",
+  "Society for American Baseball Research (SABR)", "2012-present",
+  "Mathematical Association of America (MAA)", "2012-present",
+  "Sigma Xi", "2013-present", 
+  "Association for Computing Machinery (ACM)", "2011-2015",
+  "American Mathematical Society (AMS)", "2005-2015",
+  "Institute for Operations Research and the Management Sciences (INFORMS)", "2010"
+) |>
+  compact_entry()
+```
+
+# College or departmental service and other college service
+
+
+## Special studies
+
+```{r}
+#| output: asis
+tribble(
+  ~description, ~title, ~date, 
+  "Sifan (Carol) Liu, Zoleka Mosaih, Ziheng (Ruby) Ru, Yutai (Nichole) Yao, Yujia (Starry) Zhou", "SDS capstone project", "Fall 2020", 
+  "Jasmine Horan, Leah Marcus, Clara Rosenberg, Kara Van Allen", "Sports analytics", "Spring 2018",
+  "Yixuan (Monica) Zhang", "Topological data analysis", "Fall 2017",
+  "Rutendo Madziwo", "ETL operations research", "Fall 2017",
+  "Weijia (Vega) Zhang, Wencong (Priscilla) Li, Trang Le, Aakanksha Sinha, Eva Gjekmarkaj", "ETL for Medium Data", "Fall 2016",
+  "Weijia (Vega) Zhang, Wencong (Priscilla) Li", "Medium Data", "Spring 2016",
+  "Jordan Menter", "Network Science", "Fall 2015",
+  "Marie-Jacques Seignon", "Data Science", "Fall 2014",
+  "Yijin Wei", "Non-autographs", "Fall 2014",
+  "Jingyang (Judy) Zhang", "Data Analysis", "Fall 2014",
+) |>
+  compact_entry()
+```
+
+
+## STRIDE advising
+
+```{r}
+#| output: asis
+tribble(
+  ~description, ~title, ~date, 
+  "Cecily Kolko", "Predicting WNBA Performance Based On Draft Position", "2022--2023",
+  "Rose Porta", "Interactive Coding for Data Science", "2019--2021",
+  "Natalia Iannucci", "Curating Medium Data Sets", "2019--2021",
+  "Audrey Bertin", "Conditions for Optimal Reproducibility", "Spring 2019",
+) |>
+  compact_entry()
+```
+
+
+## Research advising
+
+```{r}
+#| output: asis
+tribble(
+  ~description, ~title, ~date, 
+  "Michele Sezgin", "Does Not Playing Hockey Make You Worse At Hockey?", "2022--2023",
+  "Marium Tapal", "Campaign finance data from the Federal Election Commission", "2021",
+  "Sophia Tannir", "Changepoint detection during baseball's offseason", "2019--2020",
+  "Audrey Bertin", "Conditions for Optimal Reproducibility", "2019--2020",
+) |>
+  compact_entry()
+```
+
+## MTH 301 research advising
+
+```{r}
+#| output: asis
+tribble(
+  ~description, ~title, ~date, 
+  "Loren Santana, Sara Stoudt", "The Perfect Bracket", "Spring 2014",
+  "Maneka Puligandla, Kelly Zaccheo, Qingyang (Rallye) Shen, J. Zhang", "Ability of Collaborative Social Networks to Complete A Directed Acyclic Task Graph", "Spring 2013",
+) |>
+  compact_entry()
+```
+
+## Early research advising
+
+```{r}
+#| output: asis
+tribble(
+  ~description, ~title, ~date, 
+  "Yixin Bao, Aixin Li, Keara Phillips-Vabre", "Getting Things Done", "Spring 2014"
+) |>
+  compact_entry()
+```
+
+
+## Liberal arts advising
+ 
+```{r}
+#| output: asis
+tribble(
+  ~class, ~students, ~begin, ~end, 
+  2023, "Rachel Aliwalas, Rose Porta, Christina Sherpa, Yanning Tan, Allison Wong, Aliaksandra Yeutseyeva, Zhulian Yu", 2019, 2021,
+  2019, "Melanie Bancilhon, Mackenzie Godinez, Julia Lee, Gwenyth (Rison) Naness, Andria Polk, Zoe Riell", 2015, 2017,
+) |>
+  group_by(title = paste("Members of the class of", class)) |>
+  summarize(
+    description = roll_up(students),
+    date = paste0(min(begin), "-", max(end))
+  ) |>
+  mutate(
+    location = "Smith College"
+  ) |>
+  resume_entry()
+```
+
+ 
+## Honors advising
+
+1. @white2023covid
+1. @iannucci2022signature
+1. @bertin2021fertile
+1. @alvord2019nfl
+1. @li2018nyctaxi
+1. @vega2017citibike
+1. @stoudt20157geospatial
+
+
+## Major advising
+
+```{r}
+#| output: asis
+tribble(
+  ~description, ~date, 
+  "Rachael An, Destiny Cecchi Samuels, Sophia Dai, Grace Darby (MST), Laura Fay, Emma Ruckle, Lala Rukh, Tillie Slosser", 2025,
+  "Jack Brandano, Meaghan Brennan, Frankie Fan, Parunjodhi Munisamy, Abbey O'Meara, Sophia Silovsky, Tint Tha Ra Wun, Julia Ting", 2024,
+  "Rachel Aliwalas, Elda Cervantes, Rose Evard, Vibha Gogu, Aushanae Haller, Alejandra Muñoz Garcia, Annah Mutaya, Michiru Nozawa (MTH/SDS), Salwa Ouachtouki, Sonia Paredes, Rose Porta, Michele Sezgin, Christina Sherpa, Liwen Xu, Ziyue Yang, Summer Yu, Rosemary Zhang (MST), Yuezhang (Mackie) Zhou", 2023,
+  "Amrita Acharya, Dianne Caravela, Emilia Field, Michelle Flesaker, Sarah Gillespie, Grace Hartley, Natalia Iannucci (MTH/SDS), Huiqing (Lily) Jin, Emma Kornberg, Ananda Montoly, Wayne Ndlovu, Sunni Raleigh, Gabrielle Whalen", 2022,
+  "Audrey Bertin, Phuong Chau, Olivia Handoko, Marlene Jackson, Chhiring Lama, Lauren Low, Dayana Meza Giraldo, Sakaiza Rasolofomanana Rajery, Ziheng (Ruby) Ru, Yanwan Zhu", 2021,
+  "Lizette Carpenter, Clara Rosenberg, Sophia Tannir, Xiaonan (Maggie) Wang, Yujia (Starry) Zhou", 2020,
+  "Stephanie Foukaris, Marta Garcia, Jingjing (Jocelyn) Hu, Julia Lee, Rutendo Madziwo, Cas Sweeney, Yi Wang", 2019,
+  "Erina Fukuda, Shuli Hu, Minji Kang, Wencong (Priscilla) Li, Syeda Zainab Rizvi, Aakanksha Sinha", 2018,
+  "Diana Fierros-Pina, Lydia Jin, Maria Lopez, Weijia (Vega) Zhang", 2017,
+  "Yiwen Zhu", 2016,
+) |>
+  mutate(
+    students = str_split(description, pattern = ", "),
+    n = map_int(students, length),
+    title = paste(n, "member(s) of the class of", date),
+    location = "Smith College"
+  ) |>
+  resume_entry()
+```
+
+## Minor advising
+
+```{r}
+#| output: asis
+tribble(
+  ~description, ~date, 
+  "Emma Ruckle", 2025,
+  "Mack Case, Hebe Guo, Phaidra Martin, Jackie Ochoa Acevedo", 2024,
+  "Nana Ansah, Sethatevy Bong, Kacey Jean-Jacques, Miagoto Benedicte Nemadjilembaye, Anh Nguyen, Catherine Peppers, Lindsay Rosenthal", 2022,
+  "Sara Khan, Emma Westgate", 2021,
+  "Kimberly Barrios (AC), Yuri Furukawa", 2020,
+  "Gabrielle Drew, Emily Halstead, Cathy Lee", 2019,
+  "Marisa Youngblood", 2018,
+  "Yipeng Lai", 2017,
+  "Erika Correll, Martha Miller (AC)", 2016,
+  "Anna Cojocaru (AC), Stephanie Huynh", 2015,
+) |>
+  mutate(
+    students = str_split(description, pattern = ", "),
+    n = map_int(students, length),
+    title = paste(n, "member(s) of the class of", date),
+    location = "Smith College"
+  ) |>
+  resume_entry()
+```
+
+
+## Concentration advising
+
+```{r}
+#| output: asis
+tribble(
+  ~student, ~title, ~date, 
+  "Laura Fay", "Journalism", 2025,
+  "Esther Clair", "Journalism", 2027,
+  "Maya Hruskar", "Journalism", 2027,
+  "Mia Huang", "Journalism", 2028,
+  "Audrey Kim", "Community Engagement and Social Change", 2024,
+  "Maria Fernanda Negrete Espinoza", "Community Engagement and Social Change", 2027,
+  "Una Gogstetter", "Community Engagement and Social Change", 2027,
+) |>
+  mutate(
+    student_plus = paste0(student, " '", date - 2000),
+  ) |>
+  arrange(date) |>
+  group_by(title) |>
+  summarize(
+    description = paste0(student_plus, collapse = ", "),
+    date = paste0(min(date), "-", max(date))
+  ) |>
+  mutate(location = "Smith College") |>
+  resume_entry()
+```
+   
+
+## SURF advising
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~date, 
+  "Wencong (Priscilla) Li, Weijia (Vega) Zhang", 2016,
+  "Jing Xia", 2015,
+) |>
+  compact_entry()
+```
+
+## Pedegogical Partners
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~description, ~date, 
+  "Sarah Susnea", "Integrating the data ethics and project-based curricula of SDS 410", "Spring 2025",
+) |>
+  compact_entry()
+```
+ 
+
+## Courses assisted, guest lectured, or co-taught
+
+```{r}
+#| output: asis
+tribble(
+  ~course, ~description, ~date, 
+   "BIO 132", "Cells, Physiology and Development", "Fall 2017",
+   "BCH 390", "Biochemical Research Using Advanced Techniques", "Spring 2017",
+   "BIO 507", "Seminar on Recent Advances and Current Problems in the Biological Sciences", "Fall 2016",
+   "BMX 100", "Frontiers of Biomathematics ", "Fall 2016",
+   "BMX 100", "Frontiers of Biomathematics ", "Fall 2015",
+   "IDP 160", "Digital Effects ", "Fall 2015",
+   "BIO 507", "Seminar on Recent Advances and Current Problems in the Biological Sciences", "Fall 2015",
+   "ENV 202", "Environmental Integration II: Collecting and Analyzing Information Laboratory", "Fall 2015",
+   "BCH 390", "Biochemical Research Using Advanced Techniques", "Spring 2015",
+   "BIO 206", "Plant Physiology", "Spring 2015",
+   "ENV 202", "Frontiers of Biomathematics ", "Fall 2014",
+) |>
+  mutate(location = "Smith College") |>
+  group_by(title = course, location) |>
+  summarize(
+    description = paste(n(), "times: ", paste(date, collapse = ", ")),
+    date = paste0(min(date), "-", max(date))
+  ) |>
+  arrange(desc(description)) |>
+  resume_entry()
+```
+
+## Courses taught
+
+```{r}
+#| output: asis
+tribble(
+  ~course, ~title, ~enrollment, ~date,
+   "SDS 236", "Data Journalism", "17", "Spring 2026",
+   "SDS 210", "Introductory Statistics", "40", "Spring 2026",
+   "SDS 355", "Sports Analytics", "8", "Fall 2025",
+   "SDS 291", "Multiple Regression", "29", "Fall 2025",
+   "SDS 236", "Data Journalism", "14", "Spring 2025",
+   "SDS 410", "Statistical & Data Sciences Capstone", "23", "Spring 2025",
+   "SDS 270", "Advanced Programming for Data Science", "35", "Fall 2024",
+   "SDS 410", "Statistical & Data Sciences Capstone", "28", "Fall 2024",
+   "SDS 236", "Data Journalism", "17", "Spring 2023",
+   "SDS 100", "Reproducible Scientific Computing with Data", "30", "Fall 2022",
+   "SDS 220", "Introduction to Probability and Statistics", "38", "Fall 2022",
+   "SDS 270", "Advanced Programming for Data Science", "36", "Spring 2022",
+   "SDS 410", "Statistical & Data Sciences Capstone", "23", "Spring 2022",
+   "SDS 410", "Statistical & Data Sciences Capstone", "19", "Fall 2021",
+   "SDS 410", "Statistical & Data Sciences Capstone", "27", "Spring 2021",
+   "SDS 192", "Introduction to Data Science", "90", "Interterm 2021",
+   "SDS 192", "Introduction to Data Science", "54", "Fall 2020",
+   "SDS 192", "Introduction to Data Science", "60", "Spring 2020",
+   "SDS 236", "Data Journalism", "20", "Spring 2020",
+   "SDS 390", "Advanced Programming for Data Science", "24", "Fall 2019",
+   "SDS 410", "Statistical & Data Sciences Capstone", "15", "Fall 2019",
+   "SDS 192", "Introduction to Data Science", "73", "Spring 2019",
+   "SDS 410", "Statistical & Data Sciences Capstone", "21", "Spring 2019",
+   "SDS 192", "Introduction to Data Science", "75", "Spring 2018",
+   "SDS 410", "Statistical & Data Sciences Capstone", "11", "Spring 2018",
+   "SDS 192", "Introduction to Data Science", "76", "Fall 2017",
+   "SDS 192", "Introduction to Data Science", "83", "Spring 2017",
+   "MTH/SDS 220", "Introduction to Probability and Statistics", "42", "Fall 2016",
+   "MTH/SDS 220L", "Introduction to Probability and Statistics Labs", "42", "Fall 2016",
+   "SDS 192", "Introduction to Data Science", "25", "Spring 2016",
+   "MTH/SDS 220", "Introduction to Probability and Statistics", "40", "Fall 2015",
+   "MTH/SDS 220L", "Introduction to Probability and Statistics Labs", "40", "Fall 2015",
+   "MTH 291", "Multiple Regression", "29", "Spring 2015",
+   "MTH 220", "Introduction to Probability and Statistics", "36", "Spring 2015",
+   "MTH 220", "Introduction to Probability and Statistics", "39", "Fall 2014",
+   "MTH 292", "Data Science", "23", "Fall 2014",
+   "MTH 220", "Introduction to Probability and Statistics", "42", "Spring 2014",
+   "MTH 220L", "Introduction to Probability and Statistics Labs", "60", "Spring 2014",
+   "MTH 292", "Data Science", "18", "Fall 2013",
+   "MTH 153", "Introduction to Discrete Mathematics", "25", "Fall 2013",
+   "MTH 241", "Introduction to Probability and Statistics", "23", "Spring 2013",
+   "MTH 241", "Introduction to Probability and Statistics", "25", "Spring 2013",
+   "MTH 153", "Introduction to Discrete Mathematics", "18", "Spring 2013",
+   "MTH 247", "Multiple Regression", "33", "Fall 2012",
+   "MTH 245L", "Introduction to Probability and Statistics Labs", "42", "Fall 2012",
+) |>
+  group_by(title) |>
+  summarize(
+    description = paste(n(), "times: ", paste(course, date, collapse = ", ")),
+    date = paste0(min(date), "-", max(date))
+  ) |>
+  arrange(desc(description)) |>
+  mutate(
+    location = "Smith College"
+  ) |>
+  resume_entry()
+```
+
+## Online courses taught or assisted
+
+
+```{r}
+#| output: asis
+tribble(
+  ~course, ~location, ~begin, ~end,
+   "Multiple Regression", "DataCamp", 2017, NA,
+   "Correlation and Regression", "DataCamp", 2017, NA,
+   "SQL and R - Introduction to Database Queries", "Statistics.com", 2014, NA,
+   "Sabermetrics 101", "edX (Boston University)", 2014, 2014
+) |>
+  group_by(location) |>
+  summarize(
+    description = roll_up(course),
+    date = paste0(min(begin), "-", ifelse(is.na(max(end)), "present", max(end)))
+  ) |>
+  mutate(title = "Instructor") |>
+  resume_entry()
+```
+
+## Departmental service
+
+```{r}
+#| output: asis
+tribble(
+  ~role, ~description, ~unit, ~begin, ~end,
+   "Search Committee Chair", "SDS/JNX Search Committee (?)", "SDS", 2026, 2026,
+   "Member", "Reappointment Review Committee (Kurtz-Garcia)", "SDS", 2025, 2026,
+   "Member", "Mathematical Statistics Committee", "MST", 2025, 2026,
+   "Member", "Tenure and Promotion Review Committee (Poirier)", "SDS", 2025, 2026,
+   "Search Committee Member", "TT Search Committee (Kirschbaum)", "SDS", 2025, 2025,
+   "Chair", "Mathematical Statistics Committee", "MST", 2024, 2025,
+   "Search Committee Member", "TT Search Committee (Stevens)", "SDS", 2024, 2024,
+   "Search Committee Member", "TT Search Committee (Beltz-Mohrmann)", "SDS", 2024, 2024,
+   "SDS Subcommitee Member", "Mentoring & Outreach subcommittee", "SDS", 2025, 2025,
+   "SDS Subcommitee Member", "Curriculum & Planning subcommittee", "SDS", 2024, 2025,
+   "Chair", "Promotion Review Committee (Crouser)", "CSC", 2024, 2025,
+   "Member", "Reappointment Review Committee (Cook)", "SDS", 2024, 2025,
+   "Member", "Reappointment Review Committee (Cao)", "SDS", 2024, 2025,
+   "Member", "Tenure and Promotion Review Committee (Kinnaird)", "SDS", 2023, 2024,
+   "Member", "Reappointment Review Committee (Poirier)", "SDS", 2023, 2024,
+   "Unit Chair", "Statistical & Data Sciences", "SDS", 2014, 2016,
+   "Unit Chair", "Statistical & Data Sciences", "SDS", 2018, 2018,
+   "Unit Chair", "Statistical & Data Sciences", "SDS", 2020, 2023,
+   "Director", "Honors", "SDS", 2019, 2023,
+   "SDS Subcommitee Chair", "Mentoring & Outreach subcommittee", "SDS", 2023, 2023,
+   "SDS Subcommitee Chair", "Curriculum & Planning subcommittee", "SDS", 2022, 2023,
+   "Chair", "Tenure and Promotion Review Committee (Kim)", "SDS", 2022, 2023,
+   "Chair", "Reappointment Review Committee (LaCombe)", "SDS", 2022, 2023,
+   "Search Committee Member", "TT Search Committee (Kurtz-Garcia)", "SDS", 2022, 2022,
+   "Search Committee Member", "TT Search Committee (Berger)", "SDS", 2022, 2022,
+   "Search Committee Chair", "VAP Search Committee (Joseph)", "SDS", 2022, 2022,
+   "Chair", "Tenure and Promotion Review Committee (Garcia)", "SDS", 2021, 2022,
+   "Search Committee Member", "TT Search Committee (failed)", "SDS", 2021, 2021,
+   "Search Committee Member", "MM2 TT Search Committee (Cao)", "SDS", 2021, 2021,
+   "Search Committee Chair", "VAP Search Committee (Sanogo)", "SDS", 2021, 2021,
+   "Chair", "Tenure and Promotion Review Committee (Ott)", "SDS", 2020, 2021,
+   "Member", "Reappointment Review Committee (Kim)", "SDS", 2020, 2021,
+   "Search Committee Member", "MM1 TT Search Committee (Poirier)", "SDS", 2020, 2020,
+   "Search Committee Member", "VAP Search Committee (Stoudt)", "SDS", 2020, 2020,
+   "Adviser", "Study Abroad", "SDS", 2016, 2021,
+   "Search Committee Chair", "VAP Search Committee (Rockoff)", "SDS", 2018, 2018,
+   "Search Committee Member", "Lab instructor Search Committee (Smetzer)", "SDS", 2018, 2018,
+   "Coordinator", "Statistics Teaching Assistants", "SDS", 2013, 2018,
+   "Search Committee Member", "TT Search Committee (Ott, Kim)", "SDS", 2016, 2017,
+   "Search Committee Member", "Claire Boothe Luce Search Committee (Kinnaird)", "SDS", 2016, 2017,
+   "Search Committee Chair", "VAP Search Committee (McNamara, Crouser)", "SDS", 2015, 2015,
+   "Webmaster", "Mathematics & Statistics", "MTH", 2012, 2014,
+) |>
+  mutate(
+    desc = paste0(unit, ": ", description, " (", begin, "-", end, ")")
+  ) |>
+  group_by(title = role) |>
+  summarize(
+    description = roll_up(desc),
+    date = paste0(min(begin), "-", max(end)),
+  ) |>
+  mutate(
+    location = "Smith College"
+  ) |>
+  resume_entry()
+```
+
+## College service
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~description, ~begin, ~end,
+  "Teller", "Smith Faculty Meetings", 2027, 2027,
+  "Faculty Co-Director", "Journalism Concentration", 2025, 2027,
+  "Member", "Committee on Athletics", 2024, 2025,
+  "Candidate (not elected)", "Committee on Faculty Compensation and Development", 2024, 2024,
+  "Advisory Committee", "Journalism Concentration", 2022, 2027,
+  "Advisory Committee", "Community Engagement and Social Change Concentration", 2020, 2026,
+  "Member", "Ethics Across the Curriculum Group", 2021, 2021,
+  "Member", "Committee on Educational Technology", 2019, 2020,
+  "Teller", "Smith Faculty Meetings", 2018, 2018,
+  "Member", "Science Center Administrative Assistant Search Committee", 2015, 2015,
+  "Faculty Liaison", "Smith Varsity Basketball Team", 2014, 2015,
+  "Member", "Task Force on Statistical & Data Sciences", 2014, 2014,
+  "Member", "Linux Systems Administrator Search Committee", 2013, 2013,
+) |>
+  group_by(title) |>
+  summarize(
+    description = roll_up(paste0(description, " (", begin, "-", end, ")")),
+    date = paste0(min(begin), "-", max(end)),
+  ) |>
+  mutate(
+    location = "Smith College"
+  ) |>
+  resume_entry()
+```
+
+## Community service
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~desc, ~location, ~begin, ~end,
+  "Assistant Coach", "Girls 5th & 6th grade basketball", "Northampton Suburban Basketball", 2025, 2026,
+  "Head Coach", "12U Girls softball", "Northampton Baseball & Softball League", 2025, 2026,
+  "Head Coach", "Girls 5th & 6th grade Quabbin basketball", "Northampton Recreation Department", 2024, 2025,
+  "Head Coach", "Girls Skills & Drills basketball", "Northampton Recreation Department", 2021, 2023,
+  "Treasurer", NA, "Nonotuck Community School", 2019, 2022,
+  "Vice President", NA, "Bay State Village Association", 2018, 2019,
+) |>
+  group_by(title, location) |>
+  summarize(
+    description = roll_up(desc),
+    date = paste0(min(begin), "-", max(end)),
+  ) |>
+  resume_entry()
+```
+
+# Skills
+
+```{r}
+#| output: asis
+tribble(
+  ~title, ~description, 
+  "Languages", "English (native), Spanish (B2; lived in Colombia for 11.5 months), German (B1; lived in Germany for six months)",
+  "Programming", "R (expert), SQL (master), PHP (experienced), Python (novice), Java (novice), C++ (novice)",
+  "Tools", "git/GitHub (experienced), Linux/bash (experienced)",
+) |>
+  resume_entry()
+```

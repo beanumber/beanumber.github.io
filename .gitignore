@@ -9,3 +9,6 @@ README_files
 
 _site/
 _extensions/
+site_libs/
+
+**/*.quarto_ipynb
