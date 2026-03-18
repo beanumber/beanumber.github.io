@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beanumber.github.io/research.html</loc>
-    <lastmod>2026-01-20T14:23:18.905Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/teaching.html</loc>
-    <lastmod>2026-01-20T14:23:18.905Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/ai.html</loc>
-    <lastmod>2026-01-20T14:23:18.904Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beanumber.github.io/index.html</loc>
-    <lastmod>2026-01-20T14:23:18.905Z</lastmod>
+    <loc>https://beanumber.github.io/baseball.html</loc>
+    <lastmod>2026-03-18T13:05:13.598Z</lastmod>
   </url>
   <url>
     <loc>https://beanumber.github.io/press.html</loc>
-    <lastmod>2026-01-20T14:23:18.905Z</lastmod>
+    <lastmod>2026-03-18T13:05:13.626Z</lastmod>
   </url>
   <url>
-    <loc>https://beanumber.github.io/baseball.html</loc>
-    <lastmod>2026-01-20T14:23:18.904Z</lastmod>
+    <loc>https://beanumber.github.io/index.html</loc>
+    <lastmod>2026-03-18T13:05:13.626Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/teaching.html</loc>
+    <lastmod>2026-03-18T13:05:13.627Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/ai.html</loc>
+    <lastmod>2026-03-18T13:05:13.598Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beanumber.github.io/research.html</loc>
+    <lastmod>2026-03-18T13:05:13.627Z</lastmod>
   </url>
 </urlset>
