@@ -374,6 +374,7 @@ Note: In computer science research, publications tend to come in pairs: a confer
 
 ## Articles (in progress)
 
+1. @eastwood2026wnba
 1. @baumer2025fairness
 1. @baumer2021macleish
 1. @hancock2018
@@ -749,6 +750,8 @@ tribble(
 #| output: asis
 tribble(
   ~title, ~candidate, ~location, ~degree, ~date,
+   "External Reviewer", "[redacted]", "Loyola University Chicago", "Mathematics and Statistics", 2026,
+   "External Reviewer", "[redacted]", "Montana State University", "Mathematical Sciences", 2026,
    "External Reviewer", "[redacted]", "Williams College", "Statistics", 2025,
    "External Reviewer", "[redacted]", "Emory University", "Statistics", 2025,
    "External Reviewer", "[redacted]", "Williams College", "Statistics", 2024,
@@ -921,15 +924,16 @@ tribble(
 #| output: asis
 tribble(
   ~description, ~date, 
-  "Rachael An, Destiny Cecchi Samuels, Sophia Dai, Grace Darby (MST), Laura Fay, Emma Ruckle, Lala Rukh, Tillie Slosser", 2025,
+  "Anika Bhandari, Josephine Gerrard, Rainbow Gu, Sophia Hillard, Aviva Jotzke, Glenvelis Perez, Mia Schildbach, Vicky Xu, Danyi Xu", 2026,
+  "Rachael An, Destiny Cecchi Samuels, Sophia Dai, Grace Darby (MST), Laura Fay, Iris Gao, Nubraz Khan, Ramsha Rauf, Emma Ruckle, Lala Rukh, Tillie Slosser", 2025,
   "Jack Brandano, Meaghan Brennan, Frankie Fan, Parunjodhi Munisamy, Abbey O'Meara, Sophia Silovsky, Tint Tha Ra Wun, Julia Ting", 2024,
   "Rachel Aliwalas, Elda Cervantes, Rose Evard, Vibha Gogu, Aushanae Haller, Alejandra Muñoz Garcia, Annah Mutaya, Michiru Nozawa (MTH/SDS), Salwa Ouachtouki, Sonia Paredes, Rose Porta, Michele Sezgin, Christina Sherpa, Liwen Xu, Ziyue Yang, Summer Yu, Rosemary Zhang (MST), Yuezhang (Mackie) Zhou", 2023,
-  "Amrita Acharya, Dianne Caravela, Emilia Field, Michelle Flesaker, Sarah Gillespie, Grace Hartley, Natalia Iannucci (MTH/SDS), Huiqing (Lily) Jin, Emma Kornberg, Ananda Montoly, Wayne Ndlovu, Sunni Raleigh, Gabrielle Whalen", 2022,
+  "Amrita Acharya, Dianne Caravela, Emilia Field, Michelle Flesaker, Sarah Gillespie, Grace Hartley, Natalia Iannucci (MTH/SDS), Huiqing (Lily) Jin, Emma Kornberg, Ananda Montoly, Wayne Ndlovu, Sunni Raleigh, Gabrielle Whalen, Summer Yu", 2022,
   "Audrey Bertin, Phuong Chau, Olivia Handoko, Marlene Jackson, Chhiring Lama, Lauren Low, Dayana Meza Giraldo, Sakaiza Rasolofomanana Rajery, Ziheng (Ruby) Ru, Yanwan Zhu", 2021,
   "Lizette Carpenter, Clara Rosenberg, Sophia Tannir, Xiaonan (Maggie) Wang, Yujia (Starry) Zhou", 2020,
   "Stephanie Foukaris, Marta Garcia, Jingjing (Jocelyn) Hu, Julia Lee, Rutendo Madziwo, Cas Sweeney, Yi Wang", 2019,
   "Erina Fukuda, Shuli Hu, Minji Kang, Wencong (Priscilla) Li, Syeda Zainab Rizvi, Aakanksha Sinha", 2018,
-  "Diana Fierros-Pina, Lydia Jin, Maria Lopez, Weijia (Vega) Zhang", 2017,
+  "Diana Fierros-Pina, Lydia Jin, Yipeng Lai, Maria Lopez, Weijia (Vega) Zhang", 2017,
   "Yiwen Zhu", 2016,
 ) |>
   mutate(
@@ -1191,7 +1195,8 @@ tribble(
 tribble(
   ~title, ~desc, ~location, ~begin, ~end,
   "Assistant Coach", "Girls 5th & 6th grade basketball", "Northampton Suburban Basketball", 2025, 2026,
-  "Head Coach", "12U Girls softball", "Northampton Baseball & Softball League", 2025, 2026,
+  "Head Coach", "12U Girls softball", "Northampton Baseball & Softball League", 2026, 2026,
+  "Head Coach", "8U Girls softball", "Northampton Baseball & Softball League", 2025, 2025,
   "Head Coach", "Girls 5th & 6th grade Quabbin basketball", "Northampton Recreation Department", 2024, 2025,
   "Head Coach", "Girls Skills & Drills basketball", "Northampton Recreation Department", 2021, 2023,
   "Treasurer", NA, "Nonotuck Community School", 2019, 2022,
