@@ -371,10 +371,10 @@ Note: In computer science research, publications tend to come in pairs: a confer
 
 1. @baumer2025lets
 1. @baumer2025ds2
+1. @eastwood2026wnba
 
 ## Articles (in progress)
 
-1. @eastwood2026wnba
 1. @baumer2025fairness
 1. @baumer2021macleish
 1. @hancock2018
