@@ -39,7 +39,7 @@ keep-typ: true
 bibliography: ["references.bib", "talks.bib", "pkgs_cran.bib", "pkgs_gh.bib"]
 # use citeproc
 citeproc: true
-csl: csl/apa-cv.csl
+csl: csl/apa-cv-note.csl
 suppress-bibliography: true
 execute:
   echo: false
@@ -1100,7 +1100,8 @@ tribble(
 #| output: asis
 tribble(
   ~role, ~description, ~unit, ~begin, ~end,
-   "Search Committee Chair", "SDS/JNX Search Committee (?)", "SDS", 2026, 2026,
+   "Chair", "Promotion Review Committee (Hopper)", "SDS", 2026, 2027,
+   "Search Committee Chair", "SDS/JNX Search Committee (Christensen)", "SDS", 2026, 2026,
    "Member", "Reappointment Review Committee (Kurtz-Garcia)", "SDS", 2025, 2026,
    "Member", "Mathematical Statistics Committee", "MST", 2025, 2026,
    "Member", "Tenure and Promotion Review Committee (Poirier)", "SDS", 2025, 2026,
