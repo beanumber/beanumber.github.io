@@ -376,6 +376,7 @@ Note: In computer science research, publications tend to come in pairs: a confer
 ## Articles (in progress)
 
 1. @baumer2025fairness
+1. @baumer2026aalac
 1. @baumer2021macleish
 1. @hancock2018
 
@@ -922,26 +923,19 @@ tribble(
 
 ```{r}
 #| output: asis
-tribble(
-  ~description, ~date, 
-  "Anika Bhandari, Josephine Gerrard, Rainbow Gu, Sophia Hillard, Aviva Jotzke, Glenvelis Perez, Mia Schildbach, Vicky Xu, Danyi Xu", 2026,
-  "Rachael An, Destiny Cecchi Samuels, Sophia Dai, Grace Darby (MST), Laura Fay, Iris Gao, Nubraz Khan, Ramsha Rauf, Emma Ruckle, Lala Rukh, Tillie Slosser", 2025,
-  "Jack Brandano, Meaghan Brennan, Frankie Fan, Parunjodhi Munisamy, Abbey O'Meara, Sophia Silovsky, Tint Tha Ra Wun, Julia Ting", 2024,
-  "Rachel Aliwalas, Elda Cervantes, Rose Evard, Vibha Gogu, Aushanae Haller, Alejandra Muñoz Garcia, Annah Mutaya, Michiru Nozawa (MTH/SDS), Salwa Ouachtouki, Sonia Paredes, Rose Porta, Michele Sezgin, Christina Sherpa, Liwen Xu, Ziyue Yang, Summer Yu, Rosemary Zhang (MST), Yuezhang (Mackie) Zhou", 2023,
-  "Amrita Acharya, Dianne Caravela, Emilia Field, Michelle Flesaker, Sarah Gillespie, Grace Hartley, Natalia Iannucci (MTH/SDS), Huiqing (Lily) Jin, Emma Kornberg, Ananda Montoly, Wayne Ndlovu, Sunni Raleigh, Gabrielle Whalen, Summer Yu", 2022,
-  "Audrey Bertin, Phuong Chau, Olivia Handoko, Marlene Jackson, Chhiring Lama, Lauren Low, Dayana Meza Giraldo, Sakaiza Rasolofomanana Rajery, Ziheng (Ruby) Ru, Yanwan Zhu", 2021,
-  "Lizette Carpenter, Clara Rosenberg, Sophia Tannir, Xiaonan (Maggie) Wang, Yujia (Starry) Zhou", 2020,
-  "Stephanie Foukaris, Marta Garcia, Jingjing (Jocelyn) Hu, Julia Lee, Rutendo Madziwo, Cas Sweeney, Yi Wang", 2019,
-  "Erina Fukuda, Shuli Hu, Minji Kang, Wencong (Priscilla) Li, Syeda Zainab Rizvi, Aakanksha Sinha", 2018,
-  "Diana Fierros-Pina, Lydia Jin, Yipeng Lai, Maria Lopez, Weijia (Vega) Zhang", 2017,
-  "Yiwen Zhu", 2016,
-) |>
-  mutate(
-    students = str_split(description, pattern = ", "),
-    n = map_int(students, length),
-    title = paste(n, "member(s) of the class of", date),
-    location = "Smith College"
+advisees <- read_csv("_data-raw/advisees.csv")
+
+advisees |>
+  filter(type == "major") |>
+  mutate(class_year = str_remove_all(class_year, "J$")) |>
+  group_by(class_year) |>
+  summarize(
+    num_majors = n(),
+    location = "Smith College",
+    description = paste(student, collapse = ", ")
   ) |>
+  mutate(title = paste(num_majors, "member(s) of the class of", class_year)) |>
+  arrange(desc(class_year)) |>
   resume_entry()
 ```
 
@@ -949,25 +943,17 @@ tribble(
 
 ```{r}
 #| output: asis
-tribble(
-  ~description, ~date, 
-  "Emma Ruckle", 2025,
-  "Mack Case, Hebe Guo, Phaidra Martin, Jackie Ochoa Acevedo", 2024,
-  "Nana Ansah, Sethatevy Bong, Kacey Jean-Jacques, Miagoto Benedicte Nemadjilembaye, Anh Nguyen, Catherine Peppers, Lindsay Rosenthal", 2022,
-  "Sara Khan, Emma Westgate", 2021,
-  "Kimberly Barrios (AC), Yuri Furukawa", 2020,
-  "Gabrielle Drew, Emily Halstead, Cathy Lee", 2019,
-  "Marisa Youngblood", 2018,
-  "Yipeng Lai", 2017,
-  "Erika Correll, Martha Miller (AC)", 2016,
-  "Anna Cojocaru (AC), Stephanie Huynh", 2015,
-) |>
-  mutate(
-    students = str_split(description, pattern = ", "),
-    n = map_int(students, length),
-    title = paste(n, "member(s) of the class of", date),
-    location = "Smith College"
+advisees |>
+  filter(type == "minor") |>
+  mutate(class_year = str_remove_all(class_year, "J$")) |>
+  group_by(class_year) |>
+  summarize(
+    num_majors = n(),
+    location = "Smith College",
+    description = paste(student, collapse = ", ")
   ) |>
+  mutate(title = paste(num_majors, "member(s) of the class of", class_year)) |>
+  arrange(desc(class_year)) |>
   resume_entry()
 ```
 
@@ -1056,7 +1042,7 @@ tribble(
 
 ```{r}
 #| output: asis
-read_csv("teaching_record.csv") |>
+read_csv("_data-raw/teaching_record.csv") |>
   filter(!is.na(course_short)) |>
   mutate(
     course = ifelse(course_short %in% c("SDS 390", "SDS 270"), "Advanced Programming for Data Science in R", course),
@@ -1119,6 +1105,9 @@ tribble(
    "Unit Chair", "Statistical & Data Sciences", "SDS", 2014, 2016,
    "Unit Chair", "Statistical & Data Sciences", "SDS", 2018, 2018,
    "Unit Chair", "Statistical & Data Sciences", "SDS", 2020, 2023,
+   "Unit Chair", "Statistical & Data Sciences", "SDS", 2026, 2027,
+   "Director", "Honors", "MST", 2026, 2027,
+   "Director", "Honors", "SDS", 2026, 2027,
    "Director", "Honors", "SDS", 2019, 2023,
    "SDS Subcommitee Chair", "Mentoring & Outreach subcommittee", "SDS", 2023, 2023,
    "SDS Subcommitee Chair", "Curriculum & Planning subcommittee", "SDS", 2022, 2023,
