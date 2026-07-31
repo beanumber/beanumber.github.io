@@ -17,7 +17,7 @@ I was a Mary P. Dolciani [Project NExT](http://archives.math.utk.edu/projnext/) 
 
 ```{r, include=FALSE}
 library(tidyverse)
-teaching <- read_csv("teaching_record.csv") |>
+teaching <- read_csv("data/teaching_record.csv") |>
   mutate(
     html = ifelse(!is.na(url), 
                   paste0(course, " ([", course_short, "](", url , "))"), 
