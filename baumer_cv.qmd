@@ -910,6 +910,7 @@ tribble(
  
 ## Honors advising
 
+1. @gogstetter2026cidar
 1. @white2023covid
 1. @iannucci2022signature
 1. @bertin2021fertile
@@ -923,7 +924,7 @@ tribble(
 
 ```{r}
 #| output: asis
-advisees <- read_csv("_data-raw/advisees.csv")
+advisees <- read_csv("data/advisees.csv")
 
 advisees |>
   filter(type == "major") |>
@@ -1042,7 +1043,7 @@ tribble(
 
 ```{r}
 #| output: asis
-read_csv("_data-raw/teaching_record.csv") |>
+read_csv("data/teaching_record.csv") |>
   filter(!is.na(course_short)) |>
   mutate(
     course = ifelse(course_short %in% c("SDS 390", "SDS 270"), "Advanced Programming for Data Science in R", course),
