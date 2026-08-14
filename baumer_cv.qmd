@@ -540,6 +540,8 @@ tribble(
 
 ## Events co-organized
 
+1. @fcdf2026
+1. @jsm2026
 1. @aalac2026
 1. @fcdf2025
 1. @jsm2025
@@ -602,6 +604,7 @@ tribble(
   "Regular reviewer", "The American Statistician", 2016, NA,
   "Regular reviewer", "Technology Innovations in Statistics Education", 2016, NA,
   "Regular reviewer", "Harvard Data Science Review", 2019, NA,
+  "At least one review", "Computational Statistics", 2026, 2026,
   "At least one review", "By The Numbers: Newsletter of the SABR Statistics Committee", 2004, NA,
   "At least one review", "R Journal", 2025, NA,
   "At least one review", "INFORMS Transactions on Education", 2022, NA,
@@ -678,6 +681,7 @@ tribble(
 #| output: asis
 tribble(
   ~role, ~location, ~begin, ~end,
+  "Founding Editor", "Journal of Statistics and Data Science in Sports", 2026, NA,
   "Interim Editor", "Journal of Quantitative Analysis in Sports", 2023, 2023,
   "Co-Editor", "Journal of Quantitative Analysis in Sports", 2022, 2023,
   "Associate Editor", "Journal of Statistics and Data Science Education", 2024, NA,
@@ -698,7 +702,7 @@ tribble(
 #| output: asis
 tribble(
   ~role, ~description, ~unit, ~begin, ~end,
-  "Non-PhD Rep (candidate)", "", "Caucus of Academic Representatives", 2025, 2028,
+  "Non-PhD Rep (candidate, not elected)", "", "Caucus of Academic Representatives", 2025, 2028,
   "Member", "Waller Education Awards Committee", "Section on Statistics and Data Science Education", 2025, 2027,
   "Program Chair", "JSM 2026", "Section on Statistical Computing", 2025, 2026,
   "Contributor", "College GAISE Revision Writing Team", "Section on Statistics and Data Science Education", 2025, 2025,
@@ -751,6 +755,7 @@ tribble(
 #| output: asis
 tribble(
   ~title, ~candidate, ~location, ~degree, ~date,
+   "External Reviewer", "[redacted]", "Carnegie Mellon University", "Statistics and Data Science", 2026,
    "External Reviewer", "[redacted]", "Loyola University Chicago", "Mathematics and Statistics", 2026,
    "External Reviewer", "[redacted]", "Montana State University", "Mathematical Sciences", 2026,
    "External Reviewer", "[redacted]", "Williams College", "Statistics", 2025,
@@ -1069,7 +1074,7 @@ tribble(
   ~course, ~location, ~begin, ~end,
    "Multiple Regression", "DataCamp", 2017, NA,
    "Correlation and Regression", "DataCamp", 2017, NA,
-   "SQL and R - Introduction to Database Queries", "Statistics.com", 2014, NA,
+   "SQL and R - Introduction to Database Queries", "Statistics.com", 2014, 2026,
    "Sabermetrics 101", "edX (Boston University)", 2014, 2014
 ) |>
   group_by(location) |>
@@ -1088,10 +1093,14 @@ tribble(
 tribble(
   ~role, ~description, ~unit, ~begin, ~end,
    "Chair", "Promotion Review Committee (Hopper)", "SDS", 2026, 2027,
+   "SDS Subcommitee Chair", "Planning subcommittee", "SDS", 2026, 2027,
+   "SDS Subcommitee Chair", "Curriculum subcommittee", "SDS", 2026, 2027,
    "Search Committee Chair", "SDS/JNX Search Committee (Christensen)", "SDS", 2026, 2026,
    "Member", "Reappointment Review Committee (Kurtz-Garcia)", "SDS", 2025, 2026,
    "Member", "Mathematical Statistics Committee", "MST", 2025, 2026,
    "Member", "Tenure and Promotion Review Committee (Poirier)", "SDS", 2025, 2026,
+   "SDS Subcommitee Member", "Planning subcommittee", "SDS", 2025, 2026,
+   "SDS Subcommitee Chair", "Curriculum subcommittee", "SDS", 2025, 2026,
    "Search Committee Member", "TT Search Committee (Kirschbaum)", "SDS", 2025, 2025,
    "Chair", "Mathematical Statistics Committee", "MST", 2024, 2025,
    "Search Committee Member", "TT Search Committee (Stevens)", "SDS", 2024, 2024,
