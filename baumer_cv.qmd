@@ -366,6 +366,7 @@ Note: In computer science research, publications tend to come in pairs: a confer
 **Forthcoming**
 
 1. @baumer2025ds2
+1. @elmore2026jsdss
 
 **Works in progress**
 
