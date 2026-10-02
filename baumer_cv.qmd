@@ -705,6 +705,7 @@ tribble(
 tribble(
   ~role, ~description, ~unit, ~begin, ~end,
   "Non-PhD Rep (candidate, not elected)", "", "Caucus of Academic Representatives", 2025, 2028,
+  "Chair", "Waller Education Awards Committee", "Section on Statistics and Data Science Education", 2027, 2027,
   "Member", "Waller Education Awards Committee", "Section on Statistics and Data Science Education", 2025, 2027,
   "Program Chair", "JSM 2026", "Section on Statistical Computing", 2025, 2026,
   "Contributor", "College GAISE Revision Writing Team", "Section on Statistics and Data Science Education", 2025, 2025,
