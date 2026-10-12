@@ -321,6 +321,7 @@ Note: In computer science research, publications tend to come in pairs: a confer
 
 ## Review articles and essays
 
+1. @baumer2026aiunder
 1. @baumer2024editor
 1. @baumer2022symposium
 1. @baumer2022ctv
