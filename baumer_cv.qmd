@@ -368,6 +368,7 @@ Note: In computer science research, publications tend to come in pairs: a confer
 
 1. @baumer2025ds2
 1. @elmore2026jsdss
+1. @albert2026interview
 
 **Works in progress**
 
@@ -485,6 +486,7 @@ Note: In computer science research, publications tend to come in pairs: a confer
 
 ## Panels and Guest Lectures
 
+1. @umass2026panel
 1. @ai2026
 1. @baumer2025jsmsports
 1. @jsm2021
@@ -543,6 +545,7 @@ tribble(
 
 ## Events co-organized
 
+1. @baumer2027jsmsports
 1. @fcdf2026
 1. @jsm2026
 1. @aalac2026
