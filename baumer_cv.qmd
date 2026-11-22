@@ -486,6 +486,7 @@ Note: In computer science research, publications tend to come in pairs: a confer
 
 ## Panels and Guest Lectures
 
+1. @Evans18112026
 1. @umass2026panel
 1. @ai2026
 1. @baumer2025jsmsports
