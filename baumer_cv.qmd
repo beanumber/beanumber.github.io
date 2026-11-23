@@ -692,7 +692,7 @@ tribble(
   "Interim Editor", "Journal of Quantitative Analysis in Sports", 2023, 2023,
   "Co-Editor", "Journal of Quantitative Analysis in Sports", 2022, 2023,
   "Associate Editor", "Journal of Statistics and Data Science Education", 2024, NA,
-  "Associate Editor", "Journal of Quantitative Analysis in Sports", 2012, NA,
+  "Associate Editor", "Journal of Quantitative Analysis in Sports", 2012, 2026,
 ) |>
   group_by(location) |>
   summarize(
